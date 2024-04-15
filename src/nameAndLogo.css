@@ -1,0 +1,44 @@
+.nameAndLogo{
+    
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.logoImage{
+    height: 80px;
+    width: 80px;
+}
+
+.logoImage img{
+    height: 100%;
+    width: 100%;
+}
+
+.nameAndPlace{
+    /* text-transform: uppercase; */
+    margin: auto;
+    color: #2596be;
+}
+
+hr.nameHr{
+    width: 50%;
+    /* margin: auto; */
+
+    background-color: #000;
+    height: 0.5px;
+
+}
+
+.hosName{
+    text-transform: uppercase;
+    font-size: large;
+    
+    text-align: center;
+    font-weight: bold;
+}
+.hosPlace{
+    font-size:small;
+}

@@ -1,0 +1,23 @@
+
+.slides{
+    width: 400%;
+    height: fit-content;
+    overflow-x: hidden;
+    
+}
+
+.slide{
+    width: 25%;
+    height: 500px;
+}
+
+.innerSlide{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.innerSlide img{
+    height: 100%;
+    width: 100%;
+}

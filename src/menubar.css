@@ -1,0 +1,46 @@
+.menuBar{
+    width: 60%;
+  }
+  .menuList{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+  .menuList li a{
+    text-decoration: none;
+    width: 100%;
+    /* color: #91a8ae ; */
+    color: #4285F4;
+    padding: 20px 10px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    /* color: #91a8ae; */
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: all ease-in 0.3s;
+    position: relative;
+  
+   
+  }
+  .menuList li a:hover{
+    color: brown;
+  }
+  .dropDownList {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    z-index: 1;
+    text-align: left;
+    border-radius: 5px;
+  }
+  .dropDownList a{
+    font-size: 13px !important;
+    padding: 10px 5px !important;
+    
+  }
