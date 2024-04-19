@@ -4,7 +4,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    margin: auto;
+    background-color: #fff;
 }
 
 .logoImage{
@@ -20,14 +21,14 @@
 .nameAndPlace{
     /* text-transform: uppercase; */
     margin: auto;
-    color: #2596be;
+    color: #4285F4;
 }
 
 hr.nameHr{
     width: 50%;
     /* margin: auto; */
 
-    background-color: #000;
+    background-color: #d0bb68;
     height: 0.5px;
 
 }
@@ -35,10 +36,12 @@ hr.nameHr{
 .hosName{
     text-transform: uppercase;
     font-size: large;
-    
+    border-bottom: 1px solid #d0bb68;
     text-align: center;
     font-weight: bold;
 }
 .hosPlace{
+    padding-top: 5px;
     font-size:small;
+    text-transform: uppercase;
 }

@@ -1,0 +1,103 @@
+
+.events{
+    height: 500px;
+    background-image: url("./gallery/homebackground.jpg");
+    background-size: cover;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+.headingEvents{
+    font-size: 30px;
+    text-align: center;
+    color: #2f3082;
+}
+
+.outerEvents{
+    width: 90%;
+    overflow: hidden;
+    height: 70%;
+    margin: auto;
+}
+.newsletters{
+    height: 90%;
+    display: flex;
+    flex-direction: row ;
+    justify-content:space-between;
+    width: 150%;
+    /* margin-left: -50%; */
+    transition: 2s;
+    
+}
+
+
+.newsletterBox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    padding: 0% 1% 0% 1%; 
+
+}
+
+.eventImage{
+    width: 100%;
+    height: 80%;
+    margin: auto;
+    border: 2px solid #d0bb68;
+    border-radius: 5px;
+}
+.innerEventImage{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.eventImage:hover{
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    z-index: 3;
+    cursor: pointer;
+    position: absolute;
+    left: 35%;
+    /* transition : 1s; */
+
+}
+
+.innerEventImage img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.newsDate{
+    text-align: center;
+    color: #2f3082;
+    font-weight: bold;
+}
+
+
+.eventControl{
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content:center;
+
+}
+.point{
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border: 2px solid #d0bb68;
+    border-radius: 50%;
+    margin:  0 5px 0 5px;
+    
+}
+.one{
+    background-color: #d0bb68;
+}
+.one:hover, .two:hover{
+    background-color: #d0bb68 !important;
+    cursor: pointer;
+}

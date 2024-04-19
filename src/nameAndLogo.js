@@ -8,7 +8,7 @@ const nameAndLogo =({name, place})=>{
             <div className="logoImage"> <img src={logo} alt="imgnotfound"/></div>
             <div className="nameAndPlace">
                 <div className="hosName"> {name} </div>
-                <hr className="nameHr"/>
+                {/* <hr className="nameHr"/> */}
                 <div className="hosPlace">{place}</div>
             </div>
         </div>

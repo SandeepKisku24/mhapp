@@ -1,5 +1,11 @@
 .menuBar{
     width: 60%;
+    background-color: #4285F4;
+    /* color: #fff !important; */
+    border-bottom-left-radius: 55px;
+    margin-left: auto;
+    margin-bottom: 3px;
+
   }
   .menuList{
     list-style: none;
@@ -12,8 +18,9 @@
     text-decoration: none;
     width: 100%;
     /* color: #91a8ae ; */
-    color: #4285F4;
-    padding: 20px 10px;
+    /* color: #4285F4; */
+    color: #fff;
+    padding: 10px 5px;
     display: block;
     font-size: 13px;
     font-weight: 400;
@@ -26,7 +33,10 @@
    
   }
   .menuList li a:hover{
-    color: brown;
+    color: #d0bb68;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
   }
   .dropDownList {
     display: flex;
@@ -38,9 +48,36 @@
     z-index: 1;
     text-align: left;
     border-radius: 5px;
+    
+  }
+  .typedrop{
+    width: 600px;
+    margin-left: -100px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+
   }
   .dropDownList a{
     font-size: 13px !important;
-    padding: 10px 5px !important;
+    /* padding: 10px 5px !important; */
+    color: #4285F4 !important;
+
     
+  }
+
+  .dropDownList a:hover{
+    color: #d0bb68 !important;
+  }
+
+  .dept{
+    width: 180px;
+    border-right: 2px solid #d0bb68;
+    padding-right: 10px;
+  }
+  .deptHeading{
+    /* font-weight: bold; */
+    text-transform: uppercase;
+    color: #2f3082;
+    font-size: 13px;
   }
