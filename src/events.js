@@ -13,12 +13,19 @@ const Event = ()=>{
         document.querySelector(".newsletters").style.marginLeft = "-50%";
         document.querySelector(".one").style.backgroundColor = "#fff";
         document.querySelector(".two").style.backgroundColor = "#d0bb68";
+        document.querySelector(".one").style.height = "15px";
+        document.querySelector(".one").style.width = "15px";
+        document.querySelector(".two").style.height = "10px";
+        document.querySelector(".two").style.width = "10px";
     }
     const handleOneClick =()=>{
         document.querySelector(".newsletters").style.marginLeft = "0%";
         document.querySelector(".two").style.backgroundColor = "#fff";
         document.querySelector(".one").style.backgroundColor = "#d0bb68";
-
+        document.querySelector(".two").style.height = "15px";
+        document.querySelector(".two").style.width = "15px";
+        document.querySelector(".one").style.height = "10px";
+        document.querySelector(".one").style.width = "10px";
     }
 
 

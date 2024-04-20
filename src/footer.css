@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    height: 400px;
+}
+
+.footer1{
+    background-image: url("./gallery/pictures/background\ Contact\ Us.jpg");
+    background-size: cover;
+    height: fit-content;
+}
+
+.bottomBar{
+    background-color: #4285F4;
+    height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.headingFooterContact{
+    font-size: 30px;
+    text-align: center;
+}

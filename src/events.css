@@ -53,8 +53,8 @@
     margin: auto;
 }
 .eventImage:hover{
-    width: 500px;
-    height: 450px;
+    width: 600px;
+    height: 500px;
     margin: auto;
     z-index: 3;
     cursor: pointer;
@@ -96,6 +96,12 @@
 }
 .one{
     background-color: #d0bb68;
+    margin-top: auto;
+    margin-top: auto;
+}
+.two{
+    margin-top: auto;
+    margin-top: auto;
 }
 .one:hover, .two:hover{
     background-color: #d0bb68 !important;

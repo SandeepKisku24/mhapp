@@ -3,6 +3,9 @@ import Slide from "./slides";
 import Announce from "./announcement";
 import AboutUs from "./aboutus";
 import Event from "./events";
+import Footer from "./footer";
+import Testimonials from "./testimonials";
+import Youtube from "./youtube";
 import "./home.css"
 const Home =()=>{
     return(
@@ -15,6 +18,11 @@ const Home =()=>{
             <br/>
             <br/>
             <Event/>
+            <br/>
+            <div className="testAndYou">
+                <Testimonials/>
+                <Youtube/>
+            </div>
         </div>
     )
 }

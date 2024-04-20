@@ -4,6 +4,8 @@ import "./menubar.css"
 const Menu = ()=>{
     const [showAboutUs, setAboutUs] = useState(false);
     const [showDep, setDep] = useState(false);
+    const [showPI, setPI] = useState(false);
+    const [showServices, setService] = useState(false);
     const handleOnMouse = ()=>{
         setAboutUs(true);
     }
@@ -15,6 +17,18 @@ const Menu = ()=>{
     }
     const handleOutMouse1 = ()=>{
         setDep(false);
+    }
+    const handleOnMouse2 = ()=>{
+        setService(true);
+    }
+    const handleOutMouse2 = ()=>{
+        setService(false);
+    }
+    const handleOnMouse3 = ()=>{
+        setPI(true);
+    }
+    const handleOutMouse3 = ()=>{
+        setPI(false);
     }
     return(
         <div className="menuBar">
@@ -59,13 +73,40 @@ const Menu = ()=>{
                         <div className="dept">
                             <div className="deptHeading">Doctors</div>
                             <hr/>
-                           
+                            <a>Dr. Arun Tudu</a>
+                            <a> DR. Rebin Renny </a>
+                            <a>Dr. Betsy Francis</a>
+                            <a>Dr. Shetty Jose</a>
+                            <a>Dt. Priti Soren</a>
+                            <a>Dr. Dileep Kumar Thakur</a>
+                            <a>Dr. Tara Sankar</a>
+                            <a>Dr. Alpana Soren</a>
                         </div>
                         {/* <Link to ="doctor">Doctors</Link> */}
                     </div>:<></>}
                 </li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">patient information</a></li>
+
+                <li><a href="#" onMouseOver={handleOnMouse2} onMouseOut={handleOutMouse2}>SERVICES <i class="fa fa-caret-down"></i></a> 
+                {showServices? <div className="dropDownList" onMouseOver={handleOnMouse2} onMouseOut={handleOutMouse2}>
+                        <Link to = "/">Community Outreach Services</Link>
+                        <Link to = "/"> Ambulance</Link>
+                        <Link to = "/"> Dieatry Services</Link>
+                        <Link to = "/"> Pharmacy</Link>
+                        
+                    </div>:<></>}
+                </li>
+                
+                <li><a href="#"onMouseOver={handleOnMouse3} onMouseOut={handleOutMouse3}>patient information <i class="fa fa-caret-down"></i> </a>
+                {showPI? <div className="dropDownList" onMouseOver={handleOnMouse3} onMouseOut={handleOutMouse3}>
+                        <Link to = "/"> General information </Link>
+                        <Link to = "/"> Admission Procedure</Link>
+                        <Link to = "/"> Visitor Hours</Link>
+                        <Link to = "/"> OPD Holidays</Link>
+                        <Link to = "/"> Inpatient Department</Link>
+                        <Link to = "/"> patient rights and responsibilities</Link>
+                        <Link to = "/">Campaigns under Mercy hospital</Link>
+                    </div>:<></>}
+                </li>
             </ul>
         </div>
     )

@@ -1,0 +1,23 @@
+.footerContact{
+    width: 50%;
+    margin: auto;
+}
+
+.addressBoxContact{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 60%;
+    background-color: #fff;
+    padding: 2% 0 1% 10%;
+}
+
+.headingContact{
+    font-size: 30px;
+    color: #2f3082;
+    width: fit-content;
+    padding-bottom: 2%;
+    border-bottom: 2px solid #d0bb68;
+}
+.socialMedia a{
+    text-decoration: none;
+    color: #2f3082;
+}

@@ -9,3 +9,7 @@
     flex-direction: row;
     justify-content: space-around;
 }
+.testAndYou{
+    display: flex;
+    flex-direction: row;
+}

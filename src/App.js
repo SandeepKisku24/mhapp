@@ -12,6 +12,7 @@ import History from "./history";
 import Gallery from "./gallery";
 import Management from "./management";
 import Vision from "./vision";
+import Footer from "./footer";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
           <Route path ="/management" element = {<Management/>}/>
           <Route path ="/gallery" element = {<Gallery/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

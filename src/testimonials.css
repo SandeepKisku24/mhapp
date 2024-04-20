@@ -1,0 +1,57 @@
+.headingTest{
+    font-size: 30px;
+    color: #2f3082;
+    text-align: center;
+}
+.testimonial{
+    height: 400px;
+    width: 40%;
+    overflow-x: hidden;
+    /* background-color: #d0bb68; */
+    border-radius: 10px;
+}
+
+.testimonialInner{
+    width: 500%;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-left: -200%; */
+}
+.review{
+    width: 20%;
+    
+    height: 50%;
+    margin: auto;
+    
+}
+.reviewContent{
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    padding: 1%;
+    border: 2px solid #4285F4;
+    border-radius: 5px;
+    padding: 3%;
+    height: 100%;
+}
+.leftReview , .rightReview{
+    position: relative;
+}
+.leftReview{
+    top : -40%
+}
+
+.rightReview{
+    top: -45%;
+    left: 90%;
+}
+
+.leftReview:hover, .rightReview:hover{
+    color: #4285F4;
+    cursor: pointer;
+}
