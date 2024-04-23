@@ -34,7 +34,7 @@
   }
   .menuList li a:hover{
     color: #d0bb68;
-    background-color: #fff;
+    /* background-color: #fff; */
     cursor: pointer;
     border-radius: 2px;
   }
@@ -68,6 +68,7 @@
 
   .dropDownList a:hover{
     color: #d0bb68 !important;
+    /* width: fit-content; */
   }
 
   .dept{

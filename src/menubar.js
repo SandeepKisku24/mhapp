@@ -36,9 +36,9 @@ const Menu = ()=>{
                 <li><Link to ="/">HOME</Link></li>
                 <li><a href="#" onMouseOver={handleOnMouse} onMouseOut={handleOutMouse} > OVERVIEW <i class="fa fa-caret-down"></i> </a>
                     {showAboutUs? <div className="dropDownList" onMouseOver={handleOnMouse} onMouseOut={handleOutMouse}>
-                        <Link to = "/history"> about us</Link>
+                        <Link to = "/aboutUs"> about us</Link>
                         <Link to = "/vision"> VISION & MISSION</Link>
-                        <Link to = "/vision"> directors's message</Link>
+                        <Link to = "/director"> directors's message</Link>
                         <Link to = "/management"> MANAGEMENT</Link>
                         <Link to = "/gallery"> GALLERY</Link>
                         

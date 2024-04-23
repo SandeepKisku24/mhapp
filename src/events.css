@@ -59,7 +59,7 @@
     z-index: 3;
     cursor: pointer;
     position: absolute;
-    left: 35%;
+    /* left: 35%; */
     /* transition : 1s; */
 
 }

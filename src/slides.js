@@ -7,8 +7,7 @@ import "./slides.css";
 
 const Slide = ()=>{
 
-    var[slideNo, setSlide] = useState(0);
-    // for the zoom part 
+    
     var width = 90;
     var height = 90;
     var intervalId =0;
@@ -19,6 +18,7 @@ const Slide = ()=>{
         intervalId = setInterval(zoom,13);
         
     },[]);
+
 
     const zoom =()=>{
         // console.log(width);
@@ -35,9 +35,21 @@ const Slide = ()=>{
     }
 
     // for the sliding part
+    var[slideNo, setSlide] = useState(0);
 
-   
-    
+    useEffect(() => {
+        //Implementing the setInterval method
+        const interval = setInterval(() => {
+            if(slideNo<3)
+            setSlide(slideNo + 1);
+            else
+            setSlide(0);
+        }, 5000);
+ 
+        //Clearing the interval
+        return () => clearInterval(interval);
+    }, [slideNo]);
+
     useEffect(()=>{
         if(slideNo>=0 && slideNo<=3){
             var slideClass = ".slide" + slideNo;
@@ -57,16 +69,11 @@ const Slide = ()=>{
         if(slideNo!==3){
             document.querySelector(".slide3").style.display = "none";
         }
-        console.log(slideNo);
+        // console.log(slideNo);
         }
-        
-    },[slideNo])
-
-
-    const handleLeftClick= ()=>{
-        
-    }
-
+    })
+    
+   
     return(
         <div className="slides">
             <div className="slide slide0" > <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
@@ -77,7 +84,7 @@ const Slide = ()=>{
                 const temp = slideNo-1;
                 if(temp>=0){
                     setSlide(temp);
-                    console.log(slideNo);
+
                 }
                 else{
                     setSlide(3);
@@ -88,7 +95,7 @@ const Slide = ()=>{
                 if(temp<=3){
                     
                     setSlide(temp);
-                    console.log(slideNo);
+                    // console.log(slideNo);
                 }
                 else{
                     setSlide(0);

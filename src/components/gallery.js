@@ -2,7 +2,7 @@ import React from "react";
 
 const gallery =()=>{
     return(
-        <>History</>
+        <>Gallery</>
     )
 }
 export default gallery;

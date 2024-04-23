@@ -20,6 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     /* margin-left: -200%; */
+    transition: 2s;
 }
 .review{
     width: 20%;
@@ -41,9 +42,11 @@
 }
 .leftReview , .rightReview{
     position: relative;
+    width: fit-content;
 }
 .leftReview{
-    top : -40%
+    top : -40%;
+    left:7%
 }
 
 .rightReview{

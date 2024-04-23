@@ -2,7 +2,7 @@ import React from "react";
 
 const vision =()=>{
     return(
-        <>History</>
+        <>This is the vision</>
     )
 }
 export default vision;

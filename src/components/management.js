@@ -2,7 +2,7 @@ import React from "react";
 
 const management =()=>{
     return(
-        <>History</>
+        <>Management</>
     )
 }
 export default management;
