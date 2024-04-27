@@ -34,7 +34,7 @@ const Menu = ()=>{
         <div className="menuBar">
             <ul className="menuList">
                 <li><Link to ="/">HOME</Link></li>
-                <li><a href="#" onMouseOver={handleOnMouse} onMouseOut={handleOutMouse} > OVERVIEW <i class="fa fa-caret-down"></i> </a>
+                <li><a href="#" onMouseOver={handleOnMouse} onMouseOut={handleOutMouse} > OVERVIEW <i class="fa fa-caret-down"></i> </a >
                     {showAboutUs? <div className="dropDownList" onMouseOver={handleOnMouse} onMouseOut={handleOutMouse}>
                         <Link to = "/aboutUs"> about us</Link>
                         <Link to = "/vision"> VISION & MISSION</Link>
@@ -44,67 +44,60 @@ const Menu = ()=>{
                         
                     </div>:<></>}
                 </li>
-                <li><a href="#" onMouseOver={handleOnMouse1} onMouseOut={handleOutMouse1}>DEPARTMENTS AND DOCTORS <i class="fa fa-caret-down"></i> </a>
+                <li><a href="#" onMouseOver={handleOnMouse1} onMouseOut={handleOutMouse1}>DEPARTMENTS AND DOCTORS <i class="fa fa-caret-down"></i> </a >
                     {showDep? <div className=" typedrop dropDownList " onMouseOver={handleOnMouse1} onMouseOut={handleOutMouse1}>
                         <div className="dept">
                             <div className="deptHeading">clinical services</div>
                             <hr/>
-                            <a>Emergency</a>
-                            <a>Intensive Care Unit (ICU)</a>
-                            <a>Outpatient Department (OPD)</a>
-                            <a>Operating Theater (O.T)</a>
-                            <a>Orthopedic</a>
-                            <a>Dental</a>
-                            <a>General Medicine</a>
-                            <a>Family Medicine</a>
-                            <a>Inpatient Department (IPD)</a>
+                            <Link to="/department/emergency">Emergency</Link >
+                            <Link to="/department/icu">Intensive Care Unit (ICU)</Link >
+                            <Link to="/department/opd">Outpatient Department (OPD)</Link >
+                            <Link to="/department/ot">Operating Theater (O.T)</Link >
+                            <Link to="/department/orthopedic">Orthopedic</Link >
+                            <Link to="/department/dental">Dental</Link >
+                            <Link to="/department/generalmedicine">General Medicine</Link >
+                            <Link to="/department/famililymedicine">Family Medicine</Link >
+                            <Link to="/department/ipd   ">Inpatient Department (IPD)</Link >
                         </div>
-                        <div className="dept">
-                            <div className="deptHeading">Diagnostic and Support Services</div>
-                            <hr/>
-                            <a>X-Ray</a>
-                            <a>Laboratory/Pathology</a>
-                            <a>Pharmacy</a>
-                            <a>Ophthalmology</a>
-                            <a>Dietetic</a>
-                            <a>Medical Social Work</a>
-                            <a>Pastoral Care</a>
-                        </div>
+                        
                         <div className="dept">
                             <div className="deptHeading">Doctors</div>
                             <hr/>
-                            <a>Dr. Arun Tudu</a>
-                            <a> DR. Rebin Renny </a>
-                            <a>Dr. Betsy Francis</a>
-                            <a>Dr. Shetty Jose</a>
-                            <a>Dt. Priti Soren</a>
-                            <a>Dr. Dileep Kumar Thakur</a>
-                            <a>Dr. Tara Sankar</a>
-                            <a>Dr. Alpana Soren</a>
+                            <Link to="/doctor/drarun">Dr. Arun Tudu</Link >
+                            <Link to="/doctor/drrebin"> DR. Rebin Renny </Link >
+                            <Link to="/doctor/drbetsy">Dr. Betsy Francis</Link >
+                            <Link to="/doctor/drshetty">Dr. Shetty Jose</Link >
+                            <Link to="doctor/dtpriti">Dt. Priti Soren</Link >
+                            <Link to="/doctor/drdileep">Dr. Dileep Kumar Thakur</Link >
+                            <Link to="/doctor/drtara">Dr. Tara Sankar</Link >
+                            <Link to="/doctor/dralpana">Dr. Alpana Soren</Link >
                         </div>
                         {/* <Link to ="doctor">Doctors</Link> */}
                     </div>:<></>}
                 </li>
 
-                <li><a href="#" onMouseOver={handleOnMouse2} onMouseOut={handleOutMouse2}>SERVICES <i class="fa fa-caret-down"></i></a> 
+                <li><a href="#" onMouseOver={handleOnMouse2} onMouseOut={handleOutMouse2}>SERVICES <i class="fa fa-caret-down"></i></a > 
                 {showServices? <div className="dropDownList" onMouseOver={handleOnMouse2} onMouseOut={handleOutMouse2}>
-                        <Link to = "/">Community Outreach Services</Link>
-                        <Link to = "/"> Ambulance</Link>
-                        <Link to = "/"> Dieatry Services</Link>
-                        <Link to = "/"> Pharmacy</Link>
+                        <Link to = "/service/lab"> Laboratory/Pathology</Link>
+                        <Link to = "/service/xray"> X-Ray</Link>
+                        <Link to = "/service/community">Community Outreach Services</Link>
+                        <Link to = "/service/ambulance"> Ambulance</Link>
+                        <Link to = "/service/Dietary"> Dietary Services</Link>
+                        <Link to = "/service/pharmacy"> Pharmacy</Link>
+                        <Link to = "/service/pastoral"> Pastoral Care</Link>
                         
                     </div>:<></>}
                 </li>
                 
-                <li><a href="#"onMouseOver={handleOnMouse3} onMouseOut={handleOutMouse3}>patient information <i class="fa fa-caret-down"></i> </a>
+                <li><a href="#"onMouseOver={handleOnMouse3} onMouseOut={handleOutMouse3}>patient information <i class="fa fa-caret-down"></i> </a >
                 {showPI? <div className="dropDownList" onMouseOver={handleOnMouse3} onMouseOut={handleOutMouse3}>
-                        <Link to = "/"> General information </Link>
-                        <Link to = "/"> Admission Procedure</Link>
-                        <Link to = "/"> Visitor Hours</Link>
-                        <Link to = "/"> OPD Holidays</Link>
-                        <Link to = "/"> Inpatient Department</Link>
-                        <Link to = "/"> patient rights and responsibilities</Link>
-                        <Link to = "/">Campaigns under Mercy hospital</Link>
+                        <Link to = "/info/generalinfo"> General information </Link>
+                        <Link to = "/info/admission"> Admission Procedure</Link>
+                        <Link to = "/info/visitorhours"> Visitor Hours</Link>
+                        <Link to = "/info/holidays"> OPD Holidays</Link>
+                        <Link to = "/info/ipdinfo"> Inpatient Department</Link>
+                        <Link to = "/info/rightsandresponsibilities"> patient rights and responsibilities</Link>
+                        <Link to = "/info/campaigns">Campaigns under Mercy hospital</Link>
                     </div>:<></>}
                 </li>
             </ul>

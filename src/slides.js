@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import slide1 from "./gallery/pictures/HOSPL PANORAMIC IMG JPG.jpg";
-import slide2 from "./gallery/pictures/slide2.jpg";
-import slide3 from "./gallery/pictures/slide3.png";
-import slide4 from "./gallery/pictures/slide4.jpg";
+import slide2 from "./gallery/pictures/slide2_2.png";
+import slide3 from "./gallery/pictures/slide3_3.jpg";
+import slide4 from "./gallery/pictures/slide4_4.jpg";
 import "./slides.css";
 
 const Slide = ()=>{
@@ -77,9 +77,61 @@ const Slide = ()=>{
     return(
         <div className="slides">
             <div className="slide slide0" > <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
-            <div className="slide1" > <img src ={slide2} alt ="img not found" />  </div>
-            <div className=" slide2" >  <img src ={slide3} alt ="img not found" />  </div>
-            <div className="  slide3" >  <img src ={slide4} alt ="img not found" />  </div>
+            <div className="slide1" > <div className="slide1Content">
+            <div className="slide1Image">
+            <img src ={slide2} alt ="img not found" />  
+            </div>
+            <div className="slide1WrittenPart">
+                <div className="biggerSlide1">
+                Your <span style={{color:"#FFD700"}}>Health</span> is our priority
+                </div>
+                <div className="smallerSlide1">
+                    
+                    In our hospital, we intertwine faith, care, and vision to cultivate a nurturing environment, ensuring comprehensive healing and patient-centered healthcare for all.
+                </div>
+                
+            </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFD700" fill-opacity="1" d="M0,32L40,74.7C80,117,160,203,240,218.7C320,235,400,181,480,181.3C560,181,640,235,720,218.7C800,203,880,117,960,101.3C1040,85,1120,139,1200,176C1280,213,1360,235,1400,245.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+            </div>
+            <div className="slide2" > <div className="slide1Content">
+            
+            <div className="slide2WrittenPart">
+                <div className="biggerSlide2">
+                Medical <span style={{}}>Health</span> Camps 
+                </div>
+                <div className="smallerSlide2">
+                    
+                Our hospital conducts monthly free health camps, extending essential medical services to underserved communities, promoting wellness, and fostering community health empowerment through accessibility and compassion.
+                </div>
+                
+            </div>
+            <div className="slide2Image">
+            <img src ={slide3} alt ="img not found" />  
+            </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            </div>
+            <div className="slide3" > <div className="slide1Content">
+            
+            <div className="slide2WrittenPart">
+                <div className="biggerSlide3">
+                Mercy hospital Poreyahat 
+                </div>
+                <div className="smallerSlide3">
+                    
+                Our hospital excels with top-tier medical expertise, advanced facilities, and compassionate care, earning recognition as a leading healthcare provider in the region.
+                </div>
+                
+            </div>
+            <div className="slide2Image">
+            <img src ={slide4} alt ="img not found" />  
+            </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            </div>
+            
+
             <div className="left arrow" onClick={()=>{
                 const temp = slideNo-1;
                 if(temp>=0){

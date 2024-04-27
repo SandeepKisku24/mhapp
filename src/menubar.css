@@ -51,7 +51,7 @@
     
   }
   .typedrop{
-    width: 600px;
+    width: 400px;
     margin-left: -100px;
     display: flex;
     flex-direction: row !important;
@@ -59,7 +59,7 @@
 
   }
   .dropDownList a{
-    font-size: 13px !important;
+    font-size: 11px !important;
     /* padding: 10px 5px !important; */
     color: #4285F4 !important;
 

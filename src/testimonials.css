@@ -9,11 +9,13 @@
     overflow-x: hidden;
     /* background-color: #d0bb68; */
     border-radius: 10px;
+    background-size: cover;
+    background-image: url("./gallery/pictures/testimonailbackground.jpg");
 }
 
 .testimonialInner{
     width: 500%;
-    height: 80%;
+    height: max-content;
     margin-top: auto;
     margin-bottom: auto;
     display: flex;
@@ -38,7 +40,7 @@
     border: 2px solid #4285F4;
     border-radius: 5px;
     padding: 3%;
-    height: 100%;
+    height: max-content;
 }
 .leftReview , .rightReview{
     position: relative;
