@@ -6,6 +6,7 @@ import {
   Navigate,
 } from "react-router-dom";
 
+import DetailsBar from "./detialsBar";
 import TopBar from "./topBar";
 import Footer from "./footer";
 
@@ -50,6 +51,7 @@ import Lab from "./components/service/lab";
 import Pastoral from "./components/service/pastoral";
 import Pharmacy from "./components/service/pharmacy";
 import Xray from "./components/service/xray";
+import ECG from "./components/service/ecg";
 
 
 // info
@@ -67,6 +69,8 @@ function App() {
     <div className="App">
         
         <Router>
+
+        <DetailsBar/>
         <TopBar/>
         <Routes>
           <Route exact path ="/" element = {<Home/>}/>
@@ -110,6 +114,7 @@ function App() {
           <Route path ="/service/pastoral" element = {<Pastoral/>}/>
           <Route path ="/service/pharmacy" element = {<Pharmacy/>}/>
           <Route path ="/service/xray" element = {<Xray/>}/>
+          <Route path ="/service/ecg" element = {<ECG/>}/>
 
           
           <Route path ="/info/admission" element = {<AdmissionInfo/>}/>

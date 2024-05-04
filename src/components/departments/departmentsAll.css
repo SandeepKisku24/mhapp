@@ -1,0 +1,24 @@
+.departmentType{
+    margin-top: 1%;
+}
+
+.deptNameHeading{
+    font-size: 30px;
+    height: 35px;
+    color: #fff;
+    background-color: #d0bb68;
+    padding-left: 20px;
+    padding-left: 5%;
+}
+.deptContent{
+    margin-top: 5%;
+    width: 60%;
+    padding-left: 5%;
+    text-align: justify;
+    font-weight: bold;
+}
+.DeptDivision{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

@@ -1,0 +1,18 @@
+.detailBar{
+    /* background-color: #d0bb68; */
+    /* background-color: #ffd700; */
+    background-color: #cae2ea;
+    color: #000;
+    /* width: 100%; */
+    display: flex;
+    justify-content: flex-end;
+}
+.details a{
+    margin-left: 5px;
+    width: fit-content;
+    margin-right: 5px;
+}
+.details a:hover{
+    cursor: pointer;
+    color: #fff;
+}

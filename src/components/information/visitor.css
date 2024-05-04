@@ -1,0 +1,19 @@
+.Visitor{
+    width: 90%;
+    margin: auto;
+    height: max-content;
+    margin-top: 2%;
+    height: 500px;
+}
+.visitorHeading{
+    font-size: 30px;
+    height: 35px;
+    background-color: #d0bb68;
+    padding-left: 20px;
+}
+.visitorInfoContent{
+    margin-top: 5%;
+}
+.visitTopic{
+    font-weight: bold;
+}

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
+    margin-top: 2%;
     height: 400px;
 }
 
@@ -10,6 +10,7 @@
     background-image: url("./gallery/pictures/background\ Contact\ Us.jpg");
     background-size: cover;
     height: fit-content;
+    margin-top: 5%;
 }
 
 .bottomBar{
@@ -22,4 +23,6 @@
 .headingFooterContact{
     font-size: 30px;
     text-align: center;
+    background-color: #d0bb68;
+    height: 40px;
 }

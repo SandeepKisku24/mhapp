@@ -12,4 +12,6 @@
 .testAndYou{
     display: flex;
     flex-direction: row;
+    background-image: url("./gallery/homebackground.jpg");
+    background-size: cover;
 }

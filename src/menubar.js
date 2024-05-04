@@ -50,26 +50,30 @@ const Menu = ()=>{
                             <div className="deptHeading">clinical services</div>
                             <hr/>
                             <Link to="/department/emergency">Emergency</Link >
-                            <Link to="/department/icu">Intensive Care Unit (ICU)</Link >
-                            <Link to="/department/opd">Outpatient Department (OPD)</Link >
                             <Link to="/department/ot">Operating Theater (O.T)</Link >
                             <Link to="/department/orthopedic">Orthopedic</Link >
+                            <Link to="/department/opthal">ophthalmology</Link >
                             <Link to="/department/dental">Dental</Link >
+                            <Link to="/department/opd">Outpatient Department (OPD)</Link >
+
                             <Link to="/department/generalmedicine">General Medicine</Link >
                             <Link to="/department/famililymedicine">Family Medicine</Link >
-                            <Link to="/department/ipd   ">Inpatient Department (IPD)</Link >
+                            <Link to="/department/icu">Intensive Care Unit (ICU)</Link >
+
+                            {/* <Link to="/department/ipd   ">Inpatient Department (IPD)</Link > */}
+                            <Link to="/info/ipdinfo  ">Inpatient Department (IPD)</Link >
                         </div>
                         
                         <div className="dept">
                             <div className="deptHeading">Doctors</div>
                             <hr/>
-                            <Link to="/doctor/drarun">Dr. Arun Tudu</Link >
-                            <Link to="/doctor/drrebin"> DR. Rebin Renny </Link >
-                            <Link to="/doctor/drbetsy">Dr. Betsy Francis</Link >
-                            <Link to="/doctor/drshetty">Dr. Shetty Jose</Link >
+                            <Link to="/department/orthopedic">Dr. Arun Tudu</Link >
+                            <Link to="/department/dental"> DR. Rebin Renny </Link >
+                            <Link to="/department/generalmedicine">Dr. Betsy Francis</Link >
+                            <Link to="/department/famililymedicine">Dr. Shetty Jose</Link >
                             <Link to="doctor/dtpriti">Dt. Priti Soren</Link >
                             <Link to="/doctor/drdileep">Dr. Dileep Kumar Thakur</Link >
-                            <Link to="/doctor/drtara">Dr. Tara Sankar</Link >
+                            <Link to="/doctor/drtara">Dr. Tara Sankar (Surgeon)</Link >
                             <Link to="/doctor/dralpana">Dr. Alpana Soren</Link >
                         </div>
                         {/* <Link to ="doctor">Doctors</Link> */}
@@ -80,9 +84,10 @@ const Menu = ()=>{
                 {showServices? <div className="dropDownList" onMouseOver={handleOnMouse2} onMouseOut={handleOutMouse2}>
                         <Link to = "/service/lab"> Laboratory/Pathology</Link>
                         <Link to = "/service/xray"> X-Ray</Link>
+                        <Link to = "/service/ecg"> ECG</Link>
                         <Link to = "/service/community">Community Outreach Services</Link>
                         <Link to = "/service/ambulance"> Ambulance</Link>
-                        <Link to = "/service/Dietary"> Dietary Services</Link>
+                        <Link to = "doctor/dtpriti"> Dietary Services</Link>
                         <Link to = "/service/pharmacy"> Pharmacy</Link>
                         <Link to = "/service/pastoral"> Pastoral Care</Link>
                         
@@ -94,7 +99,7 @@ const Menu = ()=>{
                         <Link to = "/info/generalinfo"> General information </Link>
                         <Link to = "/info/admission"> Admission Procedure</Link>
                         <Link to = "/info/visitorhours"> Visitor Hours</Link>
-                        <Link to = "/info/holidays"> OPD Holidays</Link>
+                        <Link to = "/info/visitorhours"> OPD Holidays</Link>
                         <Link to = "/info/ipdinfo"> Inpatient Department</Link>
                         <Link to = "/info/rightsandresponsibilities"> patient rights and responsibilities</Link>
                         <Link to = "/info/campaigns">Campaigns under Mercy hospital</Link>
