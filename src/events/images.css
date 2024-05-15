@@ -1,0 +1,12 @@
+
+.image{
+    width: 50px;
+    height: 100rem;
+    cursor: pointer;
+}
+.image img{
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 8px;
+}

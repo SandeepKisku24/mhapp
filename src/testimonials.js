@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from "react";
-import "./testimonials.css"
+import "./testimonials.css";
+import ReadMore from "./readMore";
 const Testimonials = ()=>{
     const [review,setReview] = useState(0);
     const [move,setMove] = useState(0);
@@ -79,6 +80,7 @@ const Testimonials = ()=>{
                 })}
     
             </div>
+            <ReadMore linkTo={"/service/xray"} />
             <div className="leftReview" onClick={handleLeftClick}><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
             <div className="rightReview" onClick={handleRightClick}><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
         </div>

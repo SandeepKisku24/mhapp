@@ -1,15 +1,30 @@
+.bgAnnouce{
+    /* position: absolute; */
+    width: 100% !important;
+    background-image: url("./gallery/pictures/HOSPL\ PANORAMIC\ IMG\ JPG.jpg");
+    height: 600px;
+    background-size: cover;
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    z-index: 1;
+}
+
 .announceBar{
+    /* position: relative; */
     width: 35%;
 }
 .headingAnnouce{
     font-size: 30px;
     text-align: center;
     color: #2f3082;
+    background-color: #fff;
 }
 .announce{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    z-index: 2;
+    /* background-color: #fff; */
 }
 
 .annoucebox{
@@ -21,6 +36,7 @@
     /* border-radius: 5px; */
     padding: 1% 2% 1% 2%;
     border-bottom: 1px solid #2f3082;
+    background-color: #fff;
     /* background: linear-gradient(0.40turn, #fff, #fff, #FBBC05); */
     /* background: linear-gradient(45deg, #fff 0% 15%,#A2AAAD 96% 100%); */
 }

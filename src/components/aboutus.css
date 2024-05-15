@@ -2,6 +2,10 @@
     /* width: 90%; */
     margin: auto;
     margin-top: 1%;
+    /* background-image: url("../gallery/pictur
+    es/HOSPL\ PANORAMIC\ IMG\ JPG.jpg"); */
+    background-size: cover;
+    
 }
 .aboutUsHeadinghistory{
     font-size: 30px;
@@ -12,6 +16,7 @@
     padding-left: 5%;
 }
 .aboutUsContenthistory{
+    background-color: #fff;
     margin-top: 5%;
     width: 60%;
     text-align: justify;
