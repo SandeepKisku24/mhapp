@@ -5,7 +5,7 @@
     margin-top: 2%;
 }
 .genInfoHeading{
-    font-size: 30px;
+    font-size: 25px;
     height: 35px;
     background-color: #d0bb68;
     padding-left: 5%;
@@ -16,4 +16,7 @@
 .genInfoContent{
     margin-top: 5%;
     padding-left: 5%;
+}
+.genInfoContent ul{
+    margin-left: 5%;
 }

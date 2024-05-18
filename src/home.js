@@ -10,6 +10,7 @@ import "./home.css"
 import { Group } from "@mantine/core";
 import { mobile } from "./screenSIzes";
 import { useMediaQuery } from "@mantine/hooks";
+import Gallery from "./events/gallery";
 const Home =()=>{
 
     const isMobile = useMediaQuery(mobile);
@@ -27,7 +28,8 @@ const Home =()=>{
             </Group>
             <br/>
             <br/>
-            <Event/>
+            {/* <Event/> */}
+            <Gallery/>
             <br/>
             <div className="testAndYou">
                 <Testimonials/>

@@ -1,17 +1,27 @@
 .ipdInfo{
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     height: max-content;
     margin-top: 2%;
 }
 .ipdInfoHeading{
-    font-size: 30px;
+    font-size: 25px;
     height: 35px;
     background-color: #d0bb68;
-    padding-left: 20px;
+    padding-left: 5%;
 }
 .ipdContent{
+    
     margin-top: 5%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ipdContent ol{
+    margin-left: 5%;
+}
+.ipdContent ul{
+    margin-left: 5%;
 }
 .ipdContentOverview{
     font-weight: bold;

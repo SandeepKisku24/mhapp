@@ -11,18 +11,23 @@ import img6 from "../gallery/Newsletters/23 - 05 August News.jpg";
 import img7 from "../gallery/Newsletters/23 - 04 July News.jpg";
 import { Thumbnails } from "yet-another-react-lightbox/plugins";
 import Images from "./images";
+import { slides } from "./data";
 
 const Gallery = ()=>{
-    const [open,setOpen] = useState(true);
+    
+    const [index,setIndex] = useState(-1);
     const images = [img1,img2,img3, img4, img5, img6, img7];
     return(
         <div>
-            <Images data = {images}/>
+            <Images data = {images} onClick = {(index)=>   {
+                setIndex(index);
+            }  }/>
             <Lightbox 
-            slides={images.map(src => ({ src }))} 
-            open = {open}
+            slides={images.map((src) => ({ src }))} 
+            open = {index>=1}
+            close = {()=>{setIndex(-1)}}
             plugins={[Thumbnails]}
-            close={() => setOpen(false)}
+            index={index}
             />
         </div>
     )

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import slide1 from "./gallery/pictures/HOSPL PANORAMIC IMG JPG.jpg";
-import slide2 from "./gallery/pictures/slide2_2.png";
+import slide2 from "./gallery/pictures/Frame 1.png";
 import slide3 from "./gallery/pictures/slide3_3.jpg";
 import slide4 from "./gallery/pictures/slide4_4.jpg";
 import "./slides.css";
@@ -77,22 +77,8 @@ const Slide = ()=>{
     return(
         <div className="slides">
             <div className="slide slide0" > <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
-            <div className="slide1" > <div className="slide1Content">
-            <div className="slide1Image">
-            <img src ={slide2} alt ="img not found" />  
-            </div>
-            <div className="slide1WrittenPart">
-                <div className="biggerSlide1">
-                Your <span style={{color:"#FFD700"}}>Health</span> is our priority
-                </div>
-                <div className="smallerSlide1">
-                    
-                    In our hospital, we intertwine faith, care, and vision to cultivate a nurturing environment, ensuring comprehensive healing and patient-centered healthcare for all.
-                </div>
-                
-            </div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffd700" fill-opacity="1" d="M0,128L480,160L960,256L1440,224L1440,320L960,320L480,320L0,320Z"></path></svg>
+            <div className="slide1" > 
+                <img src={slide2}/>
             </div>
             <div className="slide2" > <div className="slide1Content">
             
