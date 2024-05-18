@@ -1,9 +1,11 @@
 import React from "react";
+import { MantineProvider } from '@mantine/core';
+import "./App.css"
+
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
+  Route
 } from "react-router-dom";
 
 import DetailsBar from "./detialsBar";
@@ -12,12 +14,15 @@ import Footer from "./footer";
 
 import Home from "./home";
 
+import Announce from "./announcement";
+
 import Director from "./components/director";
 import History from "./history";
 import Gallery from "./components/gallery";
 import Management from "./components/management";
 import Vision from "./components/vision";
 import AboutUs from "./components/aboutus";
+import Gallery1 from "./events/gallery";
 
 // departments
 import Dental from "./components/departments/dental";
@@ -66,21 +71,21 @@ import Visitor from "./components/information/visitor";
 
 function App() {
   return (
-    <div className="App">
+    <MantineProvider>
+      <div className="App">
         
         <Router>
-
-        <DetailsBar/>
         <TopBar/>
         <Routes>
           <Route exact path ="/" element = {<Home/>}/>
+          <Route  path ="/announce" element = {<Announce number = "0"/>}/>
 
           <Route path ="/aboutUs" element = {<AboutUs/>}/>
           <Route path ="/director" element = {<Director/>}/>
           <Route path ="/history" element = {<History/>}/>
           <Route path ="/vision" element = {<Vision/>}/>
           <Route path ="/management" element = {<Management/>}/>
-          <Route path ="/gallery" element = {<Gallery/>}/>
+          <Route path ="/gallery" element = {<Gallery1/>}/>
           
 
           <Route path ="/department/dental" element = {<Dental/>}/>
@@ -134,6 +139,7 @@ function App() {
         <Footer/>
       </Router>
     </div>
+  </MantineProvider>
   );
 }
 
