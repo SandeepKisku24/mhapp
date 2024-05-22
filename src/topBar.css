@@ -2,8 +2,9 @@
     position: sticky;
     top: 0;
     z-index: 5;
-    background-color: #fff;
+    background-color: #F5F5F5;
     border-bottom: 1px solid #4285F4;
+    /* opacity: 0.3; */
 }
 
 /* .topBarSecond{

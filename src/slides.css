@@ -168,17 +168,11 @@
     width: 100%;
 }
 
-.slide2{
-    border: 2px solid #a2d9ff;
-}
-.slide3 {
-    border: 2px solid #d0bb68;
-}
 
 
 .left{
     position: absolute;
-    z-index: 2;
+    z-index: 2; 
     top: 250px;
     left: 0%;
     background-color: #fff;
@@ -203,7 +197,7 @@
 }
 .left, .right   {
     color: #d0bb68;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
     text-align: center;
     /* margin-top: 5px; */

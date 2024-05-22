@@ -39,20 +39,20 @@ const Slide = ()=>{
     }
 
     // for the sliding part
-    var[slideNo, setSlide] = useState(1);
+    var[slideNo, setSlide] = useState(0);
 
-    // useEffect(() => {
-    //     //Implementing the setInterval method
-    //     const interval = setInterval(() => {
-    //         if(slideNo<3)
-    //         setSlide(slideNo + 1);
-    //         else
-    //         setSlide(0);
-    //     }, 5000);
+    useEffect(() => {
+        //Implementing the setInterval method
+        const interval = setInterval(() => {
+            if(slideNo<3)
+            setSlide(slideNo + 1);
+            else
+            setSlide(0);
+        }, 5000);
  
-    //     //Clearing the interval
-    //     return () => clearInterval(interval);
-    // }, [slideNo]);
+        //Clearing the interval
+        return () => clearInterval(interval);
+    }, [slideNo]);
 
     useEffect(()=>{
         if(slideNo>=0 && slideNo<=3){
@@ -103,7 +103,7 @@ const Slide = ()=>{
                     width:"90%",
                     left:"5%",
                     borderRadius:"5px",
-                    zIndex:"10",
+                    // zIndex:,
                     padding:"5px"}} >
                     <Text fw={500} size={isMobile?"12px":"18px"} mt="md" mx="auto" c="#fff" >
                     We prioritize the health and well-being of every individual by offering a comprehensive range of services, including dental care. 
@@ -136,7 +136,7 @@ const Slide = ()=>{
                     width:"90%",
                     left:"5%",
                     borderRadius:"5px",
-                    zIndex:"10",
+                    // zIndex:"10",
                     padding:"5px"}} >
                     <Text fw={500} size={isMobile?"12px":"18px"} mt="md" mx="auto" c="#fff" >
                     We prioritize the health and well-being of every individual by offering a comprehensive range of services, including excellent imaging services. 

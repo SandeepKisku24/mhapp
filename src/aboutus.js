@@ -7,7 +7,7 @@ import ReadMore from "./readMore";
 const AboutUs = ()=>{
     const isMobile = useMediaQuery(mobile);
         return(
-        <Group className="aboutUs" maw={isMobile?"95%":"60%"} mx={isMobile?"auto":""} style={{borderRight: isMobile?"":"1px solid #d0bb68"}}>
+        <Group className="aboutUs" maw={isMobile?"95%":"60%"} mx={isMobile?"auto":""} style={{borderRight: isMobile?"":""}}>
             <Group className="headingAboutUs" style={{ fontSize: isMobile ? '20px' : '30px' }}>
                 Mercy Hospital, Poreyahat, Godda, Jharkhand ( an  undertaking of Diocese of Bhagalpur)
             </Group>

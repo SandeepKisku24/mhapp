@@ -4,6 +4,7 @@ import ReadMore from "./readMore";
 import { Center, Group, Stack, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import { mobile } from "./screenSizes";
+import { colors } from "@mui/material";
 
 
 const Announce = ({number})=>{
@@ -43,7 +44,7 @@ const Announce = ({number})=>{
     // console.log(number);
     
     return(
-        <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":""} gap={isMobile?"0":"1px"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',}}  >
+        <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":""} gap={isMobile?"0":"1px"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',backgroundColor:"#4285F4", borderRadius:"5px"}}  >
                 
                 <Group justify="center" className="headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px',}} >Announcements</Group>
                 <br/>
@@ -74,7 +75,7 @@ const Announce = ({number})=>{
                     )
                 })}
             </div>
-            {number!=0?<ReadMore linkTo={"/announce"} />:<></>}
+            {number!=0?<ReadMore linkTo={"/announce"}/>:<></>}
         </Group>
     )
 }

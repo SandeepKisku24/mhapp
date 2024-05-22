@@ -9,11 +9,12 @@
 .readMe{
     width: fit-content;
     text-align: center;
-    border: 1px solid #4285F4;
+    border: 1px solid #fff;
     margin: auto;
     padding: 2%;
     border-radius: 4px;
 }
 .readMe a{
     text-decoration: none;
+    color: #fff;
 }
