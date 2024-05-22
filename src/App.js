@@ -75,6 +75,7 @@ function App() {
       <div className="App">
         
         <Router>
+        <DetailsBar/>
         <TopBar/>
         <Routes>
           <Route exact path ="/" element = {<Home/>}/>

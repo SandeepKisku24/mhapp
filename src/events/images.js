@@ -30,7 +30,6 @@ const Images= ({data,onClick})=> {
   {
     slides.map((slide,index) => (
       <Carousel.Slide key={index} className='image' onClick={()=>{handleClick(index)}}> 
-        {console.log(slide.title + " ok")}
         <Card key={index} shadow="sm" radius="md" style={{ position: 'relative' }}> 
         <Image src={slide.src} alt={slide.src} height={200} />
         <Overlay 

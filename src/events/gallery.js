@@ -24,7 +24,7 @@ const Gallery = ()=>{
             }  }/>
             <Lightbox 
             slides={images.map((src) => ({ src }))} 
-            open = {index>=1}
+            open = {index>=0}
             close = {()=>{setIndex(-1)}}
             plugins={[Thumbnails]}
             index={index}

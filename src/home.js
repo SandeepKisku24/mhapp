@@ -25,7 +25,7 @@ const Home =()=>{
             {isMobile?<Stack maw={isMobile?"95%":"90%"} mx="auto" my="2%">
                 <AboutUs/>
                 <Announce />
-            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%">
+            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%" style={{backgroundColor:"#B0C5F9", borderRadius:"5px"}} >
                 <AboutUs />
                 <Announce/>
             </Group> }
@@ -40,7 +40,7 @@ const Home =()=>{
                 <Testimonials/>
                 <Youtube/>
             </Stack>:
-            <div style={{display:"flex", flexDirection:"row", justifyContent: "space-between" , width:"90%", margin:"auto"}} >
+            <div style={{display:"flex", flexDirection:"row", justifyContent: "space-between" , width:"90%", margin:"auto", backgroundColor:"#F5F5F5", borderRadius:"5px", paddingTop:"3%", paddingBottom:"5%"}} >
                  <Testimonials/>
                  <Youtube/>
             </div>}

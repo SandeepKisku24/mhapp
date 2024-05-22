@@ -314,7 +314,7 @@ const infolinks = infodata.map((item) => (
                 </SimpleGrid>
                 <div className={classes.dropdownFooter}>
                   <Group justify="space-between">
-                    <Stack gap={5} fz="sm" className='submenupart'>
+                    <Stack gap={5} fz="sm">
 
                       {infodata!==null?infolinks:<></>}
   
