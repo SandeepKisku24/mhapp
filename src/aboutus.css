@@ -1,10 +1,11 @@
 .aboutUs{
-    width: 60%;
-    border-right : 1px solid #d0bb68;
+    /* width: 60%; */
+    /* margin: auto; */
+    /* border-right : 1px solid #d0bb68; */
 }
 .headingAboutUs{
     color: #2f3082;
-    font-size: 30px;
+    
     padding: 0% 1% 0 1%;
     text-align: center;
 }

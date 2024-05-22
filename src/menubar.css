@@ -1,7 +1,11 @@
-.menuBar{
+
+.submenupart a{
+    color: #4285F4;
+}
+
+/* .menuBar{
     width: 60%;
     background-color: #4285F4;
-    /* color: #fff !important; */
     border-bottom-left-radius: 55px;
     margin-left: auto;
     margin-bottom: 3px;
@@ -17,14 +21,12 @@
   .menuList li a{
     text-decoration: none;
     width: 100%;
-    /* color: #91a8ae ; */
-    /* color: #4285F4; */
+    
     color: #fff;
     padding: 10px 5px;
     display: block;
     font-size: 13px;
     font-weight: 400;
-    /* color: #91a8ae; */
     letter-spacing: .5px;
     text-transform: uppercase;
     transition: all ease-in 0.3s;
@@ -34,7 +36,6 @@
   }
   .menuList li a:hover{
     color: #d0bb68;
-    /* background-color: #fff; */
     cursor: pointer;
     border-radius: 2px;
   }
@@ -60,7 +61,6 @@
   }
   .dropDownList a{
     font-size: 11px !important;
-    /* padding: 10px 5px !important; */
     color: #4285F4 !important;
 
     
@@ -68,7 +68,6 @@
 
   .dropDownList a:hover{
     color: #d0bb68 !important;
-    /* width: fit-content; */
   }
 
   .dept{
@@ -77,8 +76,7 @@
     padding-right: 10px;
   }
   .deptHeading{
-    /* font-weight: bold; */
     text-transform: uppercase;
     color: #2f3082;
     font-size: 13px;
-  }
+  } */

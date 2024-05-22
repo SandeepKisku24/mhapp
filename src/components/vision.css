@@ -16,6 +16,17 @@
     text-align: justify;
 
 }
+.visionContent ol{
+    margin-left: 5%;
+
+}
+.visionContent{
+    margin-top: 5%;
+    width: 60%;
+    padding-left: 5%;
+    text-align: justify;
+
+}
 .visionIntro{
     font-weight: bold;
     

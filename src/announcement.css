@@ -11,13 +11,15 @@
 
 .announceBar{
     /* position: relative; */
-    width: 35%;
+    /* width: 35%; */
 }
 .headingAnnouce{
-    font-size: 30px;
+    width: 100%;
+    /* font-size: 30px; */
     text-align: center;
     color: #2f3082;
     background-color: #fff;
+    /* height: fit-content; */
 }
 .announce{
     display: flex;
@@ -34,7 +36,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     /* border-radius: 5px; */
-    padding: 1% 2% 1% 2%;
+    padding: 0% 2% 1% 2%;
     border-bottom: 1px solid #2f3082;
     background-color: #fff;
     /* background: linear-gradient(0.40turn, #fff, #fff, #FBBC05); */
