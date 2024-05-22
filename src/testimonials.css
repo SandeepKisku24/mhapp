@@ -1,39 +1,18 @@
+
 .headingTest{
     font-size: 30px;
     color: #2f3082;
     text-align: center;
+    width: 100%;
 }
-.testimonial{
-    height: 400px;
-    width: 40%;
+/* .testimonial{
+    height: fit-content;
+    width: 50%;
     overflow-x: hidden;
-    /* background-color: #d0bb68; */
+    background-color: #d0bb68;
     border-radius: 10px;
     background-size: cover;
-    /* background-image: url("./gallery/pictures/testimonailbackground.jpg"); */
-}
-
-.testimonialInner{
-    width: 500%;
-    height: max-content;
-    margin-top: auto;
-    margin-bottom: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* margin-left: -200%; */
-    transition: 2s;
-}
-.testimonialInner:hover{
-    cursor: pointer;
-}
-.review{
-    width: 20%;
-    
-    height: 50%;
-    margin: auto;
-    
-}
+} */
 .reviewContent{
     background-color: #fff;
     width: 70%;
@@ -46,7 +25,7 @@
     padding: 3%;
     height: max-content;
 }
-.leftReview , .rightReview{
+/* .leftReview , .rightReview{
     position: relative;
     width: fit-content;
 }
@@ -64,3 +43,28 @@
     color: #4285F4;
     cursor: pointer;
 }
+
+
+
+
+.testimonialInner{
+    width: 500%;
+    height: max-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: -200%;/
+    transition: 2s;
+}
+.testimonialInner:hover{
+    cursor: pointer;
+}
+.review{
+    width: 20%;
+    
+    height: 50%;
+    margin: auto;
+    
+} */

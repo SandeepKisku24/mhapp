@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import slide1 from "./gallery/pictures/HOSPL PANORAMIC IMG JPG.jpg";
-import slide2 from "./gallery/pictures/Frame 1.png";
-import slide3 from "./gallery/pictures/slide3_3.jpg";
-import slide4 from "./gallery/pictures/slide4_4.jpg";
+import slide2 from "./gallery/pictures/Dental.jpg";
+import slide3 from "./gallery/pictures/Xray1.jpg";
+import slide4 from "./gallery/pictures/Dental flex.jpg";
 import "./slides.css";
+import { Card, Image, Stack, Text } from "@mantine/core";
+import { mobile } from './screenSizes';
+import { useMediaQuery } from "@mantine/hooks";
 
 const Slide = ()=>{
 
-    
+    const isMobile = useMediaQuery(mobile);
+
     var width = 90;
     var height = 90;
     var intervalId =0;
@@ -35,20 +39,20 @@ const Slide = ()=>{
     }
 
     // for the sliding part
-    var[slideNo, setSlide] = useState(0);
+    var[slideNo, setSlide] = useState(1);
 
-    useEffect(() => {
-        //Implementing the setInterval method
-        const interval = setInterval(() => {
-            if(slideNo<3)
-            setSlide(slideNo + 1);
-            else
-            setSlide(0);
-        }, 5000);
+    // useEffect(() => {
+    //     //Implementing the setInterval method
+    //     const interval = setInterval(() => {
+    //         if(slideNo<3)
+    //         setSlide(slideNo + 1);
+    //         else
+    //         setSlide(0);
+    //     }, 5000);
  
-        //Clearing the interval
-        return () => clearInterval(interval);
-    }, [slideNo]);
+    //     //Clearing the interval
+    //     return () => clearInterval(interval);
+    // }, [slideNo]);
 
     useEffect(()=>{
         if(slideNo>=0 && slideNo<=3){
@@ -69,7 +73,7 @@ const Slide = ()=>{
         if(slideNo!==3){
             document.querySelector(".slide3").style.display = "none";
         }
-        // console.log(slideNo);
+
         }
     })
     
@@ -78,9 +82,72 @@ const Slide = ()=>{
         <div className="slides">
             <div className="slide slide0" > <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
             <div className="slide1" > 
-                <img src={slide2}/>
+                {/* <img src={slide2}/> */}
+                <Card
+                shadow="sm"
+                padding="xl"
+                
+                >
+                <Card.Section>
+                    <Image
+                    src={slide2}
+                    h={500}
+                    alt="No way!"
+                    />
+                </Card.Section>
+
+                <Stack gap={0} pb={5}  style={{
+                    backgroundColor:"#34A853",
+                    position:"absolute",
+                    top:"410px",
+                    width:"90%",
+                    left:"5%",
+                    borderRadius:"5px",
+                    zIndex:"10",
+                    padding:"5px"}} >
+                    <Text fw={500} size={isMobile?"12px":"18px"} mt="md" mx="auto" c="#fff" >
+                    We prioritize the health and well-being of every individual by offering a comprehensive range of services, including dental care. 
+                    </Text>
+
+                    <Text mt="xs" c="#fff" size={isMobile?"12px":"18px"} mx="auto" >
+                    Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
+                    </Text>
+                </Stack>
+                </Card>
             </div>
-            <div className="slide2" > <div className="slide1Content">
+            <div className="slide2" > 
+            <Card
+                shadow="sm"
+                padding="xl"
+                
+                >
+                <Card.Section>
+                    <Image
+                    src={slide3}
+                    h={500}
+                    alt="No way!"
+                    />
+                </Card.Section>
+
+                <Stack gap={0} pb={5}  style={{
+                    backgroundColor:"#34A853",
+                    position:"absolute",
+                    top:"410px",
+                    width:"90%",
+                    left:"5%",
+                    borderRadius:"5px",
+                    zIndex:"10",
+                    padding:"5px"}} >
+                    <Text fw={500} size={isMobile?"12px":"18px"} mt="md" mx="auto" c="#fff" >
+                    We prioritize the health and well-being of every individual by offering a comprehensive range of services, including excellent imaging services. 
+                    </Text>
+
+                    <Text mt="xs" c="#fff" size={isMobile?"12px":"18px"} mx="auto" >
+                    Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
+                    </Text>
+                </Stack>
+                </Card>
+            {/* <div className="slide1Content">
             
             <div className="slide2WrittenPart">
                 <div className="biggerSlide2">
@@ -96,9 +163,26 @@ const Slide = ()=>{
             <img src ={slide3} alt ="img not found" />  
             </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
             </div>
-            <div className="slide3" > <div className="slide1Content">
+            <div className="slide3" >
+
+            <Card
+                shadow="sm"
+                padding="xl"
+                
+                >
+                <Card.Section>
+                    <Image
+                    src={slide4}
+                    h={500}
+                    alt="No way!"
+                    />
+                </Card.Section>
+
+                
+                </Card>
+            {/* <div className="slide1Content">
             
             <div className="slide2WrittenPart">
                 <div className="biggerSlide3">
@@ -114,7 +198,7 @@ const Slide = ()=>{
             <img src ={slide4} alt ="img not found" />  
             </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d0bb68" fill-opacity="1" d="M0,160L480,224L960,256L1440,160L1440,320L960,320L480,320L0,320Z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d0bb68" fill-opacity="1" d="M0,160L480,224L960,256L1440,160L1440,320L960,320L480,320L0,320Z"></path></svg> */}
             </div>
             
 

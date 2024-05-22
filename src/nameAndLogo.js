@@ -2,7 +2,7 @@ import React from "react";
 import logo from "./gallery/pictures/logo.png"
 import "./nameAndLogo.css"
 import { Group, Image, Stack, Text, Title } from "@mantine/core";
-import { mobile } from "./screenSIzes";
+import { mobile } from "./screenSizes";
 import { useMediaQuery } from "@mantine/hooks";
 
 const NameAndLogo =({name, place})=>{
@@ -26,7 +26,7 @@ const NameAndLogo =({name, place})=>{
                     <Text fz={isMobile?"xs":"md"} fw={700} c="#4285F4"style={{
                         textTransform:"uppercase"
                     }}>{name}</Text>
-                    <Text fz={isMobile?"9px":"xs"} fw={600 }  c="#4285F4" style={{
+                    <Text fz={isMobile?"9px":"xs"} fw={600 }  c="#000" style={{
                         textTransform:"uppercase"
                     }}>{place}</Text>
                 </Stack>

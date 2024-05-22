@@ -7,8 +7,8 @@ import Footer from "./footer";
 import Testimonials from "./testimonials";
 import Youtube from "./youtube";
 import "./home.css"
-import { Group } from "@mantine/core";
-import { mobile } from "./screenSIzes";
+import { Group, Stack } from "@mantine/core";
+import { mobile } from "./screenSizes";
 import { useMediaQuery } from "@mantine/hooks";
 import Gallery from "./events/gallery";
 const Home =()=>{
@@ -22,19 +22,28 @@ const Home =()=>{
                 <AboutUs/>
                 <Announce/>
             </div> */}
-            <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%">
+            {isMobile?<Stack maw={isMobile?"95%":"90%"} mx="auto" my="2%">
                 <AboutUs/>
+                <Announce />
+            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%">
+                <AboutUs />
                 <Announce/>
-            </Group>
+            </Group> }
+
             <br/>
             <br/>
             {/* <Event/> */}
             <Gallery/>
             <br/>
-            <div className="testAndYou">
+            {isMobile?
+            <Stack maw="95%" >
                 <Testimonials/>
                 <Youtube/>
-            </div>
+            </Stack>:
+            <div style={{display:"flex", flexDirection:"row", justifyContent: "space-between" , width:"90%", margin:"auto"}} >
+                 <Testimonials/>
+                 <Youtube/>
+            </div>}
         </div>
     )
 }

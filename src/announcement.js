@@ -1,17 +1,21 @@
 import React, { useEffect } from "react";
 import "./announcement.css"
 import ReadMore from "./readMore";
-import { Group, Stack, Text } from "@mantine/core";
+import { Center, Group, Stack, Text } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "./screenSizes";
 
 
 const Announce = ({number})=>{
+    const isMobile = useMediaQuery(mobile);
+
     useEffect(()=>{
         if(number!=0)
             {
                 
             }
             else{
-                console.log(number+ "hi");
+                // console.log(number+ "hi");
                 var tmp = document.querySelector(".announceBar");
                 var tmp1 = document.querySelector(".announce");
                 
@@ -21,7 +25,7 @@ const Announce = ({number})=>{
                 }
                 
                 if(tmp1){
-                    tmp1.style.width = "50%";
+                    tmp1.style.width = "100%";
                     tmp1.style.margin = "auto";
                     tmp1.style.borderRadius = "5px";
                 }
@@ -39,9 +43,9 @@ const Announce = ({number})=>{
     // console.log(number);
     
     return(
-        <div className="announceBar">
+        <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":""} gap={isMobile?"0":"1px"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',}}  >
                 
-                <div className="headingAnnouce">Announcements</div>
+                <Group justify="center" className="headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px',}} >Announcements</Group>
                 <br/>
                 <br/>
                 <div className="announce">
@@ -71,7 +75,7 @@ const Announce = ({number})=>{
                 })}
             </div>
             {number!=0?<ReadMore linkTo={"/announce"} />:<></>}
-        </div>
+        </Group>
     )
 }
 

@@ -6,8 +6,9 @@ import '@mantine/core/styles.css';
 const topBar =()=>{
     return(
         
-            <Menu>
-            </Menu>
+            <div className="topBar">
+                <Menu/>
+            </div>
        
     )
 }
