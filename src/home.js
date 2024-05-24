@@ -11,6 +11,7 @@ import { Group, Stack } from "@mantine/core";
 import { mobile } from "./screenSizes";
 import { useMediaQuery } from "@mantine/hooks";
 import Gallery from "./events/gallery";
+import Service from "./service";
 const Home =()=>{
 
     const isMobile = useMediaQuery(mobile);
@@ -25,7 +26,7 @@ const Home =()=>{
             {isMobile?<Stack maw={isMobile?"95%":"90%"} mx="auto" my="2%">
                 <AboutUs/>
                 <Announce />
-            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%" style={{backgroundColor:"#B0C5F9", borderRadius:"5px"}} >
+            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%" style={{backgroundColor:"#4285F4", borderRadius:"5px"}} >
                 <AboutUs />
                 <Announce/>
             </Group> }
@@ -35,6 +36,11 @@ const Home =()=>{
             {/* <Event/> */}
             <Gallery/>
             <br/>
+            <br/>
+            <Service/>
+            <br/>
+            <br/>
+
             {isMobile?
             <Stack maw="95%" >
                 <Testimonials/>

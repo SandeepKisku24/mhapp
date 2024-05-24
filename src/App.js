@@ -11,6 +11,7 @@ import {
 import DetailsBar from "./detialsBar";
 import TopBar from "./topBar";
 import Footer from "./footer";
+import Service from "./service";
 
 import Home from "./home";
 
@@ -67,6 +68,7 @@ import Holidays from "./components/information/holidays";
 import IpdInfo from "./components/information/ipd";
 import RightsAndRes from "./components/information/rightandres";
 import Visitor from "./components/information/visitor";
+import DepartmentsAll from "./departmentsAll";
 
 
 function App() {
@@ -80,6 +82,9 @@ function App() {
         <Routes>
           <Route exact path ="/" element = {<Home/>}/>
           <Route  path ="/announce" element = {<Announce number = "0"/>}/>
+          <Route path ="/service" element = {<Service/>}/>
+          <Route path ="/department" element = {<DepartmentsAll/>}/>
+
 
           <Route path ="/aboutUs" element = {<AboutUs/>}/>
           <Route path ="/director" element = {<Director/>}/>
