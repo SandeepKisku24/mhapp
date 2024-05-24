@@ -14,13 +14,14 @@
     background-size: cover;
 } */
 .reviewContent{
-    background-color: #fff;
+    background-color: #4285F4;
+    color: #fff;
     width: 70%;
     margin: auto;
     text-align: justify;
     padding: 1%;
     /* border: 2px solid #4285F4; */
-    border: 2px solid #ffd700;
+    /* border: 2px solid #ffd700; */
     border-radius: 5px;
     padding: 3%;
     height: max-content;

@@ -19,7 +19,7 @@ const Testimonials = ()=>{
     
     return(
 
-        <Group className="testimonial" maw={isMobile?"95%":"50%"} style={{backgroundColor:"#B0C5F9", borderRadius:"5px"}} >
+        <Group className="testimonial" maw={isMobile?"95%":"50%"} style={{backgroundColor:"", borderRadius:"5px"}} >
             <div className="headingTest" justify="center">Testimonials</div>
             <Carousel
                 nextControlIcon={<IconArrowRight style={{ width: rem(16), height: rem(16) }} />}

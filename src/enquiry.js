@@ -17,7 +17,7 @@ const Enquiry = ()=>{
                 
                 <div className="inputText">
                     <label for ="nameEnquiry">Name</label><br/>
-                    <input placeholder ="Firstname Lastname " id="nameEnquiry"  name="name" value={name} onChange={(e)=>{
+                    <input placeholder ="First name Last name " id="nameEnquiry"  name="name" value={name} onChange={(e)=>{
                     setName(e.target.value)
                 }} />
                 </div>

@@ -7,7 +7,8 @@
 }
 
 .footer1{
-    background-image: url("./gallery/pictures/background\ Contact\ Us.jpg");
+    /* background-image: url("./gallery/pictures/background\ Contact\ Us.jpg"); */
+    background-color: #060822;
     background-size: cover;
     height: fit-content;
     margin-top: 5%;

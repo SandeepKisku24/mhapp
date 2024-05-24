@@ -44,9 +44,9 @@ const Announce = ({number})=>{
     // console.log(number);
     
     return(
-        <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":""} gap={isMobile?"0":"1px"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',backgroundColor:"#4285F4", borderRadius:"5px"}}  >
+        <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":""} gap={isMobile?"0":"0"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',backgroundColor:"#fff", borderRadius:"5px"}}  >
                 
-                <Group justify="center" className="headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px',}} >Announcements</Group>
+                <Group justify="center" className="headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px', borderBottom: "1px solid #000", fontWeight:"bold"}} >Announcements</Group>
                 <br/>
                 <br/>
                 <div className="announce">
@@ -56,7 +56,7 @@ const Announce = ({number})=>{
                         <Group gap="10" my={10}>
                             
                             <Text className="annouceIcon">
-                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M640-440v-80h160v80H640Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM120-360v-240h160l200-200v640L280-360H120Zm280-246-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
                             </Text>
                             <Stack w="80%" gap="2">
                             <Text >{note}</Text>

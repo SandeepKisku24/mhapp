@@ -5,8 +5,12 @@ import { Container, Text,Stack } from "@mantine/core";
 const footerCU =()=>{
     return(
 
-        <Container>
-            <Stack gap={10}>
+        <Container style={{
+            backgroundColor:"#fff",
+            width:"400px",
+            margin:"auto"
+        }}>
+            <Stack gap={10} >
             <Text className="headingContact"> Mercy hospital</Text>
             <Text>Poreyahat, Godda,  814153</Text>
             <Text>Jharkhand, India</Text>

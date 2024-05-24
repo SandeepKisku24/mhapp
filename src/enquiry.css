@@ -1,7 +1,9 @@
 .enquiry{
     margin: auto;
     width: 40%;
-    color: #fff;
+    color: #4285F4;
+    background-color: #fff;
+    font-family: 'garamond', Georgia, Times, 'Times New Roman', serif!important;
 }
 form{
     width: fit-content;

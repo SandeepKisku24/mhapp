@@ -1,15 +1,18 @@
 import React from "react";
 import "./aboutus.css"
-import { Group } from "@mantine/core";
+import { Group, Text } from "@mantine/core";
 import { mobile } from "./screenSizes";
 import { useMediaQuery } from "@mantine/hooks";
 import ReadMore from "./readMore";
 const AboutUs = ()=>{
     const isMobile = useMediaQuery(mobile);
         return(
-        <Group className="aboutUs" maw={isMobile?"95%":"60%"} mx={isMobile?"auto":""} style={{borderRight: isMobile?"":""}}>
-            <Group className="headingAboutUs" style={{ fontSize: isMobile ? '20px' : '30px' }}>
-                Mercy Hospital, Poreyahat, Godda, Jharkhand ( an  undertaking of Diocese of Bhagalpur)
+        <Group className="aboutUs" maw={isMobile?"95%":"60%"} mx={isMobile?"auto":""} style={{borderRight: isMobile?"":""}} gap={0}>
+            <Group className="headingAboutUs" style={{ fontSize: isMobile ? '20px' : '30px' }} justify="center" gap={0}>
+                Mercy Hospital, Poreyahat, Godda, Jharkhand 
+                <Text size="20px" fw={600}>
+                ( an  undertaking of Diocese of Bhagalpur)
+                </Text>
             </Group>
             <br/>
             <Group className="contentAboutUs" >

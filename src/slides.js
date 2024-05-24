@@ -101,11 +101,12 @@ const Slide = ()=>{
                     position:"absolute",
                     top:"410px",
                     width:"90%",
+                    height:"80px",
                     left:"5%",
                     borderRadius:"5px",
                     // zIndex:,
-                    padding:"5px"}} >
-                    <Text fw={500} size={isMobile?"12px":"18px"} mt="md" mx="auto" c="#fff" >
+                    padding:"1px"}} >
+                    <Text fw={500} size={isMobile?"12px":"18px"} mt="5" mx="auto" c="#fff" >
                     We prioritize the health and well-being of every individual by offering a comprehensive range of services, including dental care. 
                     </Text>
 
@@ -135,10 +136,11 @@ const Slide = ()=>{
                     top:"410px",
                     width:"90%",
                     left:"5%",
+                    height:"80px",
                     borderRadius:"5px",
                     // zIndex:"10",
-                    padding:"5px"}} >
-                    <Text fw={500} size={isMobile?"12px":"18px"} mt="md" mx="auto" c="#fff" >
+                    padding:"1px"}} >
+                    <Text fw={500} size={isMobile?"12px":"18px"} mt="5" mx="auto" c="#fff" >
                     We prioritize the health and well-being of every individual by offering a comprehensive range of services, including excellent imaging services. 
                     </Text>
 
