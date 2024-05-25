@@ -40,8 +40,8 @@ const Images= ({data,onClick})=> {
         {/* <Group position="center" style={{ left: '50%', transform: 'translate(-50%, -50%)', zIndex: 2 }}>  */}
         </Card>
 
-        <Group className='gal' justify='center' style={{ backgroundColor:"#83B81A",padding:"1%",borderRadius:"5px", zIndex: 5 }}> 
-        <Text c="white" weight={700} size="lg">{slide.title}</Text> 
+        <Group className='gal' justify='center' style={{ backgroundColor:"#fff",padding:"1%",borderRadius:"5px", zIndex: 5 }}> 
+        <Text c="#000" weight={700} size="lg">{slide.title}</Text> 
         </Group>
       </Carousel.Slide>
     ))

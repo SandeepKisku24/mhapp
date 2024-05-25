@@ -75,7 +75,7 @@ const Announce = ({number})=>{
                     )
                 })}
             </div>
-            {number!=0?<ReadMore linkTo={"/announce"}/>:<></>}
+            {number!=0?<ReadMore linkTo={"/announce"} text=" Show All"/>:<></>}
         </Group>
     )
 }

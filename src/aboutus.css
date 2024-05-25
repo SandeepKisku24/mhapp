@@ -2,10 +2,12 @@
     /* width: 60%; */
     /* margin: auto; */
     /* border-right : 1px solid #d0bb68; */
+    background-color: #FFEAAA3D;
+    border-radius: 5px;
 }
 .headingAboutUs{
     /* color: #2f3082; */
-    color: #fff;
+    color: #000;
     font-weight: 600;
     padding: 3% 1% 0 1%;
     text-align: center;
@@ -15,6 +17,6 @@
     text-align: justify;
     padding-top: 4%;
     margin: auto;
-    color: #fff;
+    color: #000;
     font-size: 17px;
 }
