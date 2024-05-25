@@ -6,16 +6,17 @@ import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import { SvgIcon } from "@mui/material";
 import { Link } from "react-router-dom";
 import "./service.css"
+import ReadMore from "./readMore";
 
 const Service = ()=>{
     const isMobile = useMediaQuery(mobile);
     const [ser,setService] = useState(-1);
     return(
-        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#4285F4"}}>
-            <Group maw="100%" c="#fff" my={15}>
-                <Text size="25px" fw={700} w="50%" ta="center">Services Provided by Mercy Hospital</Text>
+        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#FFFFE0",fontFamily:"Montserrat"}}>
+            <Group maw="100%" my={15}>
+                <Text size="25px" fw={500} c="grey" w="50%" ta="center">Services Provided in Mercy Hospital</Text>
                 <Group maw="40%">
-                    <Text ta="justify"> 
+                    <Text ta="justify" size="18px" c="grey" fw={400} style={{ lineHeight: '1.6', letterSpacing: '0.1em' }} > 
                     At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
 
                     </Text>
@@ -32,7 +33,7 @@ const Service = ()=>{
 
                     <Stack justify="space-between"  h={200} align="stretch" gap={0}>
                         <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw="bold" ta="center" w= "100%" size="xl" className="headingService">Emergency Service</Text>   
+                            <Text fw="500" ta="center" w= "100%" size="xl" className="headingService">Emergency Service</Text>   
                         </Group>
 
                         <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
@@ -55,7 +56,7 @@ const Service = ()=>{
 
                     <Stack justify="space-between"  h={200} align="stretch" gap={10}>
                         <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw="bold" ta="center"  w= "100%" size="xl" className="headingService">Imaging Service</Text>   
+                            <Text fw="500" ta="center"  w= "100%" size="xl" className="headingService">Imaging Service</Text>   
                         </Group>
 
                         <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
@@ -78,7 +79,7 @@ const Service = ()=>{
 
                     <Stack justify="space-between"  h={200} align="stretch" gap={10}>
                         <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw="bold" ta="center" w= "100%" size="xl" className="headingService">ECG Service</Text>   
+                            <Text fw="500" ta="center" w= "100%" size="xl" className="headingService">ECG Service</Text>   
                         </Group>
 
                         <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
@@ -101,7 +102,7 @@ const Service = ()=>{
 
                     <Stack justify="space-between"  h={200} align="stretch" gap={10}>
                         <Group justify="space-between" mt="md" mb="xs">
-                            <Text fw="bold" ta="center" w= "100%" size="xl" className="headingService">Dental Service</Text>   
+                            <Text fw="500" ta="center" w= "100%" size="xl" className="headingService">Dental Service</Text>   
                         </Group>
 
                         <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
@@ -119,6 +120,9 @@ const Service = ()=>{
 
 
             </Group>}
+            
+            <ReadMore linkTo={"/department"}  text="Show all Services"/>
+
         </Group>
     )
 }

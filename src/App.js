@@ -11,7 +11,9 @@ import {
 import DetailsBar from "./detialsBar";
 import TopBar from "./topBar";
 import Footer from "./footer";
+
 import Service from "./service";
+import Facility from "./facilities";
 
 import Home from "./home";
 
@@ -84,6 +86,7 @@ function App() {
           <Route  path ="/announce" element = {<Announce number = "0"/>}/>
           <Route path ="/service" element = {<Service/>}/>
           <Route path ="/department" element = {<DepartmentsAll/>}/>
+          <Route path ="/facility" element = {<Facility/>}/>
 
 
           <Route path ="/aboutUs" element = {<AboutUs/>}/>

@@ -26,7 +26,7 @@ const Home =()=>{
             {isMobile?<Stack maw={isMobile?"95%":"90%"} mx="auto" my="2%">
                 <AboutUs/>
                 <Announce />
-            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%" style={{backgroundColor:"#4285F4", borderRadius:"5px"}} >
+            </Stack>: <Group maw={isMobile?"95%":"90%"} mx="auto" my="2%" style={{backgroundColor:"#", borderRadius:"5px"}} >
                 <AboutUs />
                 <Announce/>
             </Group> }

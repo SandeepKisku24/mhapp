@@ -20,7 +20,7 @@ const AboutUs = ()=>{
                      {/* The Catholic Diocese of Bhagalpur under the leadership of His Ex. Bishop Kurien Valiakandathil, decided to administer the Mercy Hospital and took over on 01-04-2024. The advisory council and Fr. George Joseph (Director) along with the Missionary Sisters of Mary Immaculate and Medical Sisters of St. Joseph are serving the hospital. The Hospital team includes the staff from different parts of India and the Hospital is proud in serving the poor and needy. */}
                 </p>
             </Group>
-            <ReadMore linkTo={"/aboutUs"}/>
+            <ReadMore linkTo={"/aboutUs"} text="Read More"/>
         </Group>
     )
 }

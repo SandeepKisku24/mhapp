@@ -9,7 +9,7 @@ import img4 from "../gallery/Newsletters/23 - 07 October News.jpg";
 import img5 from "../gallery/Newsletters/23 - 06 September News.jpg";
 import img6 from "../gallery/Newsletters/23 - 05 August News.jpg";
 import img7 from "../gallery/Newsletters/23 - 04 July News.jpg";
-import { Thumbnails } from "yet-another-react-lightbox/plugins";
+import { Thumbnails, Zoom } from "yet-another-react-lightbox/plugins";
 import Images from "./images";
 import { slides } from "./data";
 
@@ -26,7 +26,7 @@ const Gallery = ()=>{
             slides={images.map((src) => ({ src }))} 
             open = {index>=0}
             close = {()=>{setIndex(-1)}}
-            plugins={[Thumbnails]}
+            plugins={[Thumbnails,Zoom]}
             index={index}
             />
         </div>
