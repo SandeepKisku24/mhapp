@@ -318,7 +318,7 @@ const infolinks = infodata.map((item) => (
 
                       {infodata!==null?infolinks:<></>}
   
-                    </Stack>
+                    </Stack> 
 
                   </Group>
                 </div>

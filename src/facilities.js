@@ -7,39 +7,14 @@ import { Carousel } from "@mantine/carousel";
 import { facdata } from "./facilitydata";
 
 
+
 function Facility() {
     const isMobile = useMediaQuery(mobile);
-    const faclinks = facdata.map((item)=>{
+    const faclinks =()=>{
 
-      <Carousel.Slide style={{borderRadius:"0px !important"}}>
+      <h1>1</h1>  
 
-      <Card shadow="sm" padding="lg" radius="md" withBorder w={275}>
-      <Card.Section>
-      <Image
-      src={item.src}
-      height={250}
-       alt="Norway"
-
-      />
-      </Card.Section>
-              
-      <Group justify="space-between" mt="md" mb="xs">
-      <Text fw={500}>{item.title}</Text>
-      </Group>
-
-      <Text size="sm" c="dimmed">
-          {item.content}
-      </Text>
-      hi
-      <Button color="blue" fullWidth mt="md" radius="md">
-          Know more
-      </Button>
-      </Card>
-
-
-      </Carousel.Slide>              
-
-  });
+  };
 
 
   return (
@@ -50,7 +25,7 @@ function Facility() {
         <Carousel
         // withIndicators
         height={450}
-        slideSize={{ base: '100%', sm: '50%', md: '23%' }}
+        slideSize={{ base: '100%', sm: '50%', md: '25%' }}
         slideGap={{ base: 0, sm: '30px' }}
         loop
         align="start"
@@ -60,33 +35,31 @@ function Facility() {
             faclinks
         }
 
-        {/* <Carousel.Slide>
-        
+        {facdata.map((item, index) => (
+        <Carousel.Slide key={index} style={{cursor:"pointer"}}>
+          <Card shadow="sm" padding="lg" radius="md" withBorder w={275}>
+            <Card.Section>
+              <Image
+                src={item.src}
+                height={250}
+                alt={item.title}
+              />
+            </Card.Section>
 
-        <Card shadow="sm" padding="lg" radius="md" withBorder w={275}>
-        <Card.Section>
-        <Image
-          src={fac2}
-          height={250}
-          alt="Norway"
-        
-        />
-        </Card.Section>
+            <Group justify="space-between" mt="md" mb="xs">
+              <Text fw={500}>{item.title}</Text>
+            </Group>
 
-        <Group justify="space-between" mt="md" mb="xs">
-        <Text fw={500}>Norway Fjord Adventures</Text>
-        </Group>
+            <Text size="sm" c="dimmed" lineClamp={3}>
+              {item.content}
+            </Text>
 
-        <Text size="sm" c="dimmed">
-        With Fjord Tours you can explore more of the magical fjord landscapes with tours and
-        activities on and around the fjords of Norway
-        </Text>
-
-        <Button color="blue" fullWidth mt="md" radius="md">
-        Book classic tour now
-        </Button>
-        </Card>    
-        </Carousel.Slide> */}
+            <Button color="blue" fullWidth mt="md" radius="md">
+              Read More
+            </Button>
+          </Card>
+        </Carousel.Slide>
+      ))}
 
     {/* <Carousel.Slide>
        
