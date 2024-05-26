@@ -16,7 +16,7 @@ const Service = ()=>{
             <Group maw="100%" my={15}>
                 <Text size="25px" fw={500} c="grey" w="50%" ta="center">Services Provided in Mercy Hospital</Text>
                 <Group maw="40%">
-                    <Text ta="justify" size="18px" c="grey" fw={400} style={{ lineHeight: '1.6', letterSpacing: '0.1em' }} > 
+                    <Text ta="justify" size="18px" c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
                     At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
 
                     </Text>
