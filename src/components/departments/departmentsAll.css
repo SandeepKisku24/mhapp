@@ -14,12 +14,20 @@
 .deptContent{
     margin-top: 5%;
     width: 70%;
-    padding-left: 1%;
     text-align: justify;
     font-weight: bold;
+    margin-left: 5%;
+    padding-bottom: 2%;
 }
 .DeptDivision{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+    .DeptDivision{
+        display: flex;
+        justify-content: space-around;
+    } 
 }

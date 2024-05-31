@@ -102,9 +102,9 @@ const infolinks = infodata.map((item) => (
   <UnstyledButton className={classes.subLink} key={item.title}>
     <Group wrap="nowrap" align="flex-start">
       <Link to={item.link} >
-        <a size="xs" c="dimmed">
+        <Anchor size="">
           {item.linkName}
-        </a>
+        </Anchor>
       </Link >
     </Group>
   </UnstyledButton>
@@ -272,7 +272,7 @@ const infolinks = infodata.map((item) => (
                   <Group justify="space-between">
                     <Stack gap={5} fz="sm" className='submenupart'>
 
-                      {owdata!==null?serlinks:<></>}
+                      {serdata!==null?serlinks:<></>}
   
                     </Stack>
 
@@ -314,7 +314,7 @@ const infolinks = infodata.map((item) => (
                 </SimpleGrid>
                 <div className={classes.dropdownFooter}>
                   <Group justify="space-between">
-                    <Stack gap={5} fz="sm">
+                    <Stack gap={5} fz="sm" style={{color:"#4285F4"}}>
 
                       {infodata!==null?infolinks:<></>}
   

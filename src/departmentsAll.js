@@ -34,7 +34,7 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">Emergency Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
                             With skilled healthcare professionals and advanced medical ...
                         </Text>
 
@@ -57,7 +57,7 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">Imaging Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
                             Chest X-ray, Skull X-ray, Hand X-ray, Wrist X-ray, PNS X-ray, Knee X-ray, Ankle X-ray...
                         </Text>
 
@@ -80,8 +80,9 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">ECG Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
-                            We provide ECG services for best diagnostic practices    ...
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
+                        An electrocardiogram (ECG) is a simple, non-invasive test that records the electrical activity of the heart. An ECG can help diagnose certain heart conditions, including abnormal heart rhythms and coronary heart disease (heart attack and angina).
+
                         </Text>
 
                         <Link to="/service/ecg" style={{opacity:ser===2?1:0, transition:" 0.5s"}}>
@@ -103,7 +104,7 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">Dental Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
                         Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
                         </Text>
 
@@ -127,11 +128,12 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">Orthopedic</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
-                        Orthopedic services encompass a wide range of medical care focused on diagnosing ...
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
+                        Orthopedic services encompass a wide range of medical care focused on diagnosing, treating, and managing conditions related to the musculoskeletal system. This system includes bones, joints, muscles, ligaments, tendons, and nerves. Orthopedic services are vital for addressing various orthopedic issues.
+
                         </Text>
 
-                        <Link to="/" style={{opacity:ser===4?1:0, transition:" 0.5s"}}>
+                        <Link to="/department/orthopedic" style={{opacity:ser===4?1:0, transition:" 0.5s"}}>
                             <Button color="blue" fullWidth mt="md" radius="md" >
                                 Know More
                             </Button>
@@ -151,11 +153,12 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">Family Medicine</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
-                        Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
+                        In Mercy Hospital, Family medicine physicians, the stalwarts of our department, possess a unique skill set honed to address a broad spectrum of medical conditions across the lifespan. From the tender care of infancy to the seasoned wisdom of old age, our physicians provide comprehensive and personalized medical attention.
+
                         </Text>
 
-                        <Link to="/department/dental" style={{opacity:ser===5?1:0, transition:" 0.5s"}}>
+                        <Link to="/department/famililymedicine" style={{opacity:ser===5?1:0, transition:" 0.5s"}}>
                             <Button color="blue" fullWidth mt="md" radius="md" >
                                 Know More
                             </Button>
@@ -175,11 +178,12 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">Laboratory/ Pathology</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
-                        Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
+                        In Mercy Hospital Laboratory and Pathology Department, we offer a comprehensive range of diagnostic tests and analyses to aid in the identification, monitoring, and management of various medical conditions. From cardiovascular diseases like myocardial infarction and cardiovascular inflammation to cancer screenings for prostate cancer and liver cancer, our department is equipped to provide accurate and timely results.
+
                         </Text>
 
-                        <Link to="/department/dental" style={{opacity:ser===6?1:0, transition:" 0.5s"}}>
+                        <Link to="/service/lab" style={{opacity:ser===6?1:0, transition:" 0.5s"}}>
                             <Button color="blue" fullWidth mt="md" radius="md" >
                                 Know More
                             </Button>
@@ -199,11 +203,12 @@ const DepartmentsAll = ()=>{
                             <Text fw="bold" ta="center" w= "100%" size="xl">General Medicine</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify">
-                        Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
+                        <Text size="md" c="dimmed" ta="justify" lineClamp={3}>
+                        In Mercy Hospital, the General Medicine Department stands as the cornerstone of adult healthcare, offering comprehensive services in diagnosis, treatment, and prevention of a wide array of diseases. Commonly referred to as internal medicine, our team of dedicated physicians specializes in addressing the unique medical needs of adults.
+
                         </Text>
 
-                        <Link to="/department/dental" style={{opacity:ser===7?1:0, transition:" 0.5s"}}>
+                        <Link to="/department/generalmedicine" style={{opacity:ser===7?1:0, transition:" 0.5s"}}>
                             <Button color="blue" fullWidth mt="md" radius="md" >
                                 Know More
                             </Button>

@@ -1,6 +1,8 @@
 import React from "react";
 import "./vision.css"
 import Overview from "./overview";
+import { Image } from "@mantine/core";
+import img from "../gallery/pictures/vision.png"
 const vision =()=>{
     return(
         <div className="vision">
@@ -9,6 +11,7 @@ const vision =()=>{
             <div className="DeptDivision">
 
             <div className="visionContent"> 
+                <Image src={img} w={250} h ={250} mx="auto" my={10}></Image>
                 <div className="visionIntro">
                 The aim and object of Poreyahat Mercy Hospital society is as follows:
                 The objects for which the society is established are the following and it is declared that several sub clauses of this clause and all the powers mentioned in it are to be cumulative and in no case is the generality of the sub-clause to be narrowed or restricted by the particularity or any other sub clause nor will any general expression in any sub clause be now will any general expression in any sub clause be narrowed or restricted by any particularity of expression in the same sub clause or the application of any rule of construction “ ejus dem generals” or otherwise:
@@ -34,6 +37,7 @@ const vision =()=>{
                     <br/>
                     <li>To run orphanage, hostel, old age home, to support/ help or students or children to stand on their free.  To work on safe motherhood care, child and women. </li>
                 </ol>
+                
             </div>
             <Overview/>
             </div>

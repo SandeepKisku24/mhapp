@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import slide1 from "./gallery/pictures/HOSPL PANORAMIC IMG JPG.jpg";
+// import slide1 from "./gallery/pictures/HOSPL PANORAMIC IMG JPG.jpg";
+import slide1 from "./gallery/pictures/home1.jpg";
 import slide2 from "./gallery/pictures/Dental.jpg";
 import slide3 from "./gallery/pictures/Xray1.jpg";
 import slide4 from "./gallery/pictures/Dental flex.jpg";

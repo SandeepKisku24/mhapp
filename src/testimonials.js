@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import { Group, Image, Stack, Text, rem } from '@mantine/core';
+import { Group, Image, Stack, Text, Title, rem } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import { IconArrowRight, IconArrowLeft } from '@tabler/icons-react';
 import "./testimonials.css";
@@ -18,12 +18,13 @@ const Testimonials = ()=>{
     return(
 
         <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" bg="#F7FEE2" style={{borderRadius:"0px"}}>
+            <Title pt={10}>"Discover heartfelt stories from our patients and their families."</Title>
             <Carousel withIndicators height={isMobile?"450":"400"} classNames={classes} w="100%">
             {
             events.map((event, index) => (
                 <Carousel.Slide key={index}>
                  <Stack my={isMobile ? "20px" : "40px"} gap={5}>
-                      <Image src={event.src} alt="image" h={100} w={100} radius="50%" mx="auto" style={{ zIndex: "3", border: "2px      solid #4285F4" }} />
+                      <Image src={event.src} alt="image" h={120} w={120} radius="50%" mx="auto" style={{ zIndex: "3", border: "2px      solid #4285F4" }} />
                       <Stack bg="#fff" maw={isMobile ? "90%" : "60%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "-40px",  display: "flex", flexDirection: "column", alignItems: "stretch" }}>
                      <Text w={isMobile ? "90%" : "80%"} mx="auto" ta="justify" pt={40} fw={550} style={{        fontFamily: "garamond" }}>
                           <span style={{ fontSize: "20px" }}>"</span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
