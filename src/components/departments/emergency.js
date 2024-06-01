@@ -28,7 +28,7 @@ const Emergency =()=>{
         <Department/>
         </div>
 
-
+        
     </div>
     )
 }

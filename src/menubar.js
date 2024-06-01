@@ -117,7 +117,7 @@ const infolinks = infodata.map((item) => (
       <header >
         <Container maw={isMobile?"95%":"90%"} mx="auto" style={{position:"sticky",top: "0px"}}>
         <Group justify="space-between" w="100%" py={10}>
-        <NameAndLogo name = "Mercy Hospital" place = " Poreyahat, Godda, Jharkhand "/>
+        <Link to={"/"}> <NameAndLogo name = " Mercy Hospital " place = " Poreyahat, Godda, Jharkhand "/> </Link>
         <Stack gap={10} style={{textTransform:"none"}}>
         <Group h="100%" pr={15} visibleFrom="sm" justify='flex-end'>
             <Anchor  href="#" fw={400} fz="md" c={menu==="train"?"gray":"#4285F4"} underline='never' onMouseEnter={()=>setMenu("train")}>

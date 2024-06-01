@@ -5,6 +5,7 @@ import { mobile } from "./screenSizes";
 import { useMediaQuery } from "@mantine/hooks";
 import { Carousel } from "@mantine/carousel";
 import { facdata } from "./facilitydata";
+import { Link } from "react-router-dom";
 
 
 
@@ -54,9 +55,11 @@ function Facility() {
               {item.content}
             </Text>
 
+            <Link to={item.link}>
             <Button color="blue" fullWidth mt="md" radius="md">
               Read More
             </Button>
+            </Link>
           </Card>
         </Carousel.Slide>
       ))}

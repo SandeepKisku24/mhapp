@@ -73,13 +73,15 @@ import Visitor from "./components/information/visitor";
 import DepartmentsAll from "./departmentsAll";
 import Bottombar from "./bottombar";
 
+import { ScrollRestoration } from "react-router-dom";
+
 
 function App() {
   return (
     <MantineProvider>
       <div className="App">
         
-        <Router>
+        <Router >
         <DetailsBar/>
         <TopBar/>
         <Routes>
@@ -148,8 +150,10 @@ function App() {
         </Routes>
         <FooterLinks/>
         <Bottombar/>
+        
       </Router>
     </div>
+    
   </MantineProvider>
   );
 }

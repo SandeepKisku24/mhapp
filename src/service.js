@@ -40,7 +40,7 @@ const Service = ()=>{
                             With skilled healthcare professionals and advanced medical ...
                         </Text>
 
-                        <Link to="/department/emergency" style={{   }}>
+                        <Link to="/department/emergency" >
                             <Button color="blue" fullWidth mt="md" radius="md" >
                                 Know More
                             </Button>
