@@ -10,7 +10,7 @@ import {
 
 import DetailsBar from "./detialsBar";
 import TopBar from "./topBar";
-import Footer from "./footer";
+import  FooterLinks from "./footer";
 
 import Service from "./service";
 import Facility from "./facilities";
@@ -71,6 +71,9 @@ import IpdInfo from "./components/information/ipd";
 import RightsAndRes from "./components/information/rightandres";
 import Visitor from "./components/information/visitor";
 import DepartmentsAll from "./departmentsAll";
+import Bottombar from "./bottombar";
+
+import { ScrollRestoration } from "react-router-dom";
 
 
 function App() {
@@ -78,7 +81,7 @@ function App() {
     <MantineProvider>
       <div className="App">
         
-        <Router>
+        <Router >
         <DetailsBar/>
         <TopBar/>
         <Routes>
@@ -145,9 +148,12 @@ function App() {
 
 
         </Routes>
-        <Footer/>
+        <FooterLinks/>
+        <Bottombar/>
+        
       </Router>
     </div>
+    
   </MantineProvider>
   );
 }
