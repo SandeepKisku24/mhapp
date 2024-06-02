@@ -98,7 +98,7 @@ const Slide = ()=>{
                 </Card.Section>
 
                 <Stack gap={0} pb={5}  style={{
-                    backgroundColor:"#34A853",
+                    backgroundColor:"#4285F4",
                     position:"absolute",
                     top:"410px",
                     width:"90%",
@@ -132,7 +132,7 @@ const Slide = ()=>{
                 </Card.Section>
 
                 <Stack gap={0} pb={5}  style={{
-                    backgroundColor:"#34A853",
+                    backgroundColor:"#4285F4",
                     position:"absolute",
                     top:"410px",
                     width:"90%",

@@ -11,7 +11,7 @@ const vision =()=>{
             <div className="DeptDivision">
 
             <div className="visionContent"> 
-                <Image src={img} w={250} h ={250} mx="auto" my={10}></Image>
+                <Image src={img} w={250} h ={250} mx="auto" my={5}></Image>
                 <div className="visionIntro">
                 The aim and object of Poreyahat Mercy Hospital society is as follows:
                 The objects for which the society is established are the following and it is declared that several sub clauses of this clause and all the powers mentioned in it are to be cumulative and in no case is the generality of the sub-clause to be narrowed or restricted by the particularity or any other sub clause nor will any general expression in any sub clause be now will any general expression in any sub clause be narrowed or restricted by any particularity of expression in the same sub clause or the application of any rule of construction “ ejus dem generals” or otherwise:

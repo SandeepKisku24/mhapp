@@ -10,55 +10,55 @@ import { useMediaQuery } from "@mantine/hooks";
 const FooterLinks =()=>{
     const isMobile = useMediaQuery(mobile);
 return(
-    <Group   maw="100%" mx="auto" py={50}  bg="#9e9e57" >
+    <Group   maw="100%" mx="auto" py={50}  bg="#F8F9FA" >
         <Group gap={30} align="flex-start" maw={isMobile?"95%":"95%"} mx="auto">
         <FooterCU/>
 
         <Stack w={150} gap={5} style={{marginTop:"0 !important"}}>
-        <Text size="18px" c="white" fw={600} style={{borderBottom:"1px solid yellow", paddingBottom: "4px", fontFamily:"garamond"}}>Quick Links</Text>
-            <Link to="/"><Anchor c="white">Home</Anchor></Link>
+        <Text size="18px" c="#5A5A5A" fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}>Quick Links</Text>
+            <Link to="/"><Anchor c="#868E96">Home</Anchor></Link>
             {owdata.map((item,index) => (
             <Link to={item.link} key={index}>
-            <Anchor c="white">{item.linkName}</Anchor>
+            <Anchor c="#868E96">{item.linkName}</Anchor>
             </Link>
             ))}
 
         </Stack>
 
-        <Stack justify="flex-start" w={150} gap={5} c="white" >
-        <Text size="18px" fw={600} style={{borderBottom:"1px solid yellow", paddingBottom: "4px", fontFamily:"garamond"}}> Departments</Text>
+        <Stack justify="flex-start" w={150} gap={5} c="#5A5A5A" >
+        <Text size="18px" fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}> Departments</Text>
 
             {depdata.map((item,index) => (
             <Link to={item.link} key={index}>
-            <Anchor c="white" >{item.linkName}</Anchor>
+            <Anchor c="#868E96" >{item.linkName}</Anchor>
             </Link>
             ))}
 
         </Stack>
 
         <Stack justify="flex-start" w={150} gap={5}>
-        <Text size="18px" fw={600} c="white" style={{borderBottom:"1px solid yellow", paddingBottom: "4px", fontFamily:"garamond"}}>Doctors</Text>
+        <Text size="18px" fw={600} c="#5A5A5A" style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}>Doctors</Text>
             {docdata.map((item,index) => (
             <Link to={item.link} key={index}>
-            <Anchor c="white" >{item.linkName}</Anchor>
+            <Anchor c="#868E96" >{item.linkName}</Anchor>
             </Link>
             ))}
 
         </Stack>
         <Stack justify="flex-start" w={150} gap={5}>
-        <Text size="18px" fw={600} style={{borderBottom:"1px solid yellow", paddingBottom: "4px", fontFamily:"garamond"}} c="white" >Services</Text>
+        <Text size="18px" fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}} c="#5A5A5A" >Services</Text>
             {serdata.map((item,index) => (
             <Link to={item.link} key={index}>
-            <Anchor c="white" >{item.linkName}</Anchor>
+            <Anchor c="#868E96" >{item.linkName}</Anchor>
             </Link>
             ))}
 
         </Stack>
-        <Stack justify="flex-start" w={150} gap={5} c="white" >
-        <Text size="18px" fw={600} style={{borderBottom:"1px solid yellow", paddingBottom: "4px", fontFamily:"garamond"}}>Information</Text>
+        <Stack justify="flex-start" w={150} gap={5} c="#5A5A5A" >
+        <Text size="18px" fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}>Information</Text>
             {infodata.map((item,index) => (
             <Link to={item.link} key={index}>
-            <Anchor c="white" >{item.linkName}</Anchor>
+            <Anchor c="#868E96" >{item.linkName}</Anchor>
             </Link>
             ))}
 

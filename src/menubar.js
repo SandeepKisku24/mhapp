@@ -102,7 +102,7 @@ const infolinks = infodata.map((item) => (
   <UnstyledButton className={classes.subLink} key={item.title}>
     <Group wrap="nowrap" align="flex-start">
       <Link to={item.link} >
-        <Anchor size="">
+        <Anchor size="" underline='never'>
           {item.linkName}
         </Anchor>
       </Link >

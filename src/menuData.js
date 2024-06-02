@@ -16,7 +16,7 @@ export const owdata = [
     linkName: 'Management'
     },
     {
-    link: '/gallery',
+    link: '/gall',
     linkName: 'Gallery'
     }
 ];

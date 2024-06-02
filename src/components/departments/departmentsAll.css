@@ -6,13 +6,14 @@
     font-size: 25px;
     height: 35px;
     
-    background-color: #d0bb68;
-    
+    /* background-color: #d0bb68; */
+    background-color: #4285F4;
+    color: #fff;
     padding-left: 5%;
     
 }
 .deptContent{
-    margin-top: 5%;
+    margin-top: 2%;
     width: 70%;
     text-align: justify;
     font-weight: bold;
