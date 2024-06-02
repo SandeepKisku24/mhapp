@@ -13,6 +13,8 @@ import { useMediaQuery } from "@mantine/hooks";
 import Gallery from "./events/gallery";
 import Service from "./service";
 import Facility from "./facilities";
+import ImageSection from "./gall";
+
 const Home =()=>{
 
     const isMobile = useMediaQuery(mobile);
@@ -47,6 +49,8 @@ const Home =()=>{
 
             <Testimonials/>
 
+            <></>
+
             {/* {isMobile?
             <Stack maw="95%" >
                 <Testimonials/>
@@ -56,6 +60,7 @@ const Home =()=>{
                  <Testimonials/>
                  <Youtube/>
             </div>} */}
+            <ImageSection/>
         </div>
     )
 }
