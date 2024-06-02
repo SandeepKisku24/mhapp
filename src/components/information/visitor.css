@@ -8,7 +8,9 @@
 .visitorHeading{
     font-size: 25px;
     height: 35px;
-    background-color: #d0bb68;
+    /* background-color: #d0bb68; */
+    background-color: #4285F4;
+    color: #fff;
     padding-left: 5%;
 }
 .visitorInfoContent{

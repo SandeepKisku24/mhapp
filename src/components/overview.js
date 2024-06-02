@@ -20,7 +20,7 @@ const Overview = ()=>{
 
                         </div>
                         <div className="overBlock"> 
-                        <Link to = "/gallery"> Gallery</Link>
+                        <Link to = "/gall"> Gallery</Link>
 
                         </div>
             </div>

@@ -12,10 +12,13 @@ import DetailsBar from "./detialsBar";
 import TopBar from "./topBar";
 import  FooterLinks from "./footer";
 
+import ImageSection from "./gall";
 import Service from "./service";
 import Facility from "./facilities";
 
 import Home from "./home";
+
+
 
 import Announce from "./announcement";
 
@@ -26,6 +29,7 @@ import Management from "./components/management";
 import Vision from "./components/vision";
 import AboutUs from "./components/aboutus";
 import Gallery1 from "./events/gallery";
+// import ImageSection from "./gall";
 
 // departments
 import Dental from "./components/departments/dental";
@@ -74,6 +78,7 @@ import DepartmentsAll from "./departmentsAll";
 import Bottombar from "./bottombar";
 
 import { ScrollRestoration } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 
 
 function App() {
@@ -82,6 +87,7 @@ function App() {
       <div className="App">
         
         <Router >
+        <ScrollToTop/>
         <DetailsBar/>
         <TopBar/>
         <Routes>
@@ -97,6 +103,8 @@ function App() {
           <Route path ="/history" element = {<History/>}/>
           <Route path ="/vision" element = {<Vision/>}/>
           <Route path ="/management" element = {<Management/>}/>
+          <Route path ="/gall" element = {<ImageSection/>}/>
+
           <Route path ="/gallery" element = {<Gallery1/>}/>
           
 
