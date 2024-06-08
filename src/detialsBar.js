@@ -3,6 +3,7 @@ import "./detialsBar.css"
 import { Anchor, Group } from "@mantine/core";
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+import { Link } from "react-router-dom";
 const DetailsBar = ()=>{
     return(
         <Group gap={15} justify="right" pr="2%" style={{backgroundColor:"#DB4437", color:"#fff"}}>
@@ -26,7 +27,8 @@ const DetailsBar = ()=>{
                 Enquiry +91 9546233931 
                 </Group>
             </Anchor>
-            <Anchor c= "#fff" underline="never" style={{backgroundColor:"#9B1C1C", textAlign:"center"}} w={80}>FAQ</Anchor>
+            <Link to="/faq" style={{backgroundColor:"#9B1C1C"}} ><Anchor c= "#fff" underline="never" px={10} style={{backgroundColor:"#9B1C1C", textAlign:"center"}} w={80}>FAQ</Anchor>
+            </Link>
         </Group>
     )
 }

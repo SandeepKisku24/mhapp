@@ -1,26 +1,18 @@
 .bgAnnouce{
-    /* position: absolute; */
+    
     width: 100% !important;
-    background-image: url("./gallery/pictures/HOSPL\ PANORAMIC\ IMG\ JPG.jpg");
+    /* background-image: url("./gallery/pictures/HOSPL\ PANORAMIC\ IMG\ JPG.jpg"); */
     height: 600px;
     background-size: cover;
-    /* filter: blur(8px);
-    -webkit-filter: blur(8px); */
+   
     z-index: 1;
 }
 
-.announceBar{
-    /* position: relative; */
-    /* width: 35%; */
-}
+
 .headingAnnouce{
     width: 100%;
-    /* font-size: 30px; */
     text-align: center;
-    /* color: #2f3082; */
-    color: #2751a3;
-    /* background-color: #fff; */
-    /* height: fit-content; */
+    color: #4284f4;
     padding-top: 3%;
 }
 .announce{
@@ -31,6 +23,7 @@
     padding-top: 2%;
     /* background-color: #fff; */
 }
+
 
 .annoucebox{
     width: 100%;
@@ -75,5 +68,11 @@
     padding: 2%;
     border-radius: 5px;
     color: #fff;
+
+}
+#full{
+    background-image: url("./gallery/pictures/HOSPL\ PANORAMIC\ IMG\ JPG.jpg") !important;
+    width: 700px !important;
+    background-size: cover !important;
 
 }

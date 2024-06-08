@@ -31,6 +31,9 @@ import AboutUs from "./components/aboutus";
 import Gallery1 from "./events/gallery";
 // import ImageSection from "./gall";
 
+import Faq from "./faq";
+import AnnounceAll from "./announcementAll";
+
 // departments
 import Dental from "./components/departments/dental";
 import Dietetic from "./components/departments/dietetic";
@@ -96,6 +99,8 @@ function App() {
           <Route path ="/service" element = {<Service/>}/>
           <Route path ="/department" element = {<DepartmentsAll/>}/>
           <Route path ="/facility" element = {<Facility/>}/>
+          <Route path ="/faq" element = {<Faq/>}/>
+          <Route path ="/annouceAll" element = {<AnnounceAll/>}/>
 
 
           <Route path ="/aboutUs" element = {<AboutUs/>}/>
