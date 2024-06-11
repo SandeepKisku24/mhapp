@@ -2,7 +2,7 @@ import React from "react";
 import "./vision.css"
 import Overview from "./overview";
 import { Image } from "@mantine/core";
-import img from "../gallery/pictures/vision.png"
+import img from "../gallery/pictures/vision.jpg"
 import { useMediaQuery } from "@mantine/hooks";
 import { mobile } from "../screenSizes";
 const Vision =()=>{

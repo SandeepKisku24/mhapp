@@ -1,12 +1,12 @@
-import img1 from  "./gallery/pictures/gallery/img1.png";
+import img1 from  "./gallery/pictures/gallery/img1.jpg";
 import img2 from "./gallery/pictures/Dental.jpg";
-import img3 from  "./gallery/pictures/gallery/img3.png";
-import img4 from  "./gallery/pictures/gallery/img4.png";
+import img3 from  "./gallery/pictures/gallery/img3.jpg";
+import img4 from  "./gallery/pictures/gallery/img4.jpg";
 import img5 from  "./gallery/pictures/gallery/img5.jpg";
-import img6 from  "./gallery/pictures/gallery/img6.png";
-import img7 from  "./gallery/pictures/gallery/img7.png";
-import img8 from  "./gallery/pictures/gallery/img8.png";
-import img9 from  "./gallery/pictures/gallery/img9.png";
+import img6 from  "./gallery/pictures/gallery/img6.jpg";
+import img7 from  "./gallery/pictures/gallery/img7.jpg";
+import img8 from  "./gallery/pictures/gallery/img8.jpg";
+import img9 from  "./gallery/pictures/gallery/img9.jpg";
 import img10 from  "./gallery/pictures/gallery/img10.jpg";
 
 export const imagedata = [
