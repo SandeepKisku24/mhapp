@@ -3,17 +3,21 @@ import "./departmentsAll.css"
 import Department from "./department";
 import { Group, Image } from "@mantine/core";
 import img from "../../gallery/pictures/emergency1.jpg"
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
+
 const Emergency =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading">Emergency </div>
         
         <div className="DeptDivision">
-        <div className="deptContent">
-            <Group maw="100%" gap={25} mx="5%" >
+        <div className="deptContent" style={{width: isMobile?"90%":"70%"}} >
+            <Group maw="100%" gap={25}>
             <Image src={img} h={300} fit="cover" w="auto"  />
             
-            <div style={{width:"60%"}}>
+            <div style={{width: isMobile?"90%":"60%"}}>
             <div>
 
                 With skilled healthcare professionals and advanced medical technology, these services save lives by stabilizing patients and initiating necessary treatment swiftly. In times of urgent need, hospital emergency services offer reassurance and rapid intervention, ensuring that individuals receive the critical care they require to recover and thrive. 
@@ -25,7 +29,7 @@ const Emergency =()=>{
             </Group>
         </div>
 
-        <Department/>
+        {isMobile?<></>:<Department/>}
         </div>
 
         

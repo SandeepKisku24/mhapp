@@ -1,13 +1,16 @@
 import React from "react";
 import "./departmentsAll.css"
 import Department from "./department";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const FamilyMed=()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading">Family Medicine Department </div>
         <div className="DeptDivision">
 
-        <div className="deptContent">
+        <div className="deptContent" style={{width: isMobile?"90%":"70%"}} >
             <div className="deptDocName">
                 Doctor's Name :  Dr. Shetty Jose
             </div>

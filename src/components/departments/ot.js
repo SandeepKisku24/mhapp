@@ -1,12 +1,15 @@
 import React from "react";
 import "./departmentsAll.css"
 import Department from "./department";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const OT=()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading">Operation Theater </div>
         <div className="DeptDivision">
-        <div className="deptContent">
+        <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
             
             <div>
 
@@ -14,7 +17,7 @@ const OT=()=>{
             </div>
         </div>
 
-        <Department/>
+        {isMobile?<></>:<Department/>}
         </div>
     </div>
     )

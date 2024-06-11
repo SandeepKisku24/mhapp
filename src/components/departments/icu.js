@@ -1,13 +1,16 @@
 import React from "react";
 import "./departmentsAll.css"
 import Department from "./department";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const ICU=()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading">ICU </div>
         <div className="DeptDivision">
 
-        <div className="deptContent">
+        <div className="deptContent"style={{width: isMobile?"90%":"70%"}} >
             
             <div>
 
@@ -15,7 +18,7 @@ const ICU=()=>{
             </div>
         </div>
 
-        <Department/>
+        {isMobile?<></>:<Department/>}
 
         </div>
     </div>

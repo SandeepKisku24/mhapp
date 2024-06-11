@@ -2,7 +2,10 @@ import React from "react";
 import Department from "./department";
 import { Image } from "@mantine/core";
 import img from "../../gallery/pictures/Dr Rebin R.jpg"
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const Dental=()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
             <div className="deptNameHeading">Dental Department </div>
@@ -27,8 +30,8 @@ const Dental=()=>{
                 </div>
             </div>
 
-            <Department/>
-
+            
+            {isMobile?<></>:<Department/>}
             </div>
         </div>
     )

@@ -1,13 +1,16 @@
 import React from "react";
 import "../departments/departmentsAll.css"
 import Department from "../departments/department";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 
 const DrDileep=()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading"> Anesthesiology Department </div>
         <div className="DeptDivision">
-        <div className="deptContent">
+        <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
             <div className="deptDocName">
                 Doctor's Name :   Dr. Dileep Kumar Takur     
             </div>
@@ -24,7 +27,7 @@ const DrDileep=()=>{
             In our hospital, the On-Call Anesthesiologist embodies the principles of safety, expertise, and compassion, standing as a steadfast guardian of patient well-being during moments of vulnerability and need.</div>
         </div>
 
-        <Department/>
+        {isMobile?<></>:<Department/>}
         </div>
     </div>
     )

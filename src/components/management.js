@@ -2,14 +2,18 @@ import React from "react";
 
 import "./management.css"
 import Overview from "./overview";
-const management =()=>{
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../screenSizes";
+
+const Management =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="management ">
             <div className="mngtHeading">
                 Management
             </div>
             <div className="DeptDivision">
-            <div className="mngtContent">
+            <div className="mngtContent" style={{width: isMobile?"90%":"60%"}}>
                 <div className="mngtPeople">
                     Director: Fr. George Joseph
                 </div>
@@ -36,10 +40,10 @@ const management =()=>{
                 <br/>
             </div>
 
-            <Overview/>
+            {isMobile?<></>:<Overview/>}
 
             </div>
         </div>
     )
 }
-export default management;
+export default Management;

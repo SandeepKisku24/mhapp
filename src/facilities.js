@@ -29,7 +29,7 @@ function Facility() {
         slideSize={{ base: '100%', sm: '50%', md: '25%' }}
         slideGap={{ base: 0, sm: '30px' }}
         loop
-        align="start"
+        align={isMobile?"center":"start"}
         style={{width:"100%",margin:"auto"}}
         >
         {
@@ -38,7 +38,7 @@ function Facility() {
 
         {facdata.map((item, index) => (
         <Carousel.Slide key={index} style={{cursor:"pointer"}}>
-          <Card shadow="sm" padding="lg" radius="md" withBorder w={275}>
+          <Card shadow="sm" padding="lg" radius="md" withBorder w={isMobile?"80%":"275"} mx="auto">
             <Card.Section>
               <Image
                 src={item.src}

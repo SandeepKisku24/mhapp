@@ -1,12 +1,15 @@
 import React from "react";
 import "../departments/departmentsAll.css"
 import Department from "../departments/department";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const DrTara=()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading">Surgery Department </div>
         <div className="DeptDivision">
-        <div className="deptContent">
+        <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
             <div className="deptDocName">
                 Doctor's Name :   Dr. Tara Sankar    
             </div>
@@ -24,7 +27,7 @@ const DrTara=()=>{
             Beyond their technical proficiency, our On-Call Surgeon embodies compassion and empathy, understanding the anxiety and vulnerability that often accompany surgical situations. They approach each case with sensitivity, providing not just surgical expertise, but also emotional support and reassurance to patients and their families.            </div>
         </div>
 
-        <Department/>
+        {isMobile?<></>:<Department/>}
         </div>
     </div>
     )

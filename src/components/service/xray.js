@@ -1,13 +1,15 @@
 import React from "react";
 import Service from "./service";
-
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const Xray =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
             <div className="deptNameHeading">X-Ray Services </div>
             <div className="DeptDivision">
 
-            <div className="deptContent">
+            <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
                
                <br/>
                <div>
@@ -42,7 +44,7 @@ const Xray =()=>{
                </div>
                </div>
 
-               <Service/>
+               {isMobile?<></>:<Service/>}
 
             </div>
         </div>

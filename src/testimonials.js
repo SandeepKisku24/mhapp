@@ -18,7 +18,7 @@ const Testimonials = ()=>{
     return(
 
         <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" bg="#F7FEE2" style={{borderRadius:"0px"}}>
-            <Title pt={10}>"Discover heartfelt stories from our patients and their families."</Title>
+            <Title pt={10} ta="center" >"Discover heartfelt stories from our patients and their families."</Title>
             <Carousel withIndicators height={isMobile?"450":"400"} classNames={classes} w="100%">
             {
             events.map((event, index) => (

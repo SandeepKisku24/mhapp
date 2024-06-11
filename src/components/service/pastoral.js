@@ -1,12 +1,16 @@
 import React from "react";
 import "../departments/departmentsAll.css"
 import Service from "./service";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
+
 const Pastoral =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
         <div className="deptNameHeading"> Pastoral Care</div>
         <div className="DeptDivision">
-        <div className="deptContent">
+        <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
            
             
            <div>
@@ -20,7 +24,7 @@ const Pastoral =()=>{
            Our pastoral care embodies the belief that true healing involves addressing the needs of the whole person—mind, body, and spirit.
            </div>
        </div>
-       <Service/>
+       {isMobile?<></>:<Service/>}
         </div>
     </div>
     )

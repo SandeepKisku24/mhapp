@@ -3,14 +3,17 @@ import "./vision.css"
 import Overview from "./overview";
 import { Image } from "@mantine/core";
 import img from "../gallery/pictures/vision.png"
-const vision =()=>{
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../screenSizes";
+const Vision =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="vision">
             <div className="visionHeading">Vision and Objective</div>
             
             <div className="DeptDivision">
 
-            <div className="visionContent"> 
+            <div className="visionContent" style={{width: isMobile?"90%":"60%"}}> 
                 <Image src={img} w={250} h ={250} mx="auto" my={5}></Image>
                 <div className="visionIntro">
                 The aim and object of Poreyahat Mercy Hospital society is as follows:
@@ -39,10 +42,10 @@ const vision =()=>{
                 </ol>
                 
             </div>
-            <Overview/>
+            {isMobile?<></>:<Overview/>}
             </div>
 
         </div>
     )
 }
-export default vision;
+export default Vision;

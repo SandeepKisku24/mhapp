@@ -10,7 +10,7 @@ import { useMediaQuery } from "@mantine/hooks";
 const FooterLinks =()=>{
     const isMobile = useMediaQuery(mobile);
 return(
-    <Group   maw="100%" mx="auto" py={50}  bg="#F8F9FA" >
+    <Group   maw={isMobile?"90%":"100%"} mx="auto" py={50}   bg="#F8F9FA" >
         <Group gap={30} align="flex-start" maw={isMobile?"95%":"95%"} mx="auto">
         <FooterCU/>
 

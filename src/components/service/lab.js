@@ -1,14 +1,17 @@
 import React from "react";
 import "../departments/departmentsAll.css"
 import Service from "./service";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 
 const Lab =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
             <div className="deptNameHeading">Laboratory/ Pathology </div>
             <div className="DeptDivision">
 
-            <div className="deptContent">
+            <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
                 
                 <div>
                 In Mercy Hospital Laboratory and Pathology Department, we offer a comprehensive range of diagnostic tests and analyses to aid in the identification, monitoring, and management of various medical conditions. From cardiovascular diseases like myocardial infarction and cardiovascular inflammation to cancer screenings for prostate cancer and liver cancer, our department is equipped to provide accurate and timely results.
@@ -25,7 +28,7 @@ const Lab =()=>{
                 Furthermore, our laboratory is equipped to measure various biomarkers and hormones, including Tn-I, CK-MB, PSA, AFP, HbA1c, and TSH, among others, to provide comprehensive insights into patients' health status.                </div>
             </div>
 
-            <Service/>
+            {isMobile?<></>:<Service/>}
 
             </div>
         </div>
