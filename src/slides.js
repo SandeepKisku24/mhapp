@@ -126,7 +126,7 @@ const Slide = ()=>{
                 <Card.Section>
                     <Image
                     src={slide3}
-                    h={500}
+                    h={550}
                     alt="No way!"
                     />
                 </Card.Section>
@@ -179,7 +179,7 @@ const Slide = ()=>{
                     <Image
                     src={slide4}
                     h={500}
-                    alt="No way!"
+                    alt="img not found"
                     />
                 </Card.Section>
 

@@ -38,7 +38,7 @@ function Facility() {
 
         {facdata.map((item, index) => (
         <Carousel.Slide key={index} style={{cursor:"pointer"}}>
-          <Card shadow="sm" padding="lg" radius="md" withBorder w={isMobile?"80%":"275"} mx="auto">
+          <Card shadow="sm" padding="lg" radius="md" withBorder w={isMobile?"80%":"90%"} mx="auto">
             <Card.Section>
               <Image
                 src={item.src}

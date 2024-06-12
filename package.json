@@ -1,4 +1,5 @@
 {
+  "homepage": "https://SandeepKisku24.github.io/mhapp",
   "name": "mhapp",
   "version": "0.1.0",
   "private": true,
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "^1.15.0",
     "postcss-simple-vars": "^7.0.1"
