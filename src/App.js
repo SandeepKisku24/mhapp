@@ -89,7 +89,7 @@ function App() {
     <MantineProvider>
       <div className="App">
         
-        <Router >
+        <Router  basename="/mhapp >
         <ScrollToTop/>
         <DetailsBar/>
         <TopBar/>
