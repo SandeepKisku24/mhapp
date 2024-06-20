@@ -82,16 +82,18 @@ import Bottombar from "./bottombar";
 
 import { ScrollRestoration } from "react-router-dom";
 import ScrollToTop from "./scrollToTop";
-
+import { mobile } from "./screenSizes";
+import { useMediaQuery } from "@mantine/hooks";
 
 function App() {
+  const isMobile = useMediaQuery(mobile);
   return (
     <MantineProvider>
       <div className="App">
         
-        <Router  basename="/mhapp >
+        <Router  basename="/mhapp" >
         <ScrollToTop/>
-        <DetailsBar/>
+        {isMobile?<></>:<DetailsBar/>}
         <TopBar/>
         <Routes>
           <Route exact path ="/" element = {<Home/>}/>

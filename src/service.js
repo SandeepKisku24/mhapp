@@ -12,11 +12,12 @@ const Service = ()=>{
     const isMobile = useMediaQuery(mobile);
     const [ser,setService] = useState(-1);
     return(
-        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#FFFFE0",fontFamily:"Montserrat"}}>
+        // FFFFE0
+        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#F8F9FA",fontFamily:"Montserrat"}}>
             {isMobile?<Stack maw="100%" my={15}>
-                <Text size="25px" fw={500} c="grey" w="95%" ta="center">Services Provided in Mercy Hospital</Text>
+                <Text size= {isMobile?"18px":"24px"} fw={500} c="4284f4" w="95%" ta="center">Services Provided in Mercy Hospital</Text>
                 <Group maw="95%" mx="auto">
-                    <Text ta="center" size="18px" c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
+                    <Text ta="center" size={isMobile?"16px":"18px"} c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
                     At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
 
                     </Text>

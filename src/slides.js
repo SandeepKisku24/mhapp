@@ -80,8 +80,8 @@ const Slide = ()=>{
     
    
     return(
-        <div className="slides">
-            <div className="slide slide0" > <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
+        <div className="slides" style={{height:isMobile?"300px":"500px"}}>
+            <div className="slide slide0" style={{height:isMobile?"300px":"500px"}}> <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
             <div className="slide1" > 
                 {/* <img src={slide2}/> */}
                 <Card
@@ -92,7 +92,7 @@ const Slide = ()=>{
                 <Card.Section>
                     <Image
                     src={slide2}
-                    h={500}
+                    h={isMobile?"300":"500"}
                     alt="No way!"
                     />
                 </Card.Section>
@@ -107,11 +107,11 @@ const Slide = ()=>{
                     borderRadius:"5px",
                     // zIndex:,
                     padding:"1px"}} >
-                    <Text fw={500} size={isMobile?"12px":"18px"} mt="5" mx="auto" c="#fff" >
+                    <Text fw={500} size={isMobile?"12px":"16px"} mt="5" mx="auto" c="#fff" >
                     We prioritize the health and well-being of every individual by offering a comprehensive range of services, including dental care. 
                     </Text>
 
-                    <Text mt="xs" c="#fff" size={isMobile?"12px":"18px"} mx="auto" >
+                    <Text mt="xs" c="#fff" size={isMobile?"12px":"16px"} mx="auto" >
                     Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
                     </Text>
                 </Stack>
@@ -126,7 +126,7 @@ const Slide = ()=>{
                 <Card.Section>
                     <Image
                     src={slide3}
-                    h={550}
+                    h={isMobile?"300":"500"}
                     alt="No way!"
                     />
                 </Card.Section>
@@ -141,11 +141,11 @@ const Slide = ()=>{
                     borderRadius:"5px",
                     // zIndex:"10",
                     padding:"1px"}} >
-                    <Text fw={500} size={isMobile?"12px":"18px"} mt="5" mx="auto" c="#fff" >
+                    <Text fw={500} size={isMobile?"12px":"16px"} mt="5" mx="auto" c="#fff" >
                     We prioritize the health and well-being of every individual by offering a comprehensive range of services, including excellent imaging services. 
                     </Text>
 
-                    <Text mt="xs" c="#fff" size={isMobile?"12px":"18px"} mx="auto" >
+                    <Text mt="xs" c="#fff" size={isMobile?"12px":"16px"} mx="auto" >
                     Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
                     </Text>
                 </Stack>
@@ -178,7 +178,8 @@ const Slide = ()=>{
                 <Card.Section>
                     <Image
                     src={slide4}
-                    h={500}
+                    h={isMobile?"300":"500"}
+                    w="100%"
                     alt="img not found"
                     />
                 </Card.Section>

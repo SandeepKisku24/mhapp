@@ -15,3 +15,20 @@
     background-image: url("./gallery/homebackground.jpg");
     background-size: cover;
 }
+
+body {
+    font-size: 16px;
+}
+
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 20px;
+    }
+    body {
+        font-size: 14px;
+    }
+  
+    
+  }
+  

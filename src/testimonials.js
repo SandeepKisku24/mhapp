@@ -17,19 +17,29 @@ const Testimonials = ()=>{
 
     return(
 
-        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" bg="#F7FEE2" style={{borderRadius:"0px"}}>
-            <Title pt={10} ta="center" >"Discover heartfelt stories from our patients and their families."</Title>
-            <Carousel withIndicators height={isMobile?"450":"400"} classNames={classes} w="100%">
+        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" bg="#EFF0FF" style={{borderRadius:"0px"}}>
+            <Title pt={10} ta="center" size={isMobile?"18px":"35px"} >"Discover heartfelt stories from our patients and their families."</Title>
+            <Carousel 
+                withIndicators
+                height={isMobile?"600":"550"} classNames={classes} w={isMobile?"100%":"80%"}
+                slideSize={isMobile?{ base: '100%', sm: '90%', md: '100%' }:{ base: '100%', sm: '80%', md: '33.3%' }}
+                slideGap={{ base: 0, sm: '' }}
+                loop
+                align={isMobile?"center":"start"}
+                style={{width:"100%",margin:"auto"}}
+            >
             {
             events.map((event, index) => (
                 <Carousel.Slide key={index}>
                  <Stack my={isMobile ? "20px" : "40px"} gap={5}>
-                      <Image src={event.src} alt="image" h={120} w={120} radius="50%" mx="auto" style={{ zIndex: "3", border: "2px      solid #4285F4" }} />
-                      <Stack bg="#fff" maw={isMobile ? "90%" : "60%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "-40px",  display: "flex", flexDirection: "column", alignItems: "stretch" }}>
-                     <Text w={isMobile ? "90%" : "80%"} mx="auto" ta="justify" pt={40} fw={550} style={{        fontFamily: "garamond" }}>
+                      <Image src={event.src} alt="image" h={isMobile?"120px":"100px"} w={isMobile?"120px":"100px"} radius="50%" mx={isMobile?"auto":"auto"} style={{ zIndex: "3", border: "2px      solid #4285F4" }} />
+                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "-40px",  display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent:"space-between" }} h={isMobile?"450":"420"}>
+                        
+                        <Text w={isMobile ? "95%" : "90%"} my="auto" mx="auto" ta="justify" pt={40} fw={400} style={{        fontFamily: "garamond" }}>
                           <span style={{ fontSize: "20px" }}>"</span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
                         </Text>
                         <Text mx="auto" fw="bold" my={5} size="19px" style={{ fontFamily: "garamond" }}>- {event.name}      </Text>
+                        
                       </Stack>
                     </Stack>
                 </Carousel.Slide>

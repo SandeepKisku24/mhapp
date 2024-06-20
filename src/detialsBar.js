@@ -4,9 +4,12 @@ import { Anchor, Group } from "@mantine/core";
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 import { Link } from "react-router-dom";
+import { mobile } from "./screenSizes";
+import { useMediaQuery } from "@mantine/hooks";
 const DetailsBar = ()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
-        <Group gap={15} justify="right" pr="2%" style={{backgroundColor:"#DB4437", color:"#fff"}}>
+        <Group gap={15} justify="right" pr="2%" style={{backgroundColor:"#DB4437", color:"#fff",fontSize: isMobile?"12px":"16px"}}> 
             <Anchor href="tel:+91-8002877072" underline="never" c= "#fff">
                 <Group>
                 <AirportShuttleIcon style={{

@@ -53,12 +53,14 @@ const Announce = ({number})=>{
                     <div key={id} className="annoucebox">
                         <Group gap="10" my={10}>
                             
-                            <Text className="annouceIcon">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M640-440v-80h160v80H640Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM120-360v-240h160l200-200v640L280-360H120Zm280-246-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
-                            </Text>
-                            <Stack w="80%" gap="2">
+                            {isMobile?<></>:
+                                <Text className="annouceIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M640-440v-80h160v80H640Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM120-360v-240h160l200-200v640L280-360H120Zm280-246-86 86H200v80h114l86 86v-252ZM300-480Z"/></svg>
+                                </Text>
+                            }
+                            <Stack w={isMobile?"100%":"80%"} gap="2" mx="auto">
                             <Text >{note}</Text>
-                            <Text>{date}</Text>
+                            <Text style={{border:" 2px solid #4284f4", width:`${date.length * 9}px`, borderRadius:"5px"} } px={5}>{date}</Text>
                             </Stack>
                         </Group>
                         {/* <div className="annouceIcon">

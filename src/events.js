@@ -6,7 +6,10 @@ import event3 from "./gallery/Newsletters/23 - 08 November News.jpg";
 import event4 from "./gallery/Newsletters/23 - 07 October News.jpg";
 import event5 from "./gallery/Newsletters/23 - 06 September News.jpg";
 import event6 from "./gallery/Newsletters/23 - 05 August News.jpg";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "./screenSizes";
 const Event = ()=>{
+    const isMobile = useMediaQuery(mobile);
 
     const[point,setPoint] =  useState(1);
     const handleTwoClick =()=>{
@@ -31,7 +34,7 @@ const Event = ()=>{
 
     return(
         <div className="events"> 
-            <div className="headingEvents">
+            <div className="headingEvents" style={{fontSize:isMobile?"14px":"20px"}} >
                 Monthly Events
             </div>
             <br/>

@@ -10,9 +10,8 @@ const ImageSection = ()=> {
   return (
         <Group h={400} maw={isMobile?"95%":"90%"} mx="auto">
         <Carousel
-        withIndicators
         height={300}
-        slideSize="33.333333%"
+        slideSize={isMobile?"100%":"33.33%"}
         slideGap="md"
         loop
         align="start"

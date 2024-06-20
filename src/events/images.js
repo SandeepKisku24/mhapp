@@ -3,8 +3,11 @@ import { Card, Image, Text, Overlay, Group, SimpleGrid, Title } from '@mantine/c
 import '@mantine/carousel/styles.css';
 import "./images.css";
 import { slides } from './data';
+import { useMediaQuery } from '@mantine/hooks';
+import { mobile } from '../screenSizes';
 const Images= ({data,onClick})=> {
     // const images = props;
+    const isMobile = useMediaQuery(mobile);
     const handleClick = (index)=>{
       onClick(index);
     }
@@ -13,7 +16,7 @@ const Images= ({data,onClick})=> {
   return (
     <div className='gallery' style={{width : "90%", margin:"auto"}}>
     
-      <Title fz="h1" className="headingEvents">
+      <Title style={{fontSize:isMobile?"18px":"30px"}} className="headingEvents">
         Monthly Events in Mercy Hospital
       </Title>
     
