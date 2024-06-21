@@ -97,8 +97,8 @@ function App() {
         <TopBar/>
         <Routes>
           <Route exact path ="/" element = {<Home/>}/>
-          <Route exact path ="/mhapp" element = {<Home/>}/>
-          <Route  path ="/announce" element = {<Announce number = "0"/>}/>
+          <Route path ="/mhapp" element = {<Home/>}/>
+          <Route path ="/announce" element = {<Announce number = "0"/>}/>
           <Route path ="/service" element = {<Service/>}/>
           <Route path ="/department" element = {<DepartmentsAll/>}/>
           <Route path ="/facility" element = {<Facility/>}/>
