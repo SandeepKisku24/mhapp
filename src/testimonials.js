@@ -38,7 +38,7 @@ const Testimonials = ()=>{
 
                       <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "40px",  display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent:"space-between" }} h={isMobile?"480":"420"}>
                         <Image src={quote} h={30} w={30} ml={isMobile?"20":"10"} mt={isMobile?"30":"10"}/>
-                        <Text w={isMobile ? "95%" : "90%"} my="auto" mx="auto" ta="justify" pt={isMobile?"":"40"} fw={400} style={{        fontFamily: "garamond" }}>
+                        <Text w={isMobile ? "95%" : "90%"} my="auto" mx="auto" ta="justify" pt={isMobile?"":"40"} fw={400} style={{        fontFamily: "garamond" }} lineClamp={6}>
                           <span style={{ fontSize: "20px" }}></span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
                         </Text>
                         <Group pb={10} gap={2} >
