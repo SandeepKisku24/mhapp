@@ -32,14 +32,14 @@ const Testimonials = ()=>{
             {
             events.map((event, index) => (
                 <Carousel.Slide key={index}>
-                 <Stack my={isMobile ? "10px" : "40px"} gap={5}>
+                 <Stack my={isMobile ? "10px" : "10px"} gap={0}>
 
                         
 
-                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "40px",  display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent:"space-between" }} h={isMobile?"480":"420"}>
+                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h={isMobile?"350":"350"} gap={0}>
                         <Image src={quote} h={30} w={30} ml={isMobile?"20":"10"} mt={isMobile?"30":"10"}/>
-                        <Text w={isMobile ? "95%" : "90%"} my="auto" mx="auto" ta="justify" pt={isMobile?"":"0"} fw={400} style={{        fontFamily: "garamond" }} lineClamp={6}>
-                          <span style={{ fontSize: "20px" }}></span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
+                        <Text w={isMobile ? "95%" : "90%"} my="20" mx="auto" ta="justify" pt={isMobile?"":"0"} fw={400} style={{        fontFamily: "garamond" }} lineClamp={6}>
+                           <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
                         </Text>
                         <Group pb={10} gap={2} >
                             <Image
