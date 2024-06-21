@@ -91,7 +91,7 @@ function App() {
     <MantineProvider>
       <div className="App">
         
-        <Router  basename="/mhapp" >
+        <Router  basename="/" >
         <ScrollToTop/>
         {isMobile?<></>:<DetailsBar/>}
         <TopBar/>
