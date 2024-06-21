@@ -9,7 +9,7 @@ import { useMediaQuery } from "@mantine/hooks";
 const DetailsBar = ()=>{
     const isMobile = useMediaQuery(mobile);
     return(
-        <Group gap={15} justify="right" pr="2%" style={{backgroundColor:"#DB4437", color:"#fff",fontSize: isMobile?"12px":"16px"}}> 
+        <Group gap={15} justify="right" pr="2%" style={{backgroundColor:"#7C469B", color:"#fff",fontSize: isMobile?"12px":"16px"}}> 
             <Anchor href="tel:+91-8002877072" underline="never" c= "#fff">
                 <Group>
                 <AirportShuttleIcon style={{
@@ -30,7 +30,7 @@ const DetailsBar = ()=>{
                 Enquiry +91 9546233931 
                 </Group>
             </Anchor>
-            <Link to="/faq" style={{backgroundColor:"#9B1C1C"}} ><Anchor c= "#fff" underline="never" px={10} style={{backgroundColor:"#9B1C1C", textAlign:"center"}} w={80}>FAQ</Anchor>
+            <Link to="/faq" style={{backgroundColor:"#4A2A5D  "}} ><Anchor c= "#fff" underline="never" px={10} style={{backgroundColor:"", textAlign:"center"}} w={80}>FAQ</Anchor>
             </Link>
         </Group>
     )
