@@ -4,6 +4,7 @@ import { Carousel } from '@mantine/carousel';
 import { IconArrowRight, IconArrowLeft } from '@tabler/icons-react';
 import "./testimonials.css";
 import classes from './testimonials.css';
+import quote from "./gallery/pictures/quote.svg"
 
 import { events } from "./testdata";
 import { mobile } from "./screenSizes";
@@ -18,7 +19,7 @@ const Testimonials = ()=>{
     return(
 
         <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" bg="#EFF0FF" style={{borderRadius:"0px"}}>
-            <Title pt={10} ta="center" size={isMobile?"18px":"35px"} >"Discover heartfelt stories from our patients and their families."</Title>
+            <Text pt={10} ta="center" size={isMobile?"18px":"35px"} className="headingsall" >"Discover heartfelt stories from our patients and their families."</Text>
             <Carousel 
                 withIndicators
                 height={isMobile?"600":"550"} classNames={classes} w={isMobile?"100%":"80%"}
@@ -31,14 +32,35 @@ const Testimonials = ()=>{
             {
             events.map((event, index) => (
                 <Carousel.Slide key={index}>
-                 <Stack my={isMobile ? "20px" : "40px"} gap={5}>
-                      <Image src={event.src} alt="image" h={isMobile?"120px":"100px"} w={isMobile?"120px":"100px"} radius="50%" mx={isMobile?"auto":"auto"} style={{ zIndex: "3", border: "2px      solid #4285F4" }} />
-                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "-40px",  display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent:"space-between" }} h={isMobile?"450":"420"}>
+                 <Stack my={isMobile ? "10px" : "40px"} gap={5}>
+
                         
-                        <Text w={isMobile ? "95%" : "90%"} my="auto" mx="auto" ta="justify" pt={40} fw={400} style={{        fontFamily: "garamond" }}>
-                          <span style={{ fontSize: "20px" }}>"</span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
+
+                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "40px",  display: "flex", flexDirection: "column", alignItems: "stretch", justifyContent:"space-between" }} h={isMobile?"480":"420"}>
+                        <Image src={quote} h={30} w={30} ml={isMobile?"20":"10"} mt={isMobile?"30":"10"}/>
+                        <Text w={isMobile ? "95%" : "90%"} my="auto" mx="auto" ta="justify" pt={isMobile?"":"40"} fw={400} style={{        fontFamily: "garamond" }}>
+                          <span style={{ fontSize: "20px" }}></span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
                         </Text>
-                        <Text mx="auto" fw="bold" my={5} size="19px" style={{ fontFamily: "garamond" }}>- {event.name}      </Text>
+                        <Group pb={10} gap={2} >
+                            <Image
+                               src={event.src}
+                               alt="image"
+                               h={isMobile ? "60px" : "80px"}
+                               w={isMobile ? "60px" : "80px"}
+                               radius="50%"
+                               mx={isMobile ? "auto" : "10px"}  
+                               style={{ zIndex: "3" }}
+                            />
+                            <Text
+                             mx={isMobile ? "auto" : "10px"}  
+                             fw="bold"
+                             my={0}  
+                             size="19px"
+                             style={{ fontFamily: "garamond" }}
+                            >
+                             {event.name}
+                            </Text>
+</Group>
                         
                       </Stack>
                     </Stack>

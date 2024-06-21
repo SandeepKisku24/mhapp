@@ -13,9 +13,9 @@ const Service = ()=>{
     const [ser,setService] = useState(-1);
     return(
         // FFFFE0
-        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#F8F9FA",fontFamily:"Montserrat"}}>
+        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#F8F9FA"}}>
             {isMobile?<Stack maw="100%" my={15}>
-                <Text size= {isMobile?"18px":"24px"} fw={500} c="4284f4" w="95%" ta="center">Services Provided in Mercy Hospital</Text>
+                <Text size= {isMobile?"18px":"30px"} c="#4285F4" w="95%" ta="center" className="headingsall">Services Provided in Mercy Hospital</Text>
                 <Group maw="95%" mx="auto">
                     <Text ta="center" size={isMobile?"16px":"18px"} c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
                     At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
@@ -24,9 +24,9 @@ const Service = ()=>{
                 </Group>
             </Stack>:
             <Group maw="100%" my={15}>
-            <Text size="25px" fw={500} c="grey" w="50%" ta="center">Services Provided in Mercy Hospital</Text>
+            <Text size="30px"  c="#4285F4" w="50%" ta="center"  className="headingsall">Services Provided in Mercy Hospital</Text>
             <Group maw="40%">
-                <Text ta="justify" size="18px" c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
+                <Text ta="justify" size="18px" c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '', fontFamily:"Garamond" }} > 
                 At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
 
                 </Text>
@@ -46,7 +46,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center" w= "100%" size="sm" className="headingService">Emergency Service</Text>   
                   </Group>
 
-                  <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                       With skilled healthcare professionals and advanced medical ...
                   </Text>
 
@@ -69,7 +69,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center"  w= "100%" size="sm" className="headingService">Imaging Service</Text>   
                   </Group>
 
-                  <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                       Chest X-ray, Skull X-ray, Hand X-ray, Wrist X-ray, PNS X-ray, Knee X-ray, Ankle X-ray...
                   </Text>
 
@@ -92,7 +92,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center" w= "100%" size="sm" className="headingService">ECG Service</Text>   
                   </Group>
 
-                  <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                       We provide ECG services for best diagnostic practices    ...
                   </Text>
 
@@ -115,7 +115,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center" w= "100%" size="sm" className="headingService">Dental Service</Text>   
                   </Group>
 
-                  <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                   Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
                   </Text>
 
@@ -142,7 +142,7 @@ const Service = ()=>{
                             <Text fw="500" ta="center" w= "100%" size="xl" className="headingService">Emergency Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                        <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                             With skilled healthcare professionals and advanced medical ...
                         </Text>
 
@@ -165,7 +165,7 @@ const Service = ()=>{
                             <Text fw="500" ta="center"  w= "100%" size="xl" className="headingService">Imaging Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                        <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                             Chest X-ray, Skull X-ray, Hand X-ray, Wrist X-ray, PNS X-ray, Knee X-ray, Ankle X-ray...
                         </Text>
 
@@ -188,7 +188,7 @@ const Service = ()=>{
                             <Text fw="500" ta="center" w= "100%" size="xl" className="headingService">ECG Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                        <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                             We provide ECG services for best diagnostic practices    ...
                         </Text>
 
@@ -211,7 +211,7 @@ const Service = ()=>{
                             <Text fw="500" ta="center" w= "100%" size="xl" className="headingService">Dental Service</Text>   
                         </Group>
 
-                        <Text size="md" c="dimmed" ta="justify" className="halfService" lineClamp={2}>
+                        <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
                         Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
                         </Text>
 

@@ -44,7 +44,7 @@ const Announce = ({number})=>{
     return(
         <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":"auto"} gap={isMobile?"0":"0"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',backgroundColor:"#fff", borderRadius:"5px"}} id={number!=0?"":"full"} >
                 
-                <Group justify="center" bg="#fff" className="headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px', borderBottom: "1px solid #000", fontWeight:"bold"}} >Announcements</Group>
+                <Text bg="#fff" className="headingsall headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px', borderBottom: "1px solid #000", textAlign:"center"}} >Announcements</Text>
                 <br/>
                 <br/>
                 <div className="announce">

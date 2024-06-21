@@ -16,9 +16,9 @@ const Images= ({data,onClick})=> {
   return (
     <div className='gallery' style={{width : "90%", margin:"auto"}}>
     
-      <Title style={{fontSize:isMobile?"18px":"30px"}} className="headingEvents">
-        Monthly Events in Mercy Hospital
-      </Title>
+      <Text style={{fontSize:isMobile?"18px":"30px"}} ta="center" className="headingsall">
+        Events in Mercy Hospital
+      </Text>
     
     <Carousel
     height={300}

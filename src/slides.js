@@ -82,128 +82,87 @@ const Slide = ()=>{
     return(
         <div className="slides" style={{height:isMobile?"300px":"500px"}}>
             <div className="slide slide0" style={{height:isMobile?"300px":"500px"}}> <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
-            <div className="slide1" > 
-                {/* <img src={slide2}/> */}
-                <Card
-                shadow="sm"
-                padding="xl"
-                
-                >
-                <Card.Section>
-                    <Image
-                    src={slide2}
-                    h={isMobile?"300":"500"}
-                    alt="No way!"
-                    />
-                </Card.Section>
-
-                <Stack gap={0} pb={5}  style={{
-                    backgroundColor:"#34A853",
-                    position:"absolute",
-                    top:"410px",
-                    width:"90%",
-                    height:"80px",
-                    left:"5%",
-                    borderRadius:"5px",
-                    // zIndex:,
-                    padding:"1px"}} >
-                    <Text fw={500} size={isMobile?"12px":"16px"} mt="5" mx="auto" c="#fff" >
-                    We prioritize the health and well-being of every individual by offering a comprehensive range of services, including dental care. 
-                    </Text>
-
-                    <Text mt="xs" c="#fff" size={isMobile?"12px":"16px"} mx="auto" >
-                    Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
-                    </Text>
-                </Stack>
-                </Card>
-            </div>
-            <div className="slide2" > 
-            <Card
-                shadow="sm"
-                padding="xl"
-                
-                >
-                <Card.Section>
-                    <Image
-                    src={slide3}
-                    h={isMobile?"300":"500"}
-                    alt="No way!"
-                    />
-                </Card.Section>
-
-                <Stack gap={0} pb={5}  style={{
-                    backgroundColor:"#34A853",
-                    position:"absolute",
-                    top:"410px",
-                    width:"90%",
-                    left:"5%",
-                    height:"80px",
-                    borderRadius:"5px",
-                    // zIndex:"10",
-                    padding:"1px"}} >
-                    <Text fw={500} size={isMobile?"12px":"16px"} mt="5" mx="auto" c="#fff" >
-                    We prioritize the health and well-being of every individual by offering a comprehensive range of services, including excellent imaging services. 
-                    </Text>
-
-                    <Text mt="xs" c="#fff" size={isMobile?"12px":"16px"} mx="auto" >
-                    Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
-                    </Text>
-                </Stack>
-                </Card>
-            {/* <div className="slide1Content">
+            <div className="slide1" style={{ height: isMobile ? "300px" : "500px", position: "relative" }}> 
+    <Card shadow="sm" padding="xl" style={{ height: "100%" }}>
+        <Image
+            fit="cover"
+            src={slide2}
+            alt="No way!"
+            style={{ height: "100%", width: "100%", objectFit: "cover" }}
+        />
+        <Stack 
+            gap={0} 
+            pb={5}  
+            style={{
+                backgroundColor: "#7C469B",
+                position: "absolute",
+                bottom: 0,
+                width: "90%",
+                height: isMobile?"60px":"80px",
+                left: "5%",
+                borderRadius: "5px",
+                padding: "1px"
+            }}
+        >
             
-            <div className="slide2WrittenPart">
-                <div className="biggerSlide2">
-                Medical <span style={{}}>Health</span> Camps 
-                </div>
-                <div className="smallerSlide2">
-                    
-                Our hospital conducts monthly free health camps, extending essential medical services to underserved communities, promoting wellness, and fostering community health empowerment through accessibility and compassion.
-                </div>
-                
-            </div>
-            <div className="slide2Image">
-            <img src ={slide3} alt ="img not found" />  
-            </div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,149.3C640,171,800,245,960,261.3C1120,277,1280,235,1360,213.3L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg> */}
-            </div>
-            <div className="slide3" >
+            <Text mt="xs" c="#fff" size={isMobile ? "8px" : "16px"} my="auto" ta="center" mx="auto" style={{textTransform:"uppercase",lineHeight:"1.5", wordSpacing:"0.2em"}}>
+            <span style={{fontSize: isMobile?"12px":"22px"}}>o</span>ur <span style={{fontSize: isMobile?"12px":"22px"}}>c</span>ommitment is to <span style={{fontSize: isMobile?"12px":"22px"}}>p</span>rovide <span style={{fontSize: isMobile?"12px":"22px"}}>e</span>xceptional <span style={{fontSize: isMobile?"12px":"22px"}}>h</span>ealthcare to all, <span style={{fontSize: isMobile?"12px":"22px"}}>e</span>nsuring <span style={{fontSize: isMobile?"12px":"22px"}}>q</span>uality and <span style={{fontSize: isMobile?"12px":"22px"}}>c</span>onvenience <span style={{fontSize: isMobile?"12px":"22px"}}>f</span>or our <span style={{fontSize: isMobile?"12px":"22px"}}>c</span>ommunity.
+            </Text>
+        </Stack>
+    </Card>
+</div>
 
-            <Card
-                shadow="sm"
-                padding="xl"
-                
-                >
-                <Card.Section>
-                    <Image
-                    src={slide4}
-                    h={isMobile?"300":"500"}
-                    w="100%"
-                    alt="img not found"
-                    />
-                </Card.Section>
+<div className="slide2" style={{ height: isMobile ? "300px" : "500px", position: "relative", width: "95%", margin: "0 auto" }}> 
+    <Card shadow="sm" padding="xl" style={{ height: "97%" }} my={10}>
+        <Card.Section style={{ height: "100%" }}>
+            <Image
+                src={slide3}
+                alt="No way!"
+                style={{ height: "100%", width: "100%", objectFit: "cover", objectPosition: "top center" }}
+            />
+        </Card.Section>
 
-                
-                </Card>
-            {/* <div className="slide1Content">
-            
-            <div className="slide2WrittenPart">
-                <div className="biggerSlide3">
-                Mercy hospital Poreyahat 
-                </div>
-                <div className="smallerSlide3">
-                    
-                Our hospital excels with top-tier medical expertise, advanced facilities, and compassionate care, earning recognition as a leading healthcare provider in the region.
-                </div>
-                
-            </div>
-            <div className="slide2Image">
-            <img src ={slide4} alt ="img not found" />  
-            </div>
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#d0bb68" fill-opacity="1" d="M0,160L480,224L960,256L1440,160L1440,320L960,320L480,320L0,320Z"></path></svg> */}
-            </div>
+        <Stack 
+            gap={0} 
+            pb={5}  
+            mx="auto"
+            style={{
+                backgroundColor: "#7C469B",
+                position: "absolute",
+                bottom: 0,
+                width: isMobile?"100%":"90%",
+                height: isMobile?"60px":"80px",
+                left: isMobile?"0%":"5%",
+                borderRadius: "5px",
+                padding: "1px"
+            }}
+        >
+            <Text fw={500} size={isMobile ? "8px" : "16px"} ta="center" my="auto" mx="auto" c="#fff" style={{textTransform:"uppercase",lineHeight:"1.5", wordSpacing:"0.2em"}}>
+                <span style={{fontSize: isMobile?"12px":"22px"}}>W</span>e <span style={{fontSize: isMobile?"12px":"22px"}}>p</span>rioritize the <span style={{fontSize: isMobile?"12px":"22px"}}>h</span>ealth and <span style={{fontSize: isMobile?"12px":"22px"}}>W</span>ell-<span style={{fontSize: isMobile?"12px":"22px"}}>b</span>eing of <span style={{fontSize: isMobile?"12px":"22px"}}>e</span>very <span style={{fontSize: isMobile?"12px":"22px"}}>i</span>ndividual by <span style={{fontSize: isMobile?"12px":"22px"}}>o</span>ffering a <span style={{fontSize: isMobile?"12px":"22px"}}>c</span>omprehensive <span style={{fontSize: isMobile?"12px":"22px"}}>r</span>ange of <span style={{fontSize: isMobile?"12px":"22px"}}>s</span>ervices, <span style={{fontSize: isMobile?"12px":"22px"}}>i</span>ncluding <span style={{fontSize: isMobile?"12px":"22px"}}>e</span>xcellent <span style={{fontSize: isMobile?"12px":"22px"}}>i</span>maging <span style={{fontSize: isMobile?"12px":"22px"}}>s</span>ervices.
+            </Text>
+            {/* <Text mt="xs" c="#fff" size={isMobile ? "12px" : "18px"} mx="auto">
+                Our commitment is to provide exceptional healthcare to all, ensuring quality and convenience for our community.
+            </Text> */}
+        </Stack>
+    </Card>
+</div>
+
+
+
+<div className="slide3" style={{ height: isMobile ? "300px" : "500px", width: "100%", margin: "0 auto", position: "relative" }}>
+    <Card shadow="sm" padding="xl" style={{ height: "100%", width: "100%" }}>
+        <Card.Section style={{ height: "100%", width: "100%", margin: "auto" }}>
+            <Image
+                src={slide4}
+                alt="img not found"
+                style={{ height: "100%", width: "100%", objectFit: "contain" }}
+            />
+        </Card.Section>
+    </Card>
+</div>
+
+
+
             
 
             <div className="left arrow" onClick={()=>{
