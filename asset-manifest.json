@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mhapp/static/css/main.acdeeb0f.css",
-    "main.js": "/mhapp/static/js/main.cc5638f9.js",
+    "main.css": "/mhapp/static/css/main.ee205ddd.css",
+    "main.js": "/mhapp/static/js/main.91998e1d.js",
     "static/media/Dental.jpg": "/mhapp/static/media/Dental.d58d0bd9b75b81cfdbb0.jpg",
     "static/media/Dental flex.jpg": "/mhapp/static/media/Dental flex.c1172b654f1879ff27f9.jpg",
     "static/media/Xray1.jpg": "/mhapp/static/media/Xray1.2dc62c25980cd9c449eb.jpg",
@@ -43,11 +43,11 @@
     "static/media/criticalcare.webp": "/mhapp/static/media/criticalcare.46490c367b4599e49dde.webp",
     "index.html": "/mhapp/index.html",
     "static/media/quote.svg": "/mhapp/static/media/quote.fe11278aa05caa6c32f63fd220483042.svg",
-    "main.acdeeb0f.css.map": "/mhapp/static/css/main.acdeeb0f.css.map",
-    "main.cc5638f9.js.map": "/mhapp/static/js/main.cc5638f9.js.map"
+    "main.ee205ddd.css.map": "/mhapp/static/css/main.ee205ddd.css.map",
+    "main.91998e1d.js.map": "/mhapp/static/js/main.91998e1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.acdeeb0f.css",
-    "static/js/main.cc5638f9.js"
+    "static/css/main.ee205ddd.css",
+    "static/js/main.91998e1d.js"
   ]
 }
