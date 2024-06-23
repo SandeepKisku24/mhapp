@@ -80,10 +80,10 @@ const Slide = ()=>{
     
    
     return(
-        <div className="slides" style={{height:isMobile?"300px":"500px"}}>
+        <div className="slides" style={{height:isMobile?"300px":"500px", width: isMobile?"100%":"90%", marginLeft:"auto",marginRight:"auto", backgroundColor:"#EFF0FF"}}>
             <div className="slide slide0" style={{height:isMobile?"300px":"500px"}}> <div className="innerSlide"> <img src ={slide1} alt ="img not found" /> </div> </div>
             <div className="slide1" style={{ height: isMobile ? "300px" : "500px", position: "relative" }}> 
-    <Card shadow="sm" padding="xl" style={{ height: "100%" }}>
+    <Card shadow="sm" padding="xl" style={{ height: "100%" }} bg="#EFF0FF">
         <Image
             fit="cover"
             src={slide2}
@@ -112,8 +112,8 @@ const Slide = ()=>{
     </Card>
 </div>
 
-<div className="slide2" style={{ height: isMobile ? "300px" : "500px", position: "relative", width: "95%", margin: "0 auto" }}> 
-    <Card shadow="sm" padding="xl" style={{ height: "97%" }} my={10}>
+<div className="slide2" style={{ height: isMobile ? "300px" : "500px", position: "relative", width: "95%", margin: "0 auto", }}> 
+    <Card shadow="sm" padding="xl" style={{ height: "97%" }} my={10} >
         <Card.Section style={{ height: "100%" }}>
             <Image
                 src={slide3}
@@ -150,7 +150,7 @@ const Slide = ()=>{
 
 
 <div className="slide3" style={{ height: isMobile ? "300px" : "500px", width: "100%", margin: "0 auto", position: "relative" }}>
-    <Card shadow="sm" padding="xl" style={{ height: "100%", width: "100%" }}>
+    <Card shadow="sm" padding="xl" style={{ height: "100%", width: "100%" }} bg="#EFF0FF">
         <Card.Section style={{ height: "100%", width: "100%", margin: "auto" }}>
             <Image
                 src={slide4}

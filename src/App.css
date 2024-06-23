@@ -33,5 +33,6 @@
   }
 
   .headingsall{
-    font-family: 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600 !important;
   }

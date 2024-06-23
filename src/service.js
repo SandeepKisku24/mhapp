@@ -17,7 +17,7 @@ const Service = ()=>{
             {isMobile?<Stack maw="100%" my={15}>
                 <Text size= {isMobile?"18px":"30px"} c="#4285F4" w="95%" ta="center" className="headingsall">Services Provided in Mercy Hospital</Text>
                 <Group maw="95%" mx="auto">
-                    <Text ta="center" size={isMobile?"16px":"18px"} c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
+                    <Text ta="center" size={isMobile?"16px":"18px"} c="" fw={600} style={{ lineHeight: '1.6', letterSpacing: '' }} > 
                     At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
 
                     </Text>
@@ -26,7 +26,7 @@ const Service = ()=>{
             <Group maw="100%" my={15}>
             <Text size="30px"  c="#4285F4" w="50%" ta="center"  className="headingsall">Services Provided in Mercy Hospital</Text>
             <Group maw="40%">
-                <Text ta="justify" size="18px" c="black" fw={400} style={{ lineHeight: '1.6', letterSpacing: '', fontFamily:"Garamond" }} > 
+                <Text ta="justify" size="18px" c="" fw={600} style={{ lineHeight: '1.6', letterSpacing: '', fontFamily:"Garamond" }} > 
                 At Mercy Hospital, we provide a wide range of medical services for the holistic treatment of our patients, ensuring quality health care.
 
                 </Text>
@@ -129,7 +129,7 @@ const Service = ()=>{
             </Group>
             
             :
-            <Group gap={25} maw="100%" p={0} my={15} >
+            <Group gap={25} maw="100%" p={0} my={15} style={{fontFamily:"garamond"}} >
                   <Card shadow="sm" style={{width:"250px", height:"300px", margin:"5px", cursor:"pointer"}} padding="lg" radius="md"  withBorder onMouseEnter={()=>{
                             setService(0);
                         }} onMouseLeave={()=>{ setService(-1)}}>

@@ -1,10 +1,11 @@
 import { Carousel } from '@mantine/carousel';
-import { Card, Image, Text, Overlay, Group, SimpleGrid, Title } from '@mantine/core';
+import { Card, Image, Text, Overlay, Group,Stack, SimpleGrid, Title } from '@mantine/core';
 import '@mantine/carousel/styles.css';
 import "./images.css";
 import { slides } from './data';
 import { useMediaQuery } from '@mantine/hooks';
 import { mobile } from '../screenSizes';
+import { grey } from '@mui/material/colors';
 const Images= ({data,onClick})=> {
     // const images = props;
     const isMobile = useMediaQuery(mobile);
@@ -14,11 +15,15 @@ const Images= ({data,onClick})=> {
     
 
   return (
-    <div className='gallery' style={{width : "90%", margin:"auto"}}>
+    <div className='gallery' style={{width : isMobile?"95%":"90%", margin:"auto", height: isMobile?"":"70vh", backgroundColor:"#F8F9FA"}} >
     
-      <Text style={{fontSize:isMobile?"18px":"30px"}} ta="center" className="headingsall">
-        Events in Mercy Hospital
-      </Text>
+      <Stack mx={isMobile?"0":"2.5%"} gap={1}>
+          <Text style={{fontSize:isMobile?"18px":"30px"}} pt={20} mb={isMobile?"":"0"} ta={isMobile?"center":"left"} className="headingsall" >
+            Events in Mercy Hospital
+          </Text>
+          <Text pb={isMobile?"10":"30"} fz={isMobile?"14px":"20px"} c="#4285F4" style={{fontFamily:"Garamond"}} fw={600}>
+           Stay connected with the latest events and activities at Mercy Hospital, and join us in making a positive impact!      </Text>
+      </Stack>
     
     <Carousel
     height={300}
@@ -31,16 +36,16 @@ const Images= ({data,onClick})=> {
     >
   {
     slides.map((slide,index) => (
-      <Carousel.Slide key={index} className='image' onClick={()=>{handleClick(index)}}> 
-        <Card key={index} shadow="sm" radius="md" style={{ position: 'relative' }}> 
+      <Carousel.Slide key={index} className='image' onClick={()=>{handleClick(index)}} > 
+        <Card key={index} shadow="sm" radius="md" style={{ position: 'relative' }} w={isMobile?"90%":"90%"} mx="auto" bg="#fff"> 
         <div className='galImg'>
         <Image style={{height:"", overflow:"hidden"}} src={slide.src} alt={slide.src} />
         </div>
         
         </Card>
 
-        <Group className='gal' justify='center' style={{ backgroundColor:"#fff",padding:"1%",borderRadius:"5px", zIndex: 5 }}> 
-        <Text c="grey" weight={700} size="lg" bg="#E8E8E8" px={30} my={5} style={{borderRadius:"5px"}}>{slide.title}</Text> 
+        <Group className='gal' justify='center' style={{ backgroundColor:"#fff",padding:"1%",borderRadius:"5px", zIndex: 5 }} maw="100%"> 
+        <Text c="#fff" weight={700} size="lg" bg="#7C469B" px={30} my={5} style={{borderRadius:"5px"}}>{slide.title}</Text> 
         </Group>
       </Carousel.Slide>
     ))

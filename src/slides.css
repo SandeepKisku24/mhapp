@@ -1,8 +1,7 @@
 
 .slides{
-    width: 100%;
     position: relative;
-
+    margin: "auto";
     overflow: hidden;
     
 }
