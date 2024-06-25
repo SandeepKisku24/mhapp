@@ -40,7 +40,7 @@ const Testimonials = ()=>{
 
                         
 
-                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h ={isMobile ? (index === see ? 450 : 350) : (index === see ? 450 : 350) }gap={0}>
+                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h ={isMobile ? (index === see ? 450 : 350) : (index === see ? 400 : 350) }gap={0}>
                         <Image src={quote} h={30} w={30} ml={isMobile?"20":"10"} mt={isMobile?"30":"10"}/>
                         <Text w={isMobile ? "95%" : "90%"} my="20" mx="auto"  ta="justify" pt={isMobile?"":"0"} fw={400} style={{ fontSize: isMobile?"16px":"16px" }} lineClamp={see!==index?6:30}>
                            <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
@@ -69,8 +69,13 @@ const Testimonials = ()=>{
                         :<></>}
 
                         <Text onClick={()=>{
-                            setSee(index);
-                        }}  ta="right" ml="40%" c="#4285F4" pr={10} style={{cursor:"pointer",width:"50%", float:"right"}}> Read More &gt; &gt; &gt;  </Text>
+                            if(see==-1){
+                                setSee(index);
+                            }
+                            else{
+                                setSee(-1);
+                            }
+                        }}  ta="right" ml="40%" c="#4285F4" pr={10} style={{cursor:"pointer",width:"50%", float:"right"}}> Read {see===-1?<span>More</span>:<span>Less</span>} &gt; &gt; &gt;  </Text>
                         
                       </Stack>
 
