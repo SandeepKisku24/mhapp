@@ -365,7 +365,7 @@ const infolinks = infodata.map((item) => (
               />
             </Center>
           </UnstyledButton>
-          <Collapse in={linksOpened}  style={{fontSize:"12px", marginRight:"5%", display : mobileMenu===1?"":"none"} }>{owlinks}</Collapse>
+          <Collapse in={linksOpened}  style={{fontSize:"12px", marginLeft:"5%", display : mobileMenu===1?"":"none"} }>{owlinks}</Collapse>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <a component="span" mr={5} className={classes.link} >
@@ -381,7 +381,7 @@ const infolinks = infodata.map((item) => (
               />
             </Center>
           </UnstyledButton>
-          <Collapse in={linksOpened} style={{fontSize:"12px", marginRight:"5%" ,display : mobileMenu===2?"":"none"}}>{deplinks}{doclinks} </Collapse>
+          <Collapse in={linksOpened} style={{fontSize:"12px", marginleft:"5%" ,display : mobileMenu===2?"":"none"}}>{deplinks}{doclinks} </Collapse>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <a component="span" mr={5} className={classes.link}>
@@ -397,7 +397,7 @@ const infolinks = infodata.map((item) => (
               />
             </Center>
           </UnstyledButton>
-          <Collapse in={linksOpened} style={{fontSize:"12px", marginRight:"5%",display : mobileMenu===3?"":"none"}}>{serlinks}</Collapse>
+          <Collapse in={linksOpened} style={{fontSize:"12px", marginLeft:"5%",display : mobileMenu===3?"":"none"}}>{serlinks}</Collapse>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <a component="span" mr={5} className={classes.link}>
@@ -413,7 +413,7 @@ const infolinks = infodata.map((item) => (
               />
             </Center>
           </UnstyledButton>
-          <Collapse in={linksOpened} style={{fontSize:"12px", marginRight:"5%",display : mobileMenu===4?"":"none"}}>{infolinks}</Collapse>
+          <Collapse in={linksOpened} style={{fontSize:"12px", marginLeft:"5%",display : mobileMenu===4?"":"none"}}>{infolinks}</Collapse>
           
   
         </ScrollArea>
