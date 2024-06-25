@@ -41,15 +41,13 @@ const Query = () => {
   return (
     <Stack>
       <Title>Let us know your query</Title>
-      <form onSubmit={form.onSubmit(handleSubmit)} onChange={()=>{
-        setFormStatus('');
-      }}>
+      <form onSubmit={form.onSubmit(handleSubmit)} >
         <TextInput
           label="First name"
           placeholder="First name"
           key={form.key('firstName')}
           {...form.getInputProps('firstName')}
-          c="white"
+          c="black"
         />
         <TextInput
           label="Last name"
@@ -57,7 +55,7 @@ const Query = () => {
           mt="md"
           key={form.key('lastName')}
           {...form.getInputProps('lastName')}
-          c="white"
+          c="black"
         />
         <TextInput
           type="text"
@@ -66,7 +64,7 @@ const Query = () => {
           mt="md"
           key={form.key('message')}
           {...form.getInputProps('message')}
-          c="white"
+          c="black"
         />
         <Button type="submit" mt="md">
           Submit
