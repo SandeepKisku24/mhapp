@@ -26,7 +26,7 @@ return(
 
         </Stack>
 
-        <Stack justify="flex-start" w={150} gap={5} c="#5A5A5A" >
+        <Stack justify="flex-start" w= {isMobile?"40%":"150"} gap={5} c="#5A5A5A" >
         <Text size={isMobile?"16px":"18px"}fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}> Departments</Text>
 
             {depdata.map((item,index) => (
@@ -37,7 +37,7 @@ return(
 
         </Stack>
 
-        <Stack justify="flex-start" w={150} gap={5}>
+        <Stack justify="flex-start" w={isMobile?"40%":"150"} gap={5}>
         <Text size={isMobile?"16px":"18px"} fw={600} c="#5A5A5A" style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}>Doctors</Text>
             {docdata.map((item,index) => (
             <Link to={item.link} key={index}>
@@ -46,7 +46,7 @@ return(
             ))}
 
         </Stack>
-        <Stack justify="flex-start" w={150} gap={5}>
+        <Stack justify="flex-start" w={isMobile?"40%":"150"} gap={5}>
         <Text size={isMobile?"16px":"18px"} fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}} c="#5A5A5A" >Services</Text>
             {serdata.map((item,index) => (
             <Link to={item.link} key={index}>
@@ -55,7 +55,7 @@ return(
             ))}
 
         </Stack>
-        <Stack justify="flex-start" w={150} gap={5} c="#5A5A5A" >
+        <Stack justify="flex-start" w={isMobile?"40%":"150"} gap={5} c="#5A5A5A" >
         <Text size={isMobile?"16px":"18px"} fw={550} style={{borderBottom:"1px solid #000", paddingBottom: "4px", fontFamily:"garamond"}}>Information</Text>
             {infodata.map((item,index) => (
             <Link to={item.link} key={index}>
