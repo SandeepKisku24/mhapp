@@ -69,13 +69,13 @@ const Testimonials = ()=>{
                         :<></>}
 
                         <Text onClick={()=>{
-                            if(see==-1){
+                            if(see===-1){
                                 setSee(index);
                             }
                             else{
                                 setSee(-1);
                             }
-                        }}  ta="right" ml="40%" c="#4285F4" pr={10} style={{cursor:"pointer",width:"50%", float:"right"}}> Read {see===-1?<span>More</span>:<span>Less</span>} &gt; &gt; &gt;  </Text>
+                        }}  ta="right" ml="40%" c="#4285F4" pr={10} style={{cursor:"pointer",width:"50%", float:"right"}}> Read {see===index?<span>Less</span>:<span>More</span>} &gt; &gt; &gt;  </Text>
                         
                       </Stack>
 
