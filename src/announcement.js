@@ -60,7 +60,7 @@ const Announce = ({number})=>{
                             }
                             <Stack w={isMobile?"100%":"80%"} gap="2" mx="auto">
                             <Text >{note}</Text>
-                            <Text style={{border:" 2px solid #4284f4", width:`${date.length * 9}px`, borderRadius:"5px"} } px={5}>{date}</Text>
+                            <Text style={{borderBottom:" 1px solid #4284f4", width:`${date.length * 9}px`} } px={5}>{date}</Text>
                             </Stack>
                         </Group>
                         {/* <div className="annouceIcon">
