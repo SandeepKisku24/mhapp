@@ -6,7 +6,7 @@
     height: 500px;
 }
 .visitorHeading{
-    font-size: 25px;
+    
     height: 35px;
     /* background-color: #d0bb68; */
     background-color: #4285F4;
@@ -15,7 +15,6 @@
 }
 .visitorInfoContent{
     margin-top: 5%;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -24,4 +23,8 @@
 }
 .visitTopic{
     font-weight: bold;
+}
+
+@media (max-width: 480px){
+
 }

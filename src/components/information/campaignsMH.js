@@ -1,10 +1,13 @@
 import React from "react";
 import "./campaignsMH.css"
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const Campaigns =()=>{
+    const isMobile = useMediaQuery(mobile);
     return(
         <div className="healthCampaigns">
             <div className="healthCampHeading">Mercy Hospital Free Health Campaigns</div>
-            <div className="healthCampContent">
+            <div className="healthCampContent" style={{width: isMobile?"95%":"60%"}}>
                 <div>
                 Every week, our hospital launches a beacon of hope that traverses the dusty paths and winding roads to nearby villages. It’s not just a medical team; it’s an embodiment of compassion, comprising doctors, nurses, and volunteers, armed not only with stethoscopes and medicines but also with a fervent dedication to serve.
                 </div>

@@ -1,12 +1,17 @@
 import React from "react";
 import "./visitor.css"
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
+
+
 const Visitor =()=>{
+    const isMoble = useMediaQuery(mobile);
     return(
         <div className="Visitor">
-        <div className="visitorHeading">
+        <div className="visitorHeading" style={{fontSize:isMoble?"18px":"24px"}} >
             Visitor information and OPD Holidays
         </div>
-        <div className="visitorInfoContent">
+        <div className="visitorInfoContent" style={{marginLeft: isMoble?"5%":"5%"}}>
             <div>
             <b>Make sure you're visiting during visiting hours and respect visiting hours and mealtimes. Kids below 14 years should not be encouraged for hospital visits</b>
 

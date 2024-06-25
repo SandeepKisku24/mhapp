@@ -65,7 +65,7 @@ const owlinks = owdata.map((item) => (
 
 const deplinks = depdata.map((item) => (
   <UnstyledButton className={classes.subLink} key={item.title}>
-    <Group wrap="nowrap" align="flex-start">
+    <Group wrap="nowrap" ml="5%" align="flex-start">
       <Link to={item.link} >
         <a size="xs" c="dimmed">
           {item.linkName}
@@ -76,7 +76,7 @@ const deplinks = depdata.map((item) => (
 ));
 const doclinks = docdata.map((item) => (
   <UnstyledButton className={classes.subLink} key={item.title}>
-    <Group wrap="nowrap" align="flex-start">
+    <Group wrap="nowrap" align="flex-start" ml="5%">
       <Link to={item.link} >
         <a size="xs" c="dimmed">
           {item.linkName}
@@ -102,7 +102,7 @@ const infolinks = infodata.map((item) => (
   <UnstyledButton className={classes.subLink} key={item.title}>
     <Group wrap="nowrap" align="flex-start">
       <Link to={item.link} >
-        <Anchor size="" underline='never'>
+        <Anchor size={isMobile?"12px":"16px"} underline='never'>
           {item.linkName}
         </Anchor>
       </Link >
@@ -381,7 +381,7 @@ const infolinks = infodata.map((item) => (
               />
             </Center>
           </UnstyledButton>
-          <Collapse in={linksOpened} style={{fontSize:"12px", marginleft:"5%" ,display : mobileMenu===2?"":"none"}}>{deplinks}{doclinks} </Collapse>
+          <Collapse in={linksOpened} style={{fontSize:"12px" ,display : mobileMenu===2?"":"none"}}>{deplinks}{doclinks} </Collapse>
           <UnstyledButton className={classes.link} onClick={toggleLinks}>
             <Center inline>
               <a component="span" mr={5} className={classes.link}>
@@ -413,7 +413,7 @@ const infolinks = infodata.map((item) => (
               />
             </Center>
           </UnstyledButton>
-          <Collapse in={linksOpened} style={{fontSize:"12px", marginLeft:"5%",display : mobileMenu===4?"":"none"}}>{infolinks}</Collapse>
+          <Collapse in={linksOpened} style={{fontSize:"12px !important", marginLeft:"5%",display : mobileMenu===4?"":"none"}}>{infolinks}</Collapse>
           
   
         </ScrollArea>
