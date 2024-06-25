@@ -60,7 +60,7 @@ const Testimonials = ()=>{
                              mx={isMobile ? "auto" : "10px"}  
                              fw="500"
                              my={0}  
-                             size="19px"
+                             fz={isMobile?"16":"19"}
                              style={{ fontFamily: "garamond" }}
                             >
                              {event.name}
