@@ -50,7 +50,7 @@ const Announce = ({number})=>{
                 <div className="announce">
                 {fNotes.map(({note,date,id})=>{
                     return(
-                    <div key={id} className="annoucebox">
+                    <div key={id} className="annoucebox" style={{fontSize: isMobile?"12px":"16px"}}>
                         <Group gap="10" my={10}>
                             
                             {isMobile?<></>:
