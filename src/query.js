@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { useForm } from '@mantine/form';
-import { TextInput, Button, Code, Title, Stack } from '@mantine/core';
+import { TextInput, Button, Code, Title, Stack, Group } from '@mantine/core';
 import React from 'react';
 import axios from 'axios';
+import CheckBoxIcon from '@mui/icons-material/CheckBox';
 
 const Query = () => {
   const [submittedValues, setSubmittedValues] = useState('');
@@ -40,7 +41,9 @@ const Query = () => {
   return (
     <Stack>
       <Title>Let us know your query</Title>
-      <form onSubmit={form.onSubmit(handleSubmit)}>
+      <form onSubmit={form.onSubmit(handleSubmit)} onChange={()=>{
+        setFormStatus('');
+      }}>
         <TextInput
           label="First name"
           placeholder="First name"
@@ -70,7 +73,7 @@ const Query = () => {
         </Button>
       </form>
       {/* {submittedValues && <Code>{submittedValues}</Code>} */}
-      {formStatus && <p>{formStatus}</p>}
+      {formStatus &&  <Group> <CheckBoxIcon style={{color:"green"}}/> <p>{formStatus}</p></Group>}
     </Stack>
   );
 };
