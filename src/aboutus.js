@@ -10,7 +10,7 @@ const AboutUs = ()=>{
         <Group className="aboutUs" maw={isMobile?"95%":"60%"} mx={isMobile?"auto":""} style={{borderRight: isMobile?"":""}} gap={0}>
             <Group className="headingsall" style={{ fontSize: isMobile ? '16px' : '30px' }} ta="center" justify="center" gap={0} c={isMobile?"#4284f4":"#4284f4"}>
                 Mercy Hospital, Poreyahat, Godda, Jharkhand 
-                <Text size={isMobile?"16px":"20px"}  fw={600}>
+                <Text size={isMobile?"12px":"20px"}  fw={600}>
                 ( an  undertaking of Diocese of Bhagalpur)
                 </Text>
             </Group>
