@@ -21,7 +21,7 @@ const Images= ({data,onClick})=> {
           <Text style={{fontSize:isMobile?"18px":"30px"}} pt={20} mb={isMobile?"":"0"} ta={isMobile?"center":"left"} className="headingsall" >
             Events in Mercy Hospital
           </Text>
-          <Text pb={isMobile?"10":"30"} fz={isMobile?"14px":"20px"} c="#4285F4" style={{fontFamily:"Garamond"}} fw={600}>
+          <Text pb={isMobile?"10":"30"} fz={isMobile?"14px":"20px"} ta={isMobile?"center":"left"} c="#4285F4" style={{fontFamily:"Garamond"}} fw={600}>
            Stay connected with the latest events and activities at Mercy Hospital, and join us in making a positive impact!      </Text>
       </Stack>
     

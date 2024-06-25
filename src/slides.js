@@ -27,7 +27,7 @@ const Slide = ()=>{
 
     const zoom =()=>{
         // console.log(width);
-        if(width <100 && height <100){
+        if( width <100 && height <100){
             width+=0.09;
             height +=0.09;
             document.querySelector(".innerSlide").style.width = `${width}%`;

@@ -14,6 +14,8 @@ const Testimonials = ()=>{
     const [review,setReview] = useState(0);
     const [move,setMove] = useState(0);
 
+    const [see, setSee] = useState(-1);
+
     const isMobile = useMediaQuery(mobile);
 
     return(
@@ -22,7 +24,7 @@ const Testimonials = ()=>{
             <Text pt={10} ta="center" size={isMobile?"18px":"35px"} className="headingsall" >"Discover heartfelt stories from our patients and their families."</Text>
             <Carousel 
                 withIndicators
-                height={isMobile?"600":"550"} classNames={classes} w={isMobile?"100%":"80%"}
+                height={isMobile?(see===-1 ? 400 : 550):"550"} classNames={classes} w={isMobile?"100%":"80%"}
                 slideSize={isMobile?{ base: '100%', sm: '90%', md: '100%' }:{ base: '100%', sm: '80%', md: '33.3%' }}
                 slideGap={{ base: 0, sm: '' }}
                 loop
@@ -32,16 +34,19 @@ const Testimonials = ()=>{
             {
             events.map((event, index) => (
                 <Carousel.Slide key={index}>
-                 <Stack my={isMobile ? "10px" : "10px"} gap={0}>
+                 <Stack my={isMobile ? "10px" : "10px"} gap={0} style={{fontFamily:"garamond"}} onMouseLeave={()=>{
+                    setSee(-1);
+                 }}>
 
                         
 
-                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h={isMobile?"350":"350"} gap={0}>
+                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h ={isMobile ? (index === see ? 450 : 350) : (index === see ? 450 : 350) }gap={0}>
                         <Image src={quote} h={30} w={30} ml={isMobile?"20":"10"} mt={isMobile?"30":"10"}/>
-                        <Text w={isMobile ? "95%" : "90%"} my="20" mx="auto" ta="justify" pt={isMobile?"":"0"} fw={400} style={{        fontFamily: "garamond" }} lineClamp={6}>
+                        <Text w={isMobile ? "95%" : "90%"} my="20" mx="auto" ta="justify" pt={isMobile?"":"0"} fw={400} style={{        fontFamily: "garamond" }} lineClamp={see!==index?6:30}>
                            <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>
                         </Text>
-                        <Group pb={10} gap={2} >
+                        {see!==index?
+                            <Group pb={10} gap={2} >
                             <Image
                                src={event.src}
                                alt="image"
@@ -53,17 +58,26 @@ const Testimonials = ()=>{
                             />
                             <Text
                              mx={isMobile ? "auto" : "10px"}  
-                             fw="bold"
+                             fw="500"
                              my={0}  
                              size="19px"
                              style={{ fontFamily: "garamond" }}
                             >
                              {event.name}
                             </Text>
-</Group>
+                        </Group>
+                        :<></>}
+
+                        <Text onClick={()=>{
+                            setSee(index);
+                        }}  ta="right" ml="40%" c="#4285F4" pr={10} style={{cursor:"pointer",width:"50%", float:"right"}}> Read More &gt; &gt; &gt;  </Text>
                         
                       </Stack>
+
                     </Stack>
+
+
+
                 </Carousel.Slide>
                 ))
             }
