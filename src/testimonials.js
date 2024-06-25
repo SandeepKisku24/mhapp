@@ -24,7 +24,7 @@ const Testimonials = ()=>{
             <Text pt={10} ta="center" size={isMobile?"18px":"35px"} className="headingsall" >"Discover heartfelt stories from our patients and their families."</Text>
             <Carousel 
                 withIndicators
-                height={isMobile?(see===-1 ? 400 : 550):"550"} classNames={classes} w={isMobile?"100%":"80%"}
+                height={isMobile?(see===-1 ? 450 : 550):"550"} classNames={classes} w={isMobile?"100%":"80%"}
                 slideSize={isMobile?{ base: '100%', sm: '90%', md: '100%' }:{ base: '100%', sm: '80%', md: '33.3%' }}
                 slideGap={{ base: 0, sm: '' }}
                 loop
