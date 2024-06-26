@@ -46,7 +46,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center" w= "100%" size="sm" className="headingService">Emergency Service</Text>   
                   </Group>
 
-                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size={isMobile?"xs":"sm"} c="#7C469B" ta="justify" className="halfService" lineClamp={isMobile?3:2}>
                       With skilled healthcare professionals and advanced medical ...
                   </Text>
 
@@ -69,7 +69,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center"  w= "100%" size="sm" className="headingService">Imaging Service</Text>   
                   </Group>
 
-                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size={isMobile?"xs":"sm"} c="#7C469B" ta="justify" className="halfService" lineClamp={isMobile?3:2}>
                       Chest X-ray, Skull X-ray, Hand X-ray, Wrist X-ray, PNS X-ray, Knee X-ray, Ankle X-ray...
                   </Text>
 
@@ -92,7 +92,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center" w= "100%" size="sm" className="headingService">ECG Service</Text>   
                   </Group>
 
-                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size={isMobile?"xs":"sm"} c="#7C469B" ta="justify" className="halfService" lineClamp={isMobile?3:2}>
                       We provide ECG services for best diagnostic practices    ...
                   </Text>
 
@@ -115,7 +115,7 @@ const Service = ()=>{
                       <Text fw="500" ta="center" w= "100%" size="sm" className="headingService">Dental Service</Text>   
                   </Group>
 
-                  <Text size="md" c="#7C469B" ta="justify" className="halfService" lineClamp={2}>
+                  <Text size={isMobile?"xs":"sm"} c="#7C469B" ta="justify" className="halfService" lineClamp={isMobile?3:2}>
                   Dental Implant, Dental Bridge, Root Canal Treatment, Dental X-Ray Dental Scaling, Tooth Coloured Filling, ...
                   </Text>
 
