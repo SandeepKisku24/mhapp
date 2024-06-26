@@ -346,7 +346,7 @@ const infolinks = infodata.map((item) => (
         zIndex={1000000}
         
       >
-        <ScrollArea h={mobileMenu===0?"50vh":`calc(80vh - ${rem(0)})`} mx="-md" style={{backgroundImage: "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)"}} >
+        <ScrollArea h={mobileMenu===0?"50vh":`calc(70vh - ${rem(0)})`} mx="-md" style={{backgroundImage: "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)"}} >
           <Divider my="sm" />
 
           <Link to="/">
