@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mhapp/static/css/main.510449fd.css",
-    "main.js": "/mhapp/static/js/main.4a7242d7.js",
+    "main.js": "/mhapp/static/js/main.50bd0aad.js",
     "static/media/Dental.jpg": "/mhapp/static/media/Dental.d58d0bd9b75b81cfdbb0.jpg",
     "static/media/Dental flex.jpg": "/mhapp/static/media/Dental flex.c1172b654f1879ff27f9.jpg",
     "static/media/Xray1.jpg": "/mhapp/static/media/Xray1.2dc62c25980cd9c449eb.jpg",
@@ -44,10 +44,10 @@
     "index.html": "/mhapp/index.html",
     "static/media/quote.svg": "/mhapp/static/media/quote.fe11278aa05caa6c32f63fd220483042.svg",
     "main.510449fd.css.map": "/mhapp/static/css/main.510449fd.css.map",
-    "main.4a7242d7.js.map": "/mhapp/static/js/main.4a7242d7.js.map"
+    "main.50bd0aad.js.map": "/mhapp/static/js/main.50bd0aad.js.map"
   },
   "entrypoints": [
     "static/css/main.510449fd.css",
-    "static/js/main.4a7242d7.js"
+    "static/js/main.50bd0aad.js"
   ]
 }
