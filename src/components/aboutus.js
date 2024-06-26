@@ -2,7 +2,7 @@ import React from "react";
 import "./aboutus.css"
 import Overview from "./overview";
 import img from "../gallery/pictures/home1.jpg"
-import { Image, Text } from "@mantine/core";
+import { Group, Image, Text } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import {mobile} from "../screenSizes";
 
@@ -11,9 +11,9 @@ const AboutUs= ()=>{
     const isMobile = useMediaQuery(mobile);
     return(
         <div className="aboutUsHistory">
-            <div className="aboutUsHeadinghistory">
-                History of Mercy Hospital
-            </div>
+            <Group className="aboutUsHeadinghistory" w="100%"  >
+                <Text mx={isMobile?"auto":"5%"} fz={isMobile?"16px":"24px"}>History of Mercy Hospital</Text>
+            </Group>
             <div className="DeptDivision">
             <div className="aboutUsContenthistory" style={{width: isMobile?"90%":"60%"}}>
             

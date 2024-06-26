@@ -4,6 +4,7 @@
     height: max-content;
     margin-top: 2%;
     height: 500px;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 .visitorHeading{
     
