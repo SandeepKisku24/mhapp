@@ -3,6 +3,9 @@ import * as TablerIcons from '@tabler/icons-react';
 import classes from './DoubleHeader.module.css';
 import { Link } from 'react-router-dom';
 import NameAndLogo from './nameAndLogo';
+import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
+
 import '@mantine/core/styles.css';
 import {
   HoverCard,
@@ -415,8 +418,30 @@ const infolinks = infodata.map((item) => (
           </UnstyledButton>
           <Collapse in={linksOpened} style={{fontSize:"12px !important", marginLeft:"5%",display : mobileMenu===4?"":"none"}}>{infolinks}</Collapse>
           
-  
+              
         </ScrollArea>
+
+        <Stack gap={10} my="auto">
+           <Anchor href="tel:+91-8002877072" underline="never" c= "#7C469B">
+                <Group>
+                <AirportShuttleIcon style={{
+                
+                display:"flex", flexDirection:"column", justifyContent:"center"
+                
+                }}/>
+                Emergency +91 8002877072 
+                </Group>
+            </Anchor>
+            <Anchor href="tel:+91-9546233931" underline="never" c= "#7C469B">
+                <Group>
+                <ContactPhoneIcon style={{              
+                display:"flex", flexDirection:"column", justifyContent:"center"
+                
+                }}/>
+                Enquiry +91 9546233931 
+                </Group>
+            </Anchor>
+            </Stack>  
       </Drawer>}
     </>
   );
