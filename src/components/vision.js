@@ -43,7 +43,7 @@ const Vision =()=>{
                     <br/>
                     <li>To run orphanage, hostel, old age home, to support/ help or students or children to stand on their free.  To work on safe motherhood care, child and women. </li>
                 </ol>
-                <Image src={img} w={isMobile?"150":"250"} h ={isMobile?"150":"250"} mx="auto" my={5}></Image>
+                <Image src={img} w={isMobile?"150":"250"} h ={isMobile?"150":"250"} mx="auto" my={5} style={{borderRadius:"50%"}}></Image>
             </div>
             {isMobile?<></>:<Overview/>}
             </div>

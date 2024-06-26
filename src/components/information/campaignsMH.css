@@ -3,14 +3,11 @@
 }
 
 .healthCampHeading{
-    font-size: 25px;
     height: 35px;
     /* color: #fff; */
     /* background-color: #d0bb68; */
     background-color: #4285F4;
     color: #fff;
-    padding-left: 20px;
-    padding-left: 5%;
 }
 .healthCampContent{
     margin-top: 5%;

@@ -3,8 +3,8 @@
     margin: auto;
     height: max-content;
     margin-top: 2%;
-    height: 500px;
-    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    height: fit-content;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 .visitorHeading{
     

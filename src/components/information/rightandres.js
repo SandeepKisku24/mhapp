@@ -2,12 +2,15 @@ import React from "react";
 import "./rightandres.css"
 import { useMediaQuery } from "@mantine/hooks";
 import { mobile } from "../../screenSizes";
+import { Group, Text } from "@mantine/core";
 
 const RightsAndRes =()=>{
     const isMobile = useMediaQuery(mobile);
     return(
         <div className="rightsAndRes">
-            <div className="rightsResHeading">Patient's Rights and responsibilities</div>
+            <Group className="rightsResHeading" w="100%"  >
+                <Text mx={isMobile?"auto":"5%"} fz={isMobile?"16px":"24px"}> Patient's Rights and responsibilities </Text>
+            </Group>
             <div className="rightsContent" style={{width: isMobile?"95%":"60%"}}>
                 <div className="rightHeading">
                     Rights of Patients

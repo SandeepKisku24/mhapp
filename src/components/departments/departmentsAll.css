@@ -3,21 +3,17 @@
 }
 
 .deptNameHeading{
-    font-size: 25px;
     height: 35px;
-    
-    /* background-color: #d0bb68; */
     background-color: #4285F4;
     color: #fff;
-    padding-left: 5%;
     
 }
 .deptContent{
     margin-top: 5%;
     text-align: justify;
-    font-weight: bold;
     margin-left: 5%;
     padding-bottom: 2%;
+    margin-right: 2%;
 }
 .DeptDivision{
     display: flex;
@@ -31,3 +27,4 @@
         justify-content: space-around;
     } 
 }
+

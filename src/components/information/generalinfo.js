@@ -1,11 +1,15 @@
 import React from "react";
 import "./generalinfo.css"
+import { Group, Text } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
+import { mobile } from "../../screenSizes";
 const GeneralInfo =()=>{
+    const isMobile =  useMediaQuery(mobile);
     return(
         <div className="GeneralInfo">
-            <div className="genInfoHeading">
-                General Information
-            </div>
+            <Group className="genInfoHeading" w="100%"  >
+                <Text mx={isMobile?"auto":"5%"} fz={isMobile?"16px":"24px"}> General Information</Text>
+            </Group>
             <div  className="genInfoContent">
                 <div className="genInfoDo">Do's</div>
                 <ul>

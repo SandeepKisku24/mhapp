@@ -1,6 +1,6 @@
 import React from "react";
 import Department from "./department";
-import { Image } from "@mantine/core";
+import { Group, Image, Text } from "@mantine/core";
 import img from "../../gallery/pictures/Dr Rebin R.jpg"
 import { useMediaQuery } from "@mantine/hooks";
 import { mobile } from "../../screenSizes";
@@ -8,7 +8,9 @@ const Dental=()=>{
     const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
-            <div className="deptNameHeading">Dental Department </div>
+            <Group className="deptNameHeading" w="100%"  >
+                <Text mx={isMobile?"auto":"5%"} fz={isMobile?"16px":"24px"}>Dental Department</Text>
+        </Group>
             <div className="DeptDivision">
             
             <div className="deptContent">

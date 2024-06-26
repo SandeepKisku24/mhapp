@@ -1,7 +1,7 @@
 import React from "react";
 import "./departmentsAll.css"
 import Department from "./department";
-import { Image } from "@mantine/core";
+import { Image, Group,Text } from "@mantine/core";
 import img from "../../gallery/pictures/Dr Arun.jpg"
 import { useMediaQuery } from "@mantine/hooks";
 import { mobile } from "../../screenSizes";
@@ -10,7 +10,9 @@ const Orthopedic=()=>{
     const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
-            <div className="deptNameHeading">Orthopedic Department </div>
+            <Group className="deptNameHeading" w="100%"  >
+                <Text mx={isMobile?"auto":"5%"} fz={isMobile?"16px":"24px"}>Orthopedic Department</Text>
+        </Group>
             <div className="DeptDivision">
             <div className="deptContent" style={{width: isMobile?"90%":"70%"}} >
                 <Image src={img} h={250} fit="contain" mx="0" mb={10} py={10} bg="#F7FEE2" w="250"  style={{boxShadow:" rgba(0, 0, 0, 0.1) 0px 4px 12px", borderRadius:"5px"}}></Image>

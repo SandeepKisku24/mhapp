@@ -3,12 +3,17 @@ import "../departments/departmentsAll.css"
 import Service from "./service";
 import { useMediaQuery } from "@mantine/hooks";
 import { mobile } from "../../screenSizes";
+import { Group, Text } from "@mantine/core";
 
 const Lab =()=>{
     const isMobile = useMediaQuery(mobile);
     return(
         <div className="departmentType">
-            <div className="deptNameHeading">Laboratory/ Pathology </div>
+            
+            <Group className="deptNameHeading" w="100%"  >
+                <Text mx={isMobile?"auto":"5%"} fz={isMobile?"16px":"24px"}>Laboratory/ Pathology </Text>
+            </Group>
+            
             <div className="DeptDivision">
 
             <div className="deptContent" style={{width: isMobile?"90%":"70%"}}>
