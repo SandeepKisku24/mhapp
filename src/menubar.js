@@ -90,7 +90,7 @@ const serlinks = serdata.map((item) => (
   <UnstyledButton className={classes.subLink} key={item.title}>
     <Group wrap="nowrap" align="flex-start">
       <Link to={item.link} >
-        <a size="xs" c="dimmed">
+        <a size="xs" >
           {item.linkName}
         </a>
       </Link >
@@ -341,8 +341,9 @@ const infolinks = infodata.map((item) => (
         title="Mercy Hospital"
         hiddenFrom="sm"
         zIndex={1000000}
+        
       >
-        <ScrollArea h={`calc(125vh - ${rem(0)})`} mx="-md">
+        <ScrollArea h={mobileMenu===0?"50vh":`calc(80vh - ${rem(0)})`} mx="-md" style={{backgroundImage: "linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%)"}} >
           <Divider my="sm" />
 
           <Link to="/">
@@ -360,7 +361,6 @@ const infolinks = infodata.map((item) => (
                 color={theme.colors.blue[6]}
                 onClick={()=>{
                   if(mobileMenu!==1) setmm(1);
-                  // else setmm(0);
                 }}
               />
             </Center>
