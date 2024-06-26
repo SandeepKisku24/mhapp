@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mhapp/static/css/main.510449fd.css",
-    "main.js": "/mhapp/static/js/main.50bd0aad.js",
+    "main.css": "/mhapp/static/css/main.425c67d5.css",
+    "main.js": "/mhapp/static/js/main.d9ccb610.js",
     "static/media/Dental.jpg": "/mhapp/static/media/Dental.d58d0bd9b75b81cfdbb0.jpg",
     "static/media/Dental flex.jpg": "/mhapp/static/media/Dental flex.c1172b654f1879ff27f9.jpg",
     "static/media/Xray1.jpg": "/mhapp/static/media/Xray1.2dc62c25980cd9c449eb.jpg",
@@ -21,6 +21,7 @@
     "static/media/img3.jpg": "/mhapp/static/media/img3.f3a6ca66ac69f6044b6c.jpg",
     "static/media/img10.jpg": "/mhapp/static/media/img10.bee672f35cd22f69bb0b.jpg",
     "static/media/img4.jpg": "/mhapp/static/media/img4.e1277690329748602bca.jpg",
+    "static/media/loading.gif": "/mhapp/static/media/loading.a5c86c223e8ab00b2708.gif",
     "static/media/img9.jpg": "/mhapp/static/media/img9.02a7f61196fb19631f79.jpg",
     "static/media/vision.jpg": "/mhapp/static/media/vision.76242c7c1f756a5a1235.jpg",
     "static/media/Dr Arun.jpg": "/mhapp/static/media/Dr Arun.1ac847e0a49a153336de.jpg",
@@ -43,11 +44,11 @@
     "static/media/criticalcare.webp": "/mhapp/static/media/criticalcare.46490c367b4599e49dde.webp",
     "index.html": "/mhapp/index.html",
     "static/media/quote.svg": "/mhapp/static/media/quote.fe11278aa05caa6c32f63fd220483042.svg",
-    "main.510449fd.css.map": "/mhapp/static/css/main.510449fd.css.map",
-    "main.50bd0aad.js.map": "/mhapp/static/js/main.50bd0aad.js.map"
+    "main.425c67d5.css.map": "/mhapp/static/css/main.425c67d5.css.map",
+    "main.d9ccb610.js.map": "/mhapp/static/js/main.d9ccb610.js.map"
   },
   "entrypoints": [
-    "static/css/main.510449fd.css",
-    "static/js/main.50bd0aad.js"
+    "static/css/main.425c67d5.css",
+    "static/js/main.d9ccb610.js"
   ]
 }
