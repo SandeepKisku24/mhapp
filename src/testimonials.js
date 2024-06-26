@@ -40,7 +40,7 @@ const Testimonials = ()=>{
 
                         
 
-                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h ={isMobile ? (index === see ? 480 : 350) : (index === see ? 400 : 350) }gap={0}>
+                      <Stack bg="#fff" maw={isMobile ? "85%" : "90%"} my="auto" mx="auto" style={{ borderRadius: "10px",      marginTop: "20px",  display: "flex", flexDirection: "column", alignItems: "", justifyContent:"" }} h ={isMobile ? (index === see ? 480 : 350) : (index === see ? 400 : 350) }gap={0}>
                         <Image src={quote} h={30} w={30} ml={isMobile?"20":"10"} mt={isMobile?"30":"10"}/>
                         <Text w={isMobile ? "95%" : "90%"} my="20" mx="auto"  ta="justify" pt={isMobile?"":"0"} fw={400} style={{ fontSize: isMobile?"16px":"16px" }} lineClamp={see!==index?6:30}>
                            <span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span> {event.event} <span style={{ fontSize: "20px" }}      >"</span>

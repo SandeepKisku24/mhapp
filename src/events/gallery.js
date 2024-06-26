@@ -22,7 +22,7 @@ const Gallery = ()=>{
             <Images data = {images} onClick = {(index)=>   {
                 setIndex(index);
             }  }/>
-            <Lightbox 
+            <Lightbox  styles={{ container: { backgroundColor: "#FFF" } }}
             slides={images.map((src) => ({ src }))} 
             open = {index>=0}
             close = {()=>{setIndex(-1)}}
