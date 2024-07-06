@@ -20,7 +20,7 @@ const Testimonials = ()=>{
 
     return(
 
-        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" bg="#EFF0FF" style={{borderRadius:"0px"}}>
+        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto"  bg="#EFF0FF" style={{borderRadius:"0px"}}>
             <Text pt={10} ta="center" size={isMobile?"18px":"35px"} className="headingsall" >"Discover heartfelt stories from our patients and their families."</Text>
             <Carousel 
                 withIndicators
@@ -30,10 +30,11 @@ const Testimonials = ()=>{
                 loop
                 align={isMobile?"center":"start"}
                 style={{width:"100%",margin:"auto"}}
+                
             >
             {
             events.map((event, index) => (
-                <Carousel.Slide key={index}>
+                <Carousel.Slide key={index} my={isMobile?"10":"40"}> 
                  <Stack my={isMobile ? "10px" : "10px"} gap={0} style={{fontFamily:"garamond"}} onMouseLeave={()=>{
                     setSee(-1);
                  }}>
