@@ -96,7 +96,7 @@
     cursor: pointer;
 }
 .left, .right   {
-    color: #4285F4;
+    color: #4285F4 !important;
     font-size: 25px;
     text-align: center;
     width: 35px;
