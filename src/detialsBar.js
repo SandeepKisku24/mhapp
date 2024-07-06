@@ -10,7 +10,7 @@ const DetailsBar = ()=>{
     const isMobile = useMediaQuery(mobile);
     return(
         <Group gap={15} justify="right" pr="2%" style={{backgroundImage: "linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%)", color:"#fff",fontSize: isMobile?"12px":"16px"}}> 
-            <Anchor href="tel:+91-8002877072" underline="never" c= "#fff">
+            <Anchor href="tel:+91-8002877072" underline="never" c= "#000">
                 <Group>
                 <AirportShuttleIcon style={{
                 
@@ -20,7 +20,7 @@ const DetailsBar = ()=>{
                 Emergency +91 8002877072 
                 </Group>
             </Anchor>
-            <Anchor href="tel:+91-9546233931" underline="never" c= "#fff">
+            <Anchor href="tel:+91-9546233931" underline="never" c= "#000">
                 <Group>
                 <ContactPhoneIcon style={{
                 
