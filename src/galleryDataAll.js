@@ -8,9 +8,18 @@ import img7 from  "./gallery/pictures/gallery/img7.jpg";
 import img8 from  "./gallery/pictures/gallery/img8.jpg";
 import img9 from  "./gallery/pictures/gallery/img9.jpg";
 import img10 from  "./gallery/pictures/gallery/img10.jpg";
+import img15 from  "./gallery/pictures/gallery/img15.jpg";
+import img16 from  "./gallery/pictures/gallery/img16.jpg";
+import img11 from "./gallery/pictures/freefoodimg.jpg";
+import img12 from "./gallery/pictures/healthcamp.png"
 
-
-export const imagedataAll = [
+export const imagehp = [
+    {
+        src:img11,
+        width : 800,
+        height : 600,
+        title: "pic 0"
+    },
     {
         src:img1,
         width : 800,
@@ -29,6 +38,36 @@ export const imagedataAll = [
         height : 600,
         title: "pic 3"
     },
+    
+    {
+        src:img6,
+        width : 800,
+        height : 600,
+        title: "pic 6"
+    },
+   
+    {
+        src:img8,
+        width : 800,
+        height : 600,
+        title: "pic 8"
+    },
+    {
+        src:img9,
+        width : 800,
+        height : 600,
+        title: "pic 9"
+    },
+   
+]
+
+export const imagehc =[
+    {
+        src:img12,
+        width : 800,
+        height : 600,
+        title: "pic 12"
+    },
     {
         src:img4,
         width : 800,
@@ -42,33 +81,27 @@ export const imagedataAll = [
         title: "pic 5"
     },
     {
-        src:img6,
-        width : 800,
-        height : 600,
-        title: "pic 6"
-    },
-    {
         src:img7,
         width : 800,
         height : 600,
         title: "pic 7"
     },
     {
-        src:img8,
-        width : 800,
-        height : 600,
-        title: "pic 8"
-    },
-    {
-        src:img9,
-        width : 800,
-        height : 600,
-        title: "pic 8"
-    },
-    {
         src:img10,
         width : 800,
         height : 600,
         title: "pic 10"
+    },
+    {
+        src:img15,
+        width : 800,
+        height : 600,
+        title: "pic 15"
+    },
+    {
+        src:img16,
+        width : 800,
+        height : 600,
+        title: "pic 16"
     },
 ]

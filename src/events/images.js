@@ -36,6 +36,7 @@ const Images= ({data,onClick})=> {
     >
   {
     slides.map((slide,index) => (
+      
       <Carousel.Slide key={index} className='image' onClick={()=>{handleClick(index)}} > 
         <Card key={index} shadow="sm" radius="md" style={{ position: 'relative' }} w={isMobile?"90%":"90%"} mx="auto" bg="#fff"> 
         <div className='galImg'>
