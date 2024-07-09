@@ -11,11 +11,6 @@ import { Link } from "react-router-dom";
 
 function Facility() {
     const isMobile = useMediaQuery(mobile);
-    const faclinks =()=>{
-
-      <h1>1</h1>  
-
-  };
 
 
   return (
@@ -32,13 +27,11 @@ function Facility() {
         align={isMobile?"center":"start"}
         style={{width:"100%",margin:"auto"}}
         >
-        {
-            faclinks
-        }
+
 
         {facdata.map((item, index) => (
         <Carousel.Slide key={index} style={{cursor:"pointer"}}>
-          <Card shadow="sm" padding="lg" radius="md" withBorder w={isMobile?"80%":"90%"} mx="auto">
+          <Card shadow="sm" padding="lg" radius="md" withBorder w={isMobile?"80%":"90%"} mx="auto" style={{}}>
             <Card.Section>
               <Image
                 src={item.src}

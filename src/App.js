@@ -30,6 +30,7 @@ import Management from "./components/management";
 import Vision from "./components/vision";
 import AboutUs from "./components/aboutus";
 import Gallery1 from "./events/gallery";
+import GalleryAll from "./galleryAll";
 // import ImageSection from "./gall";
 
 import Faq from "./faq";
@@ -85,6 +86,7 @@ import { ScrollRestoration } from "react-router-dom";
 import ScrollToTop from "./scrollToTop";
 import { mobile } from "./screenSizes";
 import { useMediaQuery } from "@mantine/hooks";
+import ImageAll from "./galleryAll";
 
 function App() {
   const isMobile = useMediaQuery(mobile);
@@ -125,7 +127,7 @@ function App() {
         <Route path ="/history" element = {<History/>}/>
         <Route path ="/vision" element = {<Vision/>}/>
         <Route path ="/management" element = {<Management/>}/>
-        <Route path ="/gall" element = {<ImageSection/>}/>
+        <Route path ="/gall" element = {<ImageAll/>}/>
 
         <Route path ="/gallery" element = {<Gallery1/>}/>
         
