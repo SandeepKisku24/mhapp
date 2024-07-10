@@ -10,7 +10,7 @@ const DepartmentsAll = ()=>{
     const isMobile = useMediaQuery(mobile);
     const [ser,setService] = useState(-1);
     return(
-        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto" my="" style={{backgroundColor:"#B0C5F9"}}>
+        <Group maw={isMobile?"95%":"100%"} justify="center" mx="auto">
             {isMobile?
             <Stack maw="100%" c="#fff" my={15}>
             <Text size="18px" fw={700} mx="auto" w="80%" ta="center">Services Provided by Mercy Hospital</Text>

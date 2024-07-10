@@ -15,7 +15,7 @@ const Images= ({data,onClick})=> {
     
 
   return (
-    <div className='gallery' style={{width : isMobile?"95%":"90%", margin:"auto", height: isMobile?"":"70vh", backgroundColor:"#F8F9FA"}} >
+    <div className='gallery' style={{width : isMobile?"95%":"90%", margin:"auto", height: isMobile?"":"70vh", backgroundColor:"#EFF0FF"}} >
     
       <Stack mx={isMobile?"0":"2.5%"} gap={1}>
           <Text style={{fontSize:isMobile?"18px":"30px"}} pt={20} mb={isMobile?"":"0"} ta={isMobile?"center":"left"} className="headingsall" >
@@ -45,8 +45,8 @@ const Images= ({data,onClick})=> {
         
         </Card>
 
-        <Group className='gal' justify='center' style={{ backgroundColor:"#fff",padding:"1%",borderRadius:"5px", zIndex: 5 }} maw="100%"> 
-        <Text c="#fff" weight={700} size="lg" bg="#7C469B" px={30} my={5} style={{borderRadius:"5px"}}>{slide.title}</Text> 
+        <Group className='gal' justify='center' style={{ backgroundColor:"#EFF0FF",padding:"1%",borderRadius:"5px", zIndex: 5 }} maw="100%"> 
+        <Text c="#fff" ta="center" weight={700} size="lg" bg="#7C469B" px={30} my={5} style={{borderRadius:"5px"}}>{slide.title}</Text> 
         </Group>
       </Carousel.Slide>
     ))

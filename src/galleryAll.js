@@ -13,7 +13,7 @@ const ImageAll = ()=> {
   return (
     <div style={{ maxWidth: isMobile ? "95%" : "90%", margin: "auto", marginTop:"2%"}}>
         <Stack w="100%" mx="auto">
-            <Text fz={isMobile?"20":"24"}  c="#4285F4" ta={isMobile?"center":"left"}>Welcome to our Hospital Gallery</Text>
+            <Text   c="#4285F4" ta={isMobile?"center":"left"} className="headingsall" style={{ fontSize: isMobile ? '16px' : '30px' }}>Hospital Gallery</Text>
             <Text ta="left" c="gray" my={10} w={isMobile?"95%":"60%"}>
                 Explore our hospital through these images. Here, you'll find photos of our state-of-the-art facilities, dedicated medical staff, and various events and activities that reflect our commitment to providing excellent care.
             </Text>
@@ -23,7 +23,7 @@ const ImageAll = ()=> {
 
         <Group maw="100%" mx="auto" mt={10}>
             <Stack w={isMobile?"40%":"20%"} c={section===0?"#4285F4":"gray"}  h={50} style={{borderBottom : section===0?"1px solid #4285F4":"", cursor:"pointer",backgroundColor:section===0?"#fff":"#EFF0FF"}} onClick={()=> setSection(0)}>
-                <Text ta="center" my="auto">
+                <Text ta="center" my="auto" >
                     Hospital Premises
                 </Text>
             </Stack>

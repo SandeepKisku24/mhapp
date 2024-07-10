@@ -14,6 +14,7 @@ import Gallery from "./events/gallery";
 import Service from "./service";
 import Facility from "./facilities";
 import ImageSection from "./gall";
+import ImageAll from "./galleryAll";
 
 const Home =()=>{
 
@@ -46,6 +47,9 @@ const Home =()=>{
             <Facility/>
             <br/>
             <br/>
+            <ImageAll/>
+            <br/>
+            <br/>
 
             <Testimonials/>
 
@@ -60,7 +64,8 @@ const Home =()=>{
                  <Testimonials/>
                  <Youtube/>
             </div>} */}
-            <ImageSection/>
+            {/* <ImageSection/> */}
+            
         </div>
     )
 }
