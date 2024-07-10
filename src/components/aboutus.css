@@ -28,3 +28,9 @@
     flex-direction: row;
     justify-content: space-around;
 }
+
+@media (max-width: 480px){
+    .DeptDivision{
+        font-size: 14px;
+      }
+}

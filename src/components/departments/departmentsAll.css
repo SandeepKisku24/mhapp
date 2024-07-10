@@ -27,4 +27,10 @@
         justify-content: space-around;
     } 
 }
+@media (max-width: 480px){
+       .deptContent {
+        font-size: 14px !important;
+      }
+}
+
 
