@@ -14,7 +14,7 @@ const ImageAll = ()=> {
     <div style={{ maxWidth: isMobile ? "95%" : "90%", margin: "auto", marginTop:"2%"}}>
         <Stack w="100%" mx="auto">
             <Text   c="#4285F4" ta={isMobile?"center":"left"} className="headingsall" style={{ fontSize: isMobile ? '16px' : '30px' }}>Hospital Gallery</Text>
-            <Text ta="left" c="gray" my={10} w={isMobile?"95%":"60%"}>
+            <Text ta={isMobile?"center":"left"} size={isMobile?"14px !important":""} c="gray" my={10} w={isMobile?"95%":"60%"} style={{lineHeight:"1.5"}}>
                 Explore our hospital through these images. Here, you'll find photos of our state-of-the-art facilities, dedicated medical staff, and various events and activities that reflect our commitment to providing excellent care.
             </Text>
         </Stack>
