@@ -6,12 +6,15 @@ import { imagehc, imagehp} from './galleryDataAll';
 import { Group, Image , Stack, Text} from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { mobile } from './screenSizes';
+import Lightbox from 'yet-another-react-lightbox';
 
 const ImageAll = ()=> {
   const isMobile = useMediaQuery(mobile);
   const [section,setSection] = useState(0);
+  const [index, setIndex] = React.useState(-1);
   return (
     <div style={{ maxWidth: isMobile ? "95%" : "90%", margin: "auto", marginTop:"2%"}}>
+        <div>
         <Stack w="100%" mx="auto">
             <Text   c="#4285F4" ta={isMobile?"center":"left"} className="headingsall" style={{ fontSize: isMobile ? '16px' : '30px' }}>Hospital Gallery</Text>
             <Text ta={isMobile?"center":"left"} size={isMobile?"14px !important":""} c="gray" my={10} w={isMobile?"95%":"60%"} style={{lineHeight:"1.5"}}>
@@ -37,19 +40,39 @@ const ImageAll = ()=> {
         {section===0? 
             <div style={{marginRight:"auto", marginTop:"0%"}}>
                 <div style={{width:isMobile?"100%":"90%", padding:"2%",backgroundColor:"#fff"}}>
-                <PhotoAlbum layout="rows" photos={imagehp}  />
+                <PhotoAlbum layout="rows" photos={imagehp} onClick={({ index: current }) => setIndex(current)} />
+                <Lightbox
+                    index={index}
+                    slides={imagehp}
+                    open={index >= 0}
+                    close={() => setIndex(-1)}
+                    styles={{ container: { backgroundColor: "#FFF" } }}
+                />
                 </div>
             </div>
         :
         
         <div style={{marginRight:"auto", marginTop:"0%"}}>
         <div style={{width:isMobile?"100%":"90%", padding:"2%", backgroundColor:"#fff"}}>
-        <PhotoAlbum layout="rows" photos={imagehc}  />
+        <PhotoAlbum layout="rows" photos={imagehc} onClick={({ index: current }) => setIndex(current)} />
+        <Lightbox
+        index={index}
+        slides={imagehc}
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        styles={{ container: { backgroundColor: "#FFF" } }}
+      />
         </div>
         </div>
         }
 
         </div>
+        </div>
+
+        
+
+
+
         
 
        
