@@ -4,6 +4,7 @@ import { imagedata } from './galleryData';
 import { Group, Image } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { mobile } from './screenSizes';
+import { Link } from 'react-router-dom';
 const ImageSection = ()=> {
   const isMobile = useMediaQuery(mobile);
   const [img,setImg] = useState(-1);
@@ -19,7 +20,9 @@ const ImageSection = ()=> {
         {imagedata.map((item, index) => (
           
           <Carousel.Slide key={index}>
-          <Image  src={item.src} alt={item.title} h={280} onMouseOver={()=>{setImg(index)}} style={{ borderRadius:"5px" ,border: img===index?"2px":"", cursor:img==index?"pointer":""}} fit='cover' />
+            <Link to = "/gall">
+            <Image  src={item.src} alt={item.title} h={280} onMouseOver={()=>{setImg(index)}} style={{ borderRadius:"5px" ,border: img===index?"2px":"", cursor:img==index?"pointer":""}} fit='cover' />
+            </Link>
           </Carousel.Slide>
         ))}
         </Carousel>

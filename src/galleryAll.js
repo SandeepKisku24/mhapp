@@ -11,21 +11,23 @@ const ImageAll = ()=> {
   const isMobile = useMediaQuery(mobile);
   const [section,setSection] = useState(0);
   return (
-    <div style={{ maxWidth: isMobile ? "95%" : "90%", margin: "auto", marginTop:"2%" }}>
+    <div style={{ maxWidth: isMobile ? "95%" : "90%", margin: "auto", marginTop:"2%"}}>
         <Stack w="100%" mx="auto">
-            <Text fz={isMobile?"20":"24"}  c="#4285F4" ta="center">Welcome to our Hospital Gallery</Text>
-            <Text ta="center" my={10} w={isMobile?"90%":"60%"} mx="auto">
+            <Text fz={isMobile?"20":"24"}  c="#4285F4" ta={isMobile?"center":"left"}>Welcome to our Hospital Gallery</Text>
+            <Text ta="left" c="gray" my={10} w={isMobile?"95%":"60%"}>
                 Explore our hospital through these images. Here, you'll find photos of our state-of-the-art facilities, dedicated medical staff, and various events and activities that reflect our commitment to providing excellent care.
             </Text>
         </Stack>
 
-        <Group maw="100%" mx="auto" my={10}>
-            <Stack w={isMobile?"40%":"20%"}  h={50} style={{borderBottom :"1px solid #4285F4", cursor:"pointer",backgroundColor:section===0?"#EFF0FF":"#fff"}} onClick={()=> setSection(0)}>
+        <div style={{backgroundColor:"#EFF0FF" , padding:"2%"}}>
+
+        <Group maw="100%" mx="auto" mt={10}>
+            <Stack w={isMobile?"40%":"20%"} c={section===0?"#4285F4":"gray"}  h={50} style={{borderBottom : section===0?"1px solid #4285F4":"", cursor:"pointer",backgroundColor:section===0?"#fff":"#EFF0FF"}} onClick={()=> setSection(0)}>
                 <Text ta="center" my="auto">
                     Hospital Premises
                 </Text>
             </Stack>
-            <Stack w={isMobile?"40%":"20%"}h={50} style={{borderBottom :"1px solid #4285F4",cursor:"pointer",backgroundColor:section===1?"#EFF0FF":"#fff"}} onClick={()=> setSection(1)} >
+            <Stack w={isMobile?"40%":"20%"} c={section===1?"#4285F4":"gray"} h={50}  style={{borderBottom :section===1?"1px solid #4285F4":"",cursor:"pointer",backgroundColor:section===1?"#ffff":"#EFF0FF"}} onClick={()=> setSection(1)} >
                 <Text ta="center" my="auto">
                     Health Camps
                 </Text>
@@ -33,15 +35,21 @@ const ImageAll = ()=> {
         </Group>
 
         {section===0? 
-            <div style={{width:isMobile?"100%":"90%",marginRight:"auto", marginTop:"4%"}}>
-                <PhotoAlbum layout="rows" photos={imagehp} />
+            <div style={{marginRight:"auto", marginTop:"0%"}}>
+                <div style={{width:isMobile?"100%":"90%", padding:"2%",backgroundColor:"#fff"}}>
+                <PhotoAlbum layout="rows" photos={imagehp}  />
+                </div>
             </div>
         :
         
-        <div style={{width:isMobile?"100%":"90%",marginRight:"auto", marginTop:"4%"}}>
-                <PhotoAlbum layout="rows" photos={imagehc} />
-            </div>
+        <div style={{marginRight:"auto", marginTop:"0%"}}>
+        <div style={{width:isMobile?"100%":"90%", padding:"2%", backgroundColor:"#fff"}}>
+        <PhotoAlbum layout="rows" photos={imagehc}  />
+        </div>
+        </div>
         }
+
+        </div>
         
 
        
