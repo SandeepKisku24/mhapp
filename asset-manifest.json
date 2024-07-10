@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mhapp/static/css/main.7bfe3a07.css",
-    "main.js": "/mhapp/static/js/main.5b005c23.js",
+    "main.js": "/mhapp/static/js/main.e04337d5.js",
     "static/media/Dental.jpg": "/mhapp/static/media/Dental.d58d0bd9b75b81cfdbb0.jpg",
     "static/media/slide3.png": "/mhapp/static/media/slide3.7195d920eab8b74e96d9.png",
     "static/media/Dental flex.jpg": "/mhapp/static/media/Dental flex.c1172b654f1879ff27f9.jpg",
@@ -13,9 +13,11 @@
     "static/media/23 - 07 October News.jpg": "/mhapp/static/media/23 - 07 October News.6ea23c0ce42207690cd0.jpg",
     "static/media/23 - 08 November News.jpg": "/mhapp/static/media/23 - 08 November News.e2e0f92d96a86a1ec701.jpg",
     "static/media/23 - 06 September News.jpg": "/mhapp/static/media/23 - 06 September News.ce624ebb2c3d7dd7a311.jpg",
+    "static/media/img16.jpg": "/mhapp/static/media/img16.1ee12f840923d9337569.jpg",
     "static/media/23 - 05 August News.jpg": "/mhapp/static/media/23 - 05 August News.a625daf01888abeb896e.jpg",
     "static/media/emergency1.jpg": "/mhapp/static/media/emergency1.e90eaea286703cbee5e8.jpg",
     "static/media/23 - 04 July News.jpg": "/mhapp/static/media/23 - 04 July News.c3b968fd7e7b218d83f6.jpg",
+    "static/media/img15.jpg": "/mhapp/static/media/img15.42d09466ff1db56a8964.jpg",
     "static/media/homebackground.jpg": "/mhapp/static/media/homebackground.98157de1d3858f50cb4d.jpg",
     "static/media/home1.jpg": "/mhapp/static/media/home1.ca091feda3fe9b892bea.jpg",
     "static/media/freefoodimg.jpg": "/mhapp/static/media/freefoodimg.f6826a0aedbd9c71fc9f.jpg",
@@ -46,10 +48,10 @@
     "index.html": "/mhapp/index.html",
     "static/media/quote.svg": "/mhapp/static/media/quote.fe11278aa05caa6c32f63fd220483042.svg",
     "main.7bfe3a07.css.map": "/mhapp/static/css/main.7bfe3a07.css.map",
-    "main.5b005c23.js.map": "/mhapp/static/js/main.5b005c23.js.map"
+    "main.e04337d5.js.map": "/mhapp/static/js/main.e04337d5.js.map"
   },
   "entrypoints": [
     "static/css/main.7bfe3a07.css",
-    "static/js/main.5b005c23.js"
+    "static/js/main.e04337d5.js"
   ]
 }
