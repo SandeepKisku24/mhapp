@@ -127,7 +127,7 @@ const Slide = ()=>{
             pb={5}  
             mx="auto"
             style={{
-                backgroundColor: "#7C469B",
+                backgroundColor: "#4284f4",
                 position: "absolute",
                 bottom: 0,
                 width: isMobile?"100%":"90%",

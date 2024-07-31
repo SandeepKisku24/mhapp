@@ -15,7 +15,7 @@ const Images= ({data,onClick})=> {
     
 
   return (
-    <div className='gallery' style={{width : isMobile?"95%":"90%", margin:"auto", height: isMobile?"":"70vh", backgroundColor:"#EFF0FF"}} >
+    <div className='gallery slidein align-up' style={{width : isMobile?"95%":"90%", margin:"auto", height: isMobile?"":"", backgroundColor:"#EFF0FF"}} >
     
       <Stack mx={isMobile?"0":"2.5%"} gap={1}>
           <Text style={{fontSize:isMobile?"18px":"30px"}} pt={20} mb={isMobile?"":"0"} ta={isMobile?"center":"left"} className="headingsall" >
@@ -37,8 +37,8 @@ const Images= ({data,onClick})=> {
   {
     slides.map((slide,index) => (
       
-      <Carousel.Slide key={index} className='image' onClick={()=>{handleClick(index)}} > 
-        <Card key={index} shadow="sm" radius="md" style={{ position: 'relative' }} w={isMobile?"90%":"90%"} mx="auto" bg="#fff"> 
+      <Carousel.Slide key={index} className='image' onClick={()=>{handleClick(index)}} style={{height:"70%"}}> 
+        <Card key={index} shadow="sm" radius="md" style={{ position: 'relative' }} w={isMobile?"90%":"90%"} mx="auto" bg="#fff">  
         <div className='galImg'>
         <Image style={{height:"", overflow:"hidden"}} src={slide.src} alt={slide.src} />
         </div>

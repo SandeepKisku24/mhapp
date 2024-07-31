@@ -1,0 +1,35 @@
+  
+.active {
+    opacity:1;
+    transition: transform 2s;
+    -webkit-transition: transform 2s;
+    transform: translateX(0%) !important;
+    
+    }
+    .sliding{
+        width: 100%;
+      }
+    
+    .alignleft {
+    
+        transform: translateX(-80%)scale(.50); 
+    }
+    .alignright{
+      transform: translateX(10%)scale(.50); 
+    
+    }
+    .align-down{
+      transform: translateY(40%)scale(.50); 
+    
+    }
+    .align-up{
+      transform: translateY(-40%)scale(.50); 
+    
+    }
+    
+    .slidein{
+        opacity: 0;
+        transition: all 2s;
+    }
+
+    

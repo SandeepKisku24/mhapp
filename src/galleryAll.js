@@ -38,9 +38,9 @@ const ImageAll = ()=> {
         </Group>
 
         {section===0? 
-            <div style={{marginRight:"auto", marginTop:"0%"}}>
+            <div className="slidein alignleft" style={{marginRight:"auto", marginTop:"0%"}}>
                 <div style={{width:isMobile?"100%":"90%", padding:"2%",backgroundColor:"#fff"}}>
-                <PhotoAlbum layout="rows" photos={imagehp} onClick={({ index: current }) => setIndex(current)} />
+                <PhotoAlbum  layout="rows" photos={imagehp} onClick={({ index: current }) => setIndex(current)} />
                 <Lightbox
                     index={index}
                     slides={imagehp}

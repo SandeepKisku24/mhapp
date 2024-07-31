@@ -34,15 +34,58 @@ const Announce = ({number})=>{
     },[number]);
 
     
-    const notes = [{note:"Objects use names to access its  In this example, person.firstName returns John:", date:"12/09/2024",id: "01"},{note:"You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array", date:"08/09/2024", id: "02"},{note:"Many programming languages support arrays with named indexes.", date:"06/01/2023", id: "03"},{note:"programming languages support arrays with named indexes.", date:"07/01/2023", id: "04"}];
+    const notes = [{note:"Health Camps in three east zone villages of Poreyahat, elderly and children are expected. ", date:"12/03/2024",id: "01"},{note:"Dental health checkups are now open 24 x 7 in our hospital, all types of services are available .", date:"08/07/2024", id: "02"},{note:" All types of x-ray facilities is now available in our ca,pus with highest accuracy rates. ", date:"06/01/2023", id: "03"},{note:"programming languages support arrays with named indexes.", date:"07/01/2023", id: "04"}];
     var fNotes = notes;
     if(number!=0){
         fNotes = fNotes.slice(0,3);
     }
+        const sliderImages = document.querySelectorAll('.slidein');
 
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function() {
+        var context = this, args = arguments;
+        var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+        };
+        };
+
+    function checkSlide(e) {
+    
+    // loop over every image 
+    // figure out where it needs to be shown
+    // at least 50% of its height
+    
+    
+    sliderImages.forEach(sliderImage => {
+    //half way through images
+     const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.offsetHeight /2;
+    // bottom of the image
+    const imageBottom = sliderImage.offsetTop + sliderImage.offsetHeight;
+    // half way in the images
+    const isHalfShown = slideInAt > sliderImage.offsetTop;
+    
+    const isNoScrolledPast = window.scrollY < imageBottom;
+    
+    if(isHalfShown ) {
+          sliderImage.classList.add('active');
+       } else {
+          sliderImage.classList.remove('active');
+       }
+    })
+    
+    
+    }
+    window.addEventListener('scroll', debounce(checkSlide));
     
     return(
-        <Group className="announceBar" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":"auto"} gap={isMobile?"0":"0"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',backgroundColor:"#fff", borderRadius:"5px"}} id={number!=0?"":"full"} >
+        <Group className="announceBar slidein alignright" maw={isMobile?"95%":"35%"} mx={isMobile?"auto":"auto"} gap={isMobile?"0":"0"} style={{ borderTop: isMobile ? '1px solid #d0bb68' : '',backgroundColor:"#fff", borderRadius:"5px"}} id={number!=0?"":"full"} >
                 
                 <Text bg="#fff" className="headingsall headingAnnouce" style={{ fontSize: isMobile ? '20px' : '30px', borderBottom: "1px solid #000", textAlign:"center"}} >Announcements</Text>
                 <br/>

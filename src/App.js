@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import { MantineProvider } from '@mantine/core';
-import "./App.css"
+import "./App.css";
+import "./swipe.css"
 
 import {
   BrowserRouter as Router,
